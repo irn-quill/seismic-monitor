@@ -1,0 +1,31 @@
+name: Update Seismic Map
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: pip install pandas requests
+        
+      - name: Run seismic script
+        run: python seismic_cluster.py
+        
+      - name: Commit and push map
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add seismic_map.html seismic_clusters.kml
+          git diff --staged --quiet || git commit -m "Update seismic map"
+          git push
