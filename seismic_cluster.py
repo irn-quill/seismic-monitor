@@ -1383,32 +1383,21 @@ def report(df):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 if __name__ == '__main__':
-    print("Starting live multi-network seismic monitor. Press Ctrl+C to stop.")
-    print("Networks: USGS + EMSC + ISC + GFZ + IRIS")
-    print("Note: ISC may return 0 events — they publish with 1-2 month delay (gold standard verification)")
+        print("Networks: USGS + EMSC + ISC + GFZ + IRIS")
     print(f"Outputs : {KML_OUTPUT_FILE}  |  {HTML_OUTPUT_FILE}")
-    print(f"Lookback: {LOOKBACK_HOURS}h  |  Refresh: {REFRESH_SECONDS}s\n")
 
     print("Initialising fault line database...")
     load_fault_lines()
     print()
 
-    while True:
-        try:
-            print(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')} UTC] Fetching...")
-            raw = fetch_all_networks()
-            if len(raw) < 2:
-                print("  Not enough data — retrying.")
-            else:
-                result = run_algorithm(raw)
-                report(result)
-                write_kml(result)
-                write_html(result)
-            print(f"  Next refresh in {REFRESH_SECONDS}s...\n")
-            time.sleep(REFRESH_SECONDS)
-        except KeyboardInterrupt:
-            print("\nStopped.")
-            break
-        except Exception as e:
-            print(f"  Error: {e} — retrying in {REFRESH_SECONDS}s")
-            time.sleep(REFRESH_SECONDS)
+    print(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')} UTC] Fetching...")
+    raw = fetch_all_networks()
+    if len(raw) < 2:
+        print("Not enough data.")
+    else:
+        result = run_algorithm(raw)
+        result = add_pressure_correlation(result)
+        report(result)
+        write_kml(result)
+        write_html(result)
+    print("Done.")
