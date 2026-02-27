@@ -1383,7 +1383,7 @@ def report(df):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 if __name__ == '__main__':
-        print("Networks: USGS + EMSC + ISC + GFZ + IRIS")
+    print("Networks: USGS + EMSC + ISC + GFZ + IRIS")
     print(f"Outputs : {KML_OUTPUT_FILE}  |  {HTML_OUTPUT_FILE}")
 
     print("Initialising fault line database...")
