@@ -10,22 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-          
+
       - name: Install dependencies
-        run: pip install pandas requests
-        
+        run: pip install pandas requests openpyxl
+
       - name: Run seismic script
         run: python seismic_cluster.py
-        
-      - name: Commit and push map
+
+      - name: Commit and push outputs
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
-          git add seismic_map.html seismic_clusters.kml
-          git diff --staged --quiet || git commit -m "Update seismic map"
+          git add seismic_map.html seismic_data.html seismic_clusters.kml gem_global_faults.geojson
+          git diff --staged --quiet || git commit -m "Update seismic data $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push

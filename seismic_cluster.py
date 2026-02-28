@@ -3,7 +3,8 @@ Seismic Cluster Detection — Bidirectional n+1 Algorithm
 Networks: USGS + EMSC + ISC + GFZ Potsdam + IRIS/EarthScope
 Outputs:
   - seismic_clusters.kml  (Google Earth Pro)
-  - seismic_map.html      (Live Leaflet web map — open in any browser)
+  - seismic_map.html      (Live Leaflet web map)
+  - seismic_data.html     (Sortable data table)
 """
 
 import pandas as pd
@@ -21,6 +22,7 @@ TIME_THRESHOLD_HRS    = 1.0
 REFRESH_SECONDS       = 60
 KML_OUTPUT_FILE       = "seismic_clusters.kml"
 HTML_OUTPUT_FILE      = "seismic_map.html"
+DATA_OUTPUT_FILE      = "seismic_data.html"
 FAULT_CACHE_FILE      = "gem_global_faults.geojson"
 LOOKBACK_HOURS        = 24
 
@@ -57,7 +59,7 @@ def load_fault_lines():
         with open(FAULT_CACHE_FILE, 'r') as f:
             data = json.load(f)
     else:
-        print("  Faults : downloading USGS Quaternary Fault Database (~8MB)...")
+        print("  Faults : downloading GEM Global Active Faults (~8MB)...")
         try:
             r = requests.get(url, timeout=60)
             r.raise_for_status()
@@ -106,8 +108,7 @@ def point_to_segment_km(plat, plon, lat1, lon1, lat2, lon2):
     return haversine_km(plat, plon, proj_lat, proj_lon)
 
 
-# Spatial grid index for fast fault lookup — built once after load_fault_lines()
-FAULT_GRID = {}   # (int(lat), int(lon)) -> list of segment indices
+FAULT_GRID = {}
 FAULT_GRID_BUILT = False
 
 def build_fault_grid():
@@ -300,7 +301,6 @@ def run_algorithm(df):
         flags.append('CLUSTER' if (prev or nxt) else '—')
     df['cluster_flag'] = flags
 
-    # ── Depth analysis ────────────────────────────────────────────────────────
     def depth_class(d):
         if pd.isna(d):  return 'unknown'
         if d < 20:      return 'very shallow'
@@ -335,7 +335,6 @@ def run_algorithm(df):
 
     df['depth_precursor'] = df.apply(precursor_flag, axis=1)
 
-    # ── Fault proximity ───────────────────────────────────────────────────────
     if FAULT_SEGMENTS:
         fault_dists  = []
         fault_names  = []
@@ -356,28 +355,18 @@ def run_algorithm(df):
     return df
 
 
-
-
 # ── Atmospheric pressure correlation ──────────────────────────────────────────
-# Uses Open-Meteo — free, no API key, global coverage
-# For each cluster event, fetches surface pressure for the 48h before the event
-# Flags if pressure dropped significantly in the window before the event
-# Note: correlation between pressure and seismicity is contested but published
 
-PRESSURE_CACHE = {}   # (round_lat, round_lon, date) -> pressure series
+PRESSURE_CACHE = {}
 
 def fetch_pressure_for_event(lat, lon, event_time):
-    """Get hourly surface pressure for 48h before event_time at lat/lon."""
-    # Round to 1dp to allow cache reuse for nearby events
     rlat = round(lat, 1)
     rlon = round(lon, 1)
     date_end   = event_time.strftime('%Y-%m-%d')
     date_start = (event_time - timedelta(hours=48)).strftime('%Y-%m-%d')
     cache_key  = (rlat, rlon, date_start, date_end)
-
     if cache_key in PRESSURE_CACHE:
         return PRESSURE_CACHE[cache_key]
-
     try:
         url = (
             f"https://api.open-meteo.com/v1/forecast"
@@ -389,9 +378,7 @@ def fetch_pressure_for_event(lat, lon, event_time):
         r = requests.get(url, timeout=15)
         r.raise_for_status()
         data = r.json()
-        times     = data['hourly']['time']
-        pressures = data['hourly']['surface_pressure']
-        series = list(zip(times, pressures))
+        series = list(zip(data['hourly']['time'], data['hourly']['surface_pressure']))
         PRESSURE_CACHE[cache_key] = series
         return series
     except Exception:
@@ -400,57 +387,34 @@ def fetch_pressure_for_event(lat, lon, event_time):
 
 
 def pressure_delta_hpa(series, event_time):
-    """
-    Calculate pressure change in the 24h window before the event.
-    Returns (pressure_at_event, change_24h, flag)
-    Negative change = pressure dropped before event.
-    """
     if not series:
         return None, None, '—'
-
-    event_str = event_time.strftime('%Y-%m-%dT%H:00')
+    event_str   = event_time.strftime('%Y-%m-%dT%H:00')
     minus24_str = (event_time - timedelta(hours=24)).strftime('%Y-%m-%dT%H:00')
-
-    p_event  = None
-    p_minus24 = None
-
+    p_event = p_minus24 = None
     for t, p in series:
-        if t == event_str:
-            p_event = p
-        if t == minus24_str:
-            p_minus24 = p
-
+        if t == event_str:   p_event   = p
+        if t == minus24_str: p_minus24 = p
     if p_event is None or p_minus24 is None:
         return p_event, None, '—'
-
     delta = p_event - p_minus24
-
-    # Flag significant drops — threshold based on published research
-    if delta < -8:
-        flag = '🌀 PRESSURE DROP'
-    elif delta < -4:
-        flag = 'pressure falling'
-    elif delta > 4:
-        flag = 'pressure rising'
-    else:
-        flag = '—'
-
+    if delta < -8:   flag = '🌀 PRESSURE DROP'
+    elif delta < -4: flag = 'pressure falling'
+    elif delta > 4:  flag = 'pressure rising'
+    else:            flag = '—'
     return round(p_event, 1), round(delta, 1), flag
 
 
 def add_pressure_correlation(df):
-    """Add pressure data to cluster events only (to limit API calls)."""
     pressure_hpa   = [None] * len(df)
     pressure_delta = [None] * len(df)
     pressure_flag  = ['—'] * len(df)
-
     cluster_indices = df.index[df['cluster_flag'] == 'CLUSTER'].tolist()
     if not cluster_indices:
         df['pressure_hpa']   = pressure_hpa
         df['pressure_delta'] = pressure_delta
         df['pressure_flag']  = pressure_flag
         return df
-
     print(f"  Pressure: fetching for {len(cluster_indices)} cluster events...")
     for i in cluster_indices:
         row = df.loc[i]
@@ -459,12 +423,11 @@ def add_pressure_correlation(df):
         pressure_hpa[i]   = p
         pressure_delta[i] = delta
         pressure_flag[i]  = flag
-
     df['pressure_hpa']   = pressure_hpa
     df['pressure_delta'] = pressure_delta
     df['pressure_flag']  = pressure_flag
     return df
-# ─────────────────────────────────────────────────────────────────────────────
+
 
 # ── HTML Leaflet map ──────────────────────────────────────────────────────────
 
@@ -495,7 +458,9 @@ def write_html(df):
                  f"Depth: {depth_str}{warning}<br>"
                  f"Prev: {dp} | Next: {dn}<br>"
                  f"Fault: {fault_str_for(row)}<br>"
-                 f"Pressure: {row.get('pressure_hpa','?') or '?'} hPa (24h change: {row.get('pressure_delta','?') or '?'} hPa) {row.get('pressure_flag','') or ''}<br>"
+                 f"Pressure: {row.get('pressure_hpa','?') or '?'} hPa "
+                 f"(24h change: {row.get('pressure_delta','?') or '?'} hPa) "
+                 f"{row.get('pressure_flag','') or ''}<br>"
                  f"<b>{'🔴 CLUSTER' if is_cluster else '⚪ Isolated'}</b>")
         markers.append({
             'lat':     float(row['latitude']),
@@ -507,7 +472,6 @@ def write_html(df):
         })
 
     markers_json = json.dumps(markers)
-
     legend_items = ''.join([
         f'<div><span style="background:{c};display:inline-block;width:12px;height:12px;'
         f'border-radius:50%;margin-right:6px;"></span>{n}</div>'
@@ -515,7 +479,6 @@ def write_html(df):
     ])
     legend_items += (f'<div><span style="background:{ISOLATED_COLOUR};display:inline-block;'
                      f'width:12px;height:12px;border-radius:50%;margin-right:6px;"></span>Isolated</div>')
-
     on_fault_line = f'<div class="on-fault">📍 {on_fault} ON FAULT</div>' if on_fault > 0 else ''
     multi_line    = f'<div class="multi">⭐ {multi} multi-network</div>' if multi > 0 else ''
 
@@ -544,6 +507,7 @@ def write_html(df):
     #panel .on-fault{{ color:#ff8800; font-size:13px; font-weight:bold; }}
     #legend {{ margin-top:12px; border-top:1px solid #333; padding-top:10px; font-size:12px; line-height:22px; }}
     #timestamp {{ font-size:10px; color:#666; margin-top:10px; }}
+    #timestamp a {{ color:#0066cc; text-decoration:none; }}
   </style>
 </head>
 <body>
@@ -555,14 +519,14 @@ def write_html(df):
   {multi_line}
   {on_fault_line}
   <div id="legend">{legend_items}</div>
-  <div id="timestamp">Updated: {timestamp}<br>Auto-refreshes every 60s</div>
+  <div id="timestamp">Updated: {timestamp}<br>Auto-refreshes every 60s<br>
+  <a href="seismic_data.html">📊 Full data table →</a></div>
 </div>
 <script>
   var map = L.map('map', {{ center: [20, 0], zoom: 2, zoomControl: true }});
   L.tileLayer('https://{{s}}.basemaps.cartocdn.com/dark_all/{{z}}/{{x}}/{{y}}{{r}}.png', {{
     attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 19
   }}).addTo(map);
-
   var markers = {markers_json};
   markers.forEach(function(m) {{
     L.circleMarker([m.lat, m.lon], {{
@@ -583,6 +547,197 @@ def write_html(df):
     print(f"  → Map saved: {HTML_OUTPUT_FILE}")
 
 
+# ── Data page ─────────────────────────────────────────────────────────────────
+
+def write_data_page(df):
+    timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
+    total     = len(df)
+    clusters  = int((df['cluster_flag'] == 'CLUSTER').sum())
+    multi     = int(((df['cluster_flag'] == 'CLUSTER') & (df['network'] == 'MULTI')).sum())
+
+    rows = []
+    for _, row in df.sort_values('parsed_time', ascending=False).iterrows():
+        is_cluster   = row['cluster_flag'] == 'CLUSTER'
+        is_precursor = row.get('depth_precursor') == 'SHALLOWING'
+        is_multi     = row.get('network') == 'MULTI'
+        net          = str(row.get('network', '?'))
+        mag          = float(row['mag']) if pd.notna(row.get('mag')) else 0
+        depth        = f"{row['depth']:.0f}" if pd.notna(row.get('depth')) else '?'
+        dc           = str(row.get('depth_class', '?'))
+        place        = str(row.get('place', '?')).replace('<','&lt;').replace('>','&gt;')
+        t            = str(row['parsed_time'])[:19]
+        lat          = f"{row['latitude']:.3f}"
+        lon          = f"{row['longitude']:.3f}"
+        fp           = str(row.get('fault_proximity', '?'))
+        fd           = f"{row['fault_dist_km']:.0f}km" if pd.notna(row.get('fault_dist_km')) else '?'
+        fn           = str(row.get('fault_name', '?') or '?')[:40]
+        dp           = f"{row['dist_prev_km']:.0f}" if pd.notna(row.get('dist_prev_km')) else '?'
+        dn           = f"{row['dist_next_km']:.0f}" if pd.notna(row.get('dist_next_km')) else '?'
+        pf           = str(row.get('pressure_flag', '—') or '—')
+        pdelta       = f"{row['pressure_delta']:.1f}" if pd.notna(row.get('pressure_delta')) else '?'
+
+        badges = []
+        if is_cluster:   badges.append('<span class="badge cluster">CLUSTER</span>')
+        if is_multi:     badges.append('<span class="badge multi">MULTI</span>')
+        if is_precursor: badges.append('<span class="badge shallow">⚠️ SHALLOWING</span>')
+        if '🌀' in pf:   badges.append('<span class="badge pressure">🌀 PRESSURE</span>')
+
+        row_class = 'crow' if is_cluster else ''
+        if is_multi: row_class += ' mrow'
+
+        rows.append(f'''<tr class="{row_class}" data-cluster="{'1' if is_cluster else '0'}" data-mag="{mag}" data-network="{net}">
+          <td>{t}</td>
+          <td class="mag mag{int(mag)}">{mag:.1f}</td>
+          <td>{place}</td>
+          <td>{depth}km<br><small>{dc}</small></td>
+          <td><span class="net net{net}">{net}</span></td>
+          <td>{lat}, {lon}</td>
+          <td>{fp}<br><small>{fd} — {fn}</small></td>
+          <td>{dp}km | {dn}km</td>
+          <td>{''.join(badges)}</td>
+          <td>{pdelta} hPa</td>
+        </tr>''')
+
+    rows_html = '\n'.join(rows)
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Seismic Event Data — {timestamp}</title>
+  <meta http-equiv="refresh" content="300">
+  <style>
+    *{{margin:0;padding:0;box-sizing:border-box}}
+    body{{background:#0a0a0f;color:#ddd;font-family:'Helvetica Neue',sans-serif;font-size:13px}}
+    #header{{background:rgba(10,10,20,0.95);border-bottom:1px solid #222;padding:14px 20px;
+      display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}}
+    #header h1{{font-size:15px;color:#fff;letter-spacing:1px}}
+    #header .stats{{font-size:12px;color:#888}}
+    #header .stats span{{color:#ff4444;font-weight:bold;margin-right:12px}}
+    #controls{{padding:10px 20px;background:#111;border-bottom:1px solid #1a1a1a;
+      display:flex;gap:10px;align-items:center;flex-wrap:wrap}}
+    #controls input,#controls select{{background:#1a1a1a;border:1px solid #333;color:#ddd;
+      padding:5px 8px;border-radius:4px;font-size:12px}}
+    #controls label{{font-size:12px;color:#888}}
+    #controls a{{margin-left:auto;color:#0066cc;font-size:12px;text-decoration:none}}
+    table{{width:100%;border-collapse:collapse}}
+    thead th{{background:#111;color:#888;font-size:11px;font-weight:normal;letter-spacing:1px;
+      text-transform:uppercase;padding:7px 10px;text-align:left;border-bottom:1px solid #222;
+      cursor:pointer;user-select:none;position:sticky;top:53px}}
+    thead th:hover{{color:#fff}}
+    thead th.sorted{{color:#ff4444}}
+    tbody tr{{border-bottom:1px solid #111;transition:background 0.1s}}
+    tbody tr:hover{{background:#111}}
+    tbody tr.crow{{background:rgba(255,50,50,0.04)}}
+    tbody tr.mrow{{background:rgba(255,255,0,0.04)}}
+    td{{padding:7px 10px;vertical-align:top}}
+    td small{{color:#555;font-size:11px}}
+    .mag{{font-weight:bold;font-size:14px}}
+    .mag0,.mag1,.mag2{{color:#aaa}}
+    .mag3{{color:#88ccff}}
+    .mag4{{color:#ffaa44}}
+    .mag5,.mag6,.mag7,.mag8,.mag9{{color:#ff4444}}
+    .net{{padding:2px 5px;border-radius:3px;font-size:11px;font-weight:bold}}
+    .netUSGS{{background:#ff333322;color:#ff6666;border:1px solid #ff3333}}
+    .netEMSC{{background:#33cc3322;color:#66ff66;border:1px solid #33cc33}}
+    .netISC {{background:#ff880022;color:#ffaa44;border:1px solid #ff8800}}
+    .netGFZ {{background:#cc33ff22;color:#dd88ff;border:1px solid #cc33ff}}
+    .netIRIS{{background:#00ccff22;color:#66eeff;border:1px solid #00ccff}}
+    .netMULTI{{background:#ffff0022;color:#ffff44;border:1px solid #ffff00}}
+    .badge{{display:inline-block;padding:2px 5px;border-radius:3px;font-size:10px;margin:1px}}
+    .badge.cluster{{background:#ff333322;color:#ff6666;border:1px solid #ff3333}}
+    .badge.multi{{background:#ffff0022;color:#ffff44;border:1px solid #ffff00}}
+    .badge.shallow{{background:#ff880022;color:#ffaa44;border:1px solid #ff8800}}
+    .badge.pressure{{background:#0088ff22;color:#44aaff;border:1px solid #0088ff}}
+    #footer{{padding:8px 20px;font-size:11px;color:#444;border-top:1px solid #111}}
+  </style>
+</head>
+<body>
+<div id="header">
+  <h1>⚡ SEISMIC EVENT DATA</h1>
+  <div class="stats">
+    <span>{clusters}</span>clusters &nbsp;
+    <span>{multi}</span>multi-network &nbsp;
+    <span>{total}</span>total events (24h)
+  </div>
+</div>
+<div id="controls">
+  <label>Search:</label>
+  <input type="text" id="search" placeholder="location, network..." oninput="filterTable()">
+  <label>Min mag:</label>
+  <select id="minmag" onchange="filterTable()">
+    <option value="0">All</option>
+    <option value="2">M2+</option>
+    <option value="3">M3+</option>
+    <option value="4">M4+</option>
+    <option value="5">M5+</option>
+  </select>
+  <label><input type="checkbox" id="clustersonly" onchange="filterTable()"> Clusters only</label>
+  <label>Network:</label>
+  <select id="netfilter" onchange="filterTable()">
+    <option value="">All</option>
+    <option>USGS</option><option>EMSC</option><option>ISC</option>
+    <option>GFZ</option><option>IRIS</option><option>MULTI</option>
+  </select>
+  <a href="seismic_map.html">← Back to map</a>
+</div>
+<table id="dt">
+  <thead><tr>
+    <th onclick="sortTable(0)">Time (UTC)</th>
+    <th onclick="sortTable(1)">Mag</th>
+    <th onclick="sortTable(2)">Location</th>
+    <th onclick="sortTable(3)">Depth</th>
+    <th onclick="sortTable(4)">Network</th>
+    <th onclick="sortTable(5)">Coordinates</th>
+    <th onclick="sortTable(6)">Fault</th>
+    <th onclick="sortTable(7)">Neighbours</th>
+    <th>Flags</th>
+    <th onclick="sortTable(9)">Pressure Δ</th>
+  </tr></thead>
+  <tbody id="tbody">{rows_html}</tbody>
+</table>
+<div id="footer">Updated: {timestamp} &nbsp;|&nbsp; Auto-refreshes every 5 minutes</div>
+<script>
+function filterTable(){{
+  var s=document.getElementById('search').value.toLowerCase();
+  var mm=parseFloat(document.getElementById('minmag').value);
+  var co=document.getElementById('clustersonly').checked;
+  var nf=document.getElementById('netfilter').value;
+  document.querySelectorAll('#tbody tr').forEach(function(r){{
+    var show=true;
+    if(s&&!r.textContent.toLowerCase().includes(s))show=false;
+    if(parseFloat(r.dataset.mag)<mm)show=false;
+    if(co&&r.dataset.cluster!=='1')show=false;
+    if(nf&&r.dataset.network!==nf)show=false;
+    r.style.display=show?'':'none';
+  }});
+}}
+var sd={{}};
+function sortTable(c){{
+  var tb=document.getElementById('tbody');
+  var rows=Array.from(tb.querySelectorAll('tr'));
+  var d=sd[c]=-(sd[c]||-1);
+  rows.sort(function(a,b){{
+    var av=a.querySelectorAll('td')[c].textContent.trim();
+    var bv=b.querySelectorAll('td')[c].textContent.trim();
+    var an=parseFloat(av),bn=parseFloat(bv);
+    if(!isNaN(an)&&!isNaN(bn))return d*(an-bn);
+    return d*av.localeCompare(bv);
+  }});
+  rows.forEach(function(r){{tb.appendChild(r);}});
+  document.querySelectorAll('thead th').forEach(function(th,i){{
+    th.classList.toggle('sorted',i===c);
+  }});
+}}
+</script>
+</body>
+</html>"""
+
+    with open(DATA_OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        f.write(html)
+    print(f"  → Data page saved: {DATA_OUTPUT_FILE}")
+
+
 # ── KML ───────────────────────────────────────────────────────────────────────
 
 def write_kml(df):
@@ -590,7 +745,6 @@ def write_kml(df):
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<kml xmlns="http://www.opengis.net/kml/2.2">',
              '<Document>', f'  <n>Seismic Clusters — {ts}</n>']
-
     for net, colour in NETWORK_COLOURS.items():
         h = colour.lstrip('#')
         kml_colour = f'ff{h[4:6]}{h[2:4]}{h[0:2]}'
@@ -598,12 +752,10 @@ def write_kml(df):
     <IconStyle><color>{kml_colour}</color><scale>1.2</scale>
       <Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
     </IconStyle><LabelStyle><scale>0</scale></LabelStyle></Style>''')
-
     lines.append('''  <Style id="isolated">
     <IconStyle><color>ffddaa88</color><scale>0.7</scale>
       <Icon><href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href></Icon>
     </IconStyle><LabelStyle><scale>0</scale></LabelStyle></Style>''')
-
     lines.append('  <Folder><n>🔴 Clusters</n>')
     for _, row in df[df['cluster_flag'] == 'CLUSTER'].iterrows():
         net   = row.get('network', 'USGS')
@@ -623,7 +775,6 @@ Fault: {fault_str_for(row)}</description>
       <Point><coordinates>{row['longitude']},{row['latitude']},0</coordinates></Point>
     </Placemark>''')
     lines.append('  </Folder>')
-
     lines.append('  <Folder><n>⚪ Isolated</n>')
     for _, row in df[df['cluster_flag'] == '—'].iterrows():
         lines.append(f'''    <Placemark>
@@ -637,7 +788,6 @@ Fault: {fault_str_for(row)}</description>
     </Placemark>''')
     lines.append('  </Folder>')
     lines += ['</Document>', '</kml>']
-
     with open(KML_OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))
     print(f"  → KML saved: {KML_OUTPUT_FILE}")
@@ -652,6 +802,7 @@ def report(df):
     precursor = (df['depth_precursor'] == 'SHALLOWING').sum() if 'depth_precursor' in df.columns else 0
     shallow   = df['depth_class'].isin(['very shallow','shallow']).sum() if 'depth_class' in df.columns else 0
     on_fault  = (df['fault_proximity'] == 'ON FAULT').sum() if 'fault_proximity' in df.columns else 0
+    pressure_drops = (df['pressure_flag'] == '🌀 PRESSURE DROP').sum() if 'pressure_flag' in df.columns else 0
 
     print()
     print("═" * 55)
@@ -664,13 +815,11 @@ def report(df):
         print(f"  📍 On fault      : {on_fault}  ← sitting directly on a known fault")
     if multi > 0:
         print(f"  ⭐ Multi-network : {multi}  ← confirmed by 2+ independent networks")
-    pressure_drops = (df['pressure_flag'] == '🌀 PRESSURE DROP').sum() if 'pressure_flag' in df.columns else 0
     if precursor > 0:
         print(f"  ⚠️  Shallowing    : {precursor}  ← depth migration detected")
     if pressure_drops > 0:
         print(f"  🌀 Pressure drop : {pressure_drops}  ← significant pressure fall before event")
     print()
-
     if clusters > 0:
         print("  Most recent cluster events:")
         for _, row in df[df['cluster_flag'] == 'CLUSTER'].tail(10).iterrows():
@@ -682,7 +831,7 @@ def report(df):
             pre   = ' ⚠️' if row.get('depth_precursor') == 'SHALLOWING' else ''
             fp    = row.get('fault_proximity', '')
             fd    = f" [{fp}]" if fp and fp not in ('unavailable', 'unknown') else ''
-            pf = f" {row['pressure_flag']}" if row.get('pressure_flag') and row.get('pressure_flag') not in ('—', None) else ""
+            pf    = f" {row['pressure_flag']}" if row.get('pressure_flag') and row.get('pressure_flag') not in ('—', None) else ''
             print(f"    [{row.get('network','?'):5}] M{row['mag']:.1f}  {place}  "
                   f"[prev:{dp}km|next:{dn}km] {dep} ({dc}){pre}{fd}{pf}")
     print("═" * 55)
@@ -691,32 +840,52 @@ def report(df):
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 if __name__ == '__main__':
-    print("Starting live multi-network seismic monitor. Press Ctrl+C to stop.")
-    print("Networks: USGS + EMSC + ISC + GFZ + IRIS")
-    print("Note: ISC may return 0 events — they publish with 1-2 month delay (gold standard verification)")
-    print(f"Outputs : {KML_OUTPUT_FILE}  |  {HTML_OUTPUT_FILE}")
-    print(f"Lookback: {LOOKBACK_HOURS}h  |  Refresh: {REFRESH_SECONDS}s\n")
+    import sys
+    is_github = os.environ.get('GITHUB_ACTIONS') == 'true'
 
+    print("Networks: USGS + EMSC + ISC + GFZ + IRIS")
+    print(f"Outputs : {KML_OUTPUT_FILE}  |  {HTML_OUTPUT_FILE}  |  {DATA_OUTPUT_FILE}")
+    print("Note: ISC publishes with 1-2 month delay (gold standard verification)")
+    print()
     print("Initialising fault line database...")
     load_fault_lines()
     print()
 
-    while True:
-        try:
-            print(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')} UTC] Fetching...")
-            raw = fetch_all_networks()
-            if len(raw) < 2:
-                print("  Not enough data — retrying.")
-            else:
-                result = run_algorithm(raw)
-                report(result)
-                write_kml(result)
-                write_html(result)
-            print(f"  Next refresh in {REFRESH_SECONDS}s...\n")
-            time.sleep(REFRESH_SECONDS)
-        except KeyboardInterrupt:
-            print("\nStopped.")
-            break
-        except Exception as e:
-            print(f"  Error: {e} — retrying in {REFRESH_SECONDS}s")
-            time.sleep(REFRESH_SECONDS)
+    if is_github:
+        # Single run mode for GitHub Actions
+        print(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')} UTC] Fetching...")
+        raw = fetch_all_networks()
+        if len(raw) < 2:
+            print("Not enough data.")
+        else:
+            result = run_algorithm(raw)
+            result = add_pressure_correlation(result)
+            report(result)
+            write_kml(result)
+            write_html(result)
+            write_data_page(result)
+        print("Done.")
+    else:
+        # Continuous loop mode for local Mac
+        print(f"Refreshing every {REFRESH_SECONDS}s. Press Ctrl+C to stop.\n")
+        while True:
+            try:
+                print(f"[{datetime.now(timezone.utc).strftime('%H:%M:%S')} UTC] Fetching...")
+                raw = fetch_all_networks()
+                if len(raw) < 2:
+                    print("  Not enough data — retrying.")
+                else:
+                    result = run_algorithm(raw)
+                    result = add_pressure_correlation(result)
+                    report(result)
+                    write_kml(result)
+                    write_html(result)
+                    write_data_page(result)
+                print(f"  Next refresh in {REFRESH_SECONDS}s...\n")
+                time.sleep(REFRESH_SECONDS)
+            except KeyboardInterrupt:
+                print("\nStopped.")
+                break
+            except Exception as e:
+                print(f"  Error: {e} — retrying in {REFRESH_SECONDS}s")
+                time.sleep(REFRESH_SECONDS)
