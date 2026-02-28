@@ -21,3 +21,6 @@ This system does not predict earthquakes. Cluster detection is observational. De
 
 Live map:
 https://irn-quill.github.io/seismic-monitor/seismic_map.html
+
+Live data:
+https://irn-quill.github.io/seismic-monitor/seismic_data.html
