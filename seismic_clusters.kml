@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-  <n>Seismic Clusters — 2026-05-01 15:15:45 UTC</n>
+  <n>Seismic Clusters — 2026-05-01 16:14:54 UTC</n>
   <Style id="cluster_USGS">
     <IconStyle><color>ff3333ff</color><scale>1.2</scale>
       <Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
@@ -43,12 +43,12 @@ Fault: 8km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.1 — EASTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 17:05:48 UTC
 Magnitude: 1.1  Depth: 7.0 km (very shallow)
 Prev: 11.0 km | Next: 13500.1 km
 Fault: 4km from Unknown (ON FAULT)</description>
-      <styleUrl>#cluster_USGS</styleUrl>
+      <styleUrl>#cluster_EMSC</styleUrl>
       <Point><coordinates>38.4261,38.0944,0</coordinates></Point>
     </Placemark>
     <Placemark>
@@ -63,42 +63,42 @@ Fault: 29km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M4.2 — NEAR N COAST OF PAPUA, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-04-30 18:36:37 UTC
 Magnitude: 4.2  Depth: 22.0 km (shallow)
-Prev: 15.2 km | Next: 5913.3 km
+Prev: 15.2 km | Next: 11864.7 km
 Fault: 42km from Unknown (near fault)</description>
-      <styleUrl>#cluster_EMSC</styleUrl>
+      <styleUrl>#cluster_MULTI</styleUrl>
       <Point><coordinates>134.31,-0.64,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M5.1 — KURIL ISLANDS</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 04:03:14 UTC
 Magnitude: 5.1  Depth: 70.0 km (intermediate)
 Prev: 6857.6 km | Next: 20.3 km
 Fault: 137km from Unknown (fault zone)</description>
-      <styleUrl>#cluster_EMSC</styleUrl>
+      <styleUrl>#cluster_USGS</styleUrl>
       <Point><coordinates>157.32,50.75,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M5.1 — 70 km ENE of Severo-Kuril’sk, Russia</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 04:03:16 UTC
 Magnitude: 5.1  Depth: 76.017 km (intermediate)
 Prev: 20.3 km | Next: 6717.2 km
 Fault: 157km from Unknown (inter-fault)</description>
-      <styleUrl>#cluster_USGS</styleUrl>
+      <styleUrl>#cluster_EMSC</styleUrl>
       <Point><coordinates>157.0891,50.859,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M2.7 — SOUTHERN ALASKA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 04:20:29 UTC
 Magnitude: 2.7  Depth: 145.0 km (intermediate)
-Prev: 3319.2 km | Next: 12.3 km
+Prev: 364.3 km | Next: 12.3 km
 Fault: 38km from Unknown (near fault)</description>
-      <styleUrl>#cluster_USGS</styleUrl>
+      <styleUrl>#cluster_EMSC</styleUrl>
       <Point><coordinates>-153.5554,60.0534,0</coordinates></Point>
     </Placemark>
     <Placemark>
@@ -132,23 +132,23 @@ Fault: 1km from San Jacinto (Coyote Creek) (ON FAULT)</description>
       <Point><coordinates>-116.43733333333,33.4095,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M4.1 — NEVADA</n>
-      <description>Network: EMSC
+      <n>M4.3 — NEVADA</n>
+      <description>Network: USGS
 Time: 2026-05-01 08:15:54 UTC
-Magnitude: 4.1  Depth: 5.0 km (very shallow) ⚠️ SHALLOWING
+Magnitude: 4.3  Depth: 5.0 km (very shallow) ⚠️ SHALLOWING
 Prev: 7253.6 km | Next: 2.1 km
 Fault: 26km from Pyramid Lake fault zone (near fault)</description>
-      <styleUrl>#cluster_EMSC</styleUrl>
+      <styleUrl>#cluster_USGS</styleUrl>
       <Point><coordinates>-119.0639,39.3436,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M2.8 — NEVADA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 08:22:30 UTC
 Magnitude: 2.8  Depth: 10.0 km (very shallow)
 Prev: 2.1 km | Next: 14051.5 km
 Fault: 28km from Pyramid Lake fault zone (near fault)</description>
-      <styleUrl>#cluster_EMSC</styleUrl>
+      <styleUrl>#cluster_USGS</styleUrl>
       <Point><coordinates>-119.054,39.3259,0</coordinates></Point>
     </Placemark>
     <Placemark>
@@ -174,215 +174,8 @@ Fault: 28km from Pyramid Lake fault zone (near fault)</description>
   </Folder>
   <Folder><n>⚪ Isolated</n>
     <Placemark>
-      <n>M1.3 — 47 km NW of Tatitlek, Alaska</n>
-      <description>Network: USGS
-Time: 2026-04-30 15:20:33 UTC
-Magnitude: 1.3  Depth: 5.0 km
-Fault: 76km from East section (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-147.329,61.155,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M0.16 — 81 km NNW of Karluk, Alaska</n>
-      <description>Network: USGS
-Time: 2026-04-30 15:22:53 UTC
-Magnitude: 0.16  Depth: 16.57 km
-Fault: 171km from Unknown (inter-fault)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-154.849,58.2745,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M2.5 — ANDREANOF ISLANDS, ALEUTIAN IS.</n>
-      <description>Network: MULTI
-Time: 2026-04-30 15:24:33 UTC
-Magnitude: 2.5  Depth: 21.5 km
-Fault: 93km from Unknown (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-178.6793,51.3288,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M2.8 — CERAM SEA, INDONESIA</n>
-      <description>Network: USGS
-Time: 2026-04-30 15:25:48 UTC
-Magnitude: 2.8  Depth: 4.0 km
-Fault: 16km from Unknown (near fault)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>128.24,-2.32,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M1.8 — WESTERN TURKEY</n>
-      <description>Network: EMSC
-Time: 2026-04-30 15:27:03 UTC
-Magnitude: 1.8  Depth: 6.8 km
-Fault: 2km from Unknown (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>28.1189,39.4069,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M1.5 — CROATIA</n>
-      <description>Network: EMSC
-Time: 2026-04-30 15:34:48 UTC
-Magnitude: 1.5  Depth: 10.0 km
-Fault: 6km from Unknown (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>15.7731,45.6807,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M2.5 — TARAPACA, CHILE</n>
-      <description>Network: EMSC
-Time: 2026-04-30 15:36:01 UTC
-Magnitude: 2.5  Depth: 101.7 km
-Fault: 89km from Chuculay 3 (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-69.13,-20.48,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M1.6 — NEAR THE COAST OF WESTERN TURKEY</n>
-      <description>Network: EMSC
-Time: 2026-04-30 15:38:16 UTC
-Magnitude: 1.6  Depth: 6.9 km
-Fault: 7km from Unknown (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>26.5144,38.7942,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M2.7 — TYRRHENIAN SEA</n>
-      <description>Network: EMSC
-Time: 2026-04-30 15:44:58 UTC
-Magnitude: 2.7  Depth: 95.5 km
-Fault: 66km from Unknown (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>14.3153,39.3392,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M-0.14 — 81 km NNW of Karluk, Alaska</n>
-      <description>Network: EMSC
-Time: 2026-04-30 15:48:50 UTC
-Magnitude: -0.14  Depth: 5.04 km
-Fault: 174km from Unknown (inter-fault)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-154.92566666667,58.2595,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M2.9 — SALTA, ARGENTINA</n>
-      <description>Network: USGS
-Time: 2026-04-30 15:49:41 UTC
-Magnitude: 2.9  Depth: 199.8 km
-Fault: 172km from Grupo de fallas Medeiros (inter-fault)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-67.01,-24.12,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M4.0 — GUERRERO, MEXICO</n>
-      <description>Network: EMSC
-Time: 2026-04-30 15:50:44 UTC
-Magnitude: 4.0  Depth: 10.0 km
-Fault: 62km from Unknown (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-99.442,16.749,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M1.71 — 6 km SW of Volcano, Hawaii</n>
-      <description>Network: EMSC
-Time: 2026-04-30 15:53:06 UTC
-Magnitude: 1.71  Depth: 0.25 km
-Fault: 0km from Kilaeua's caldera (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-155.28416442871,19.40299987793,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M0.5 — 26 km SSE of Livengood, Alaska</n>
-      <description>Network: USGS
-Time: 2026-04-30 15:56:31 UTC
-Magnitude: 0.5  Depth: 9.0 km
-Fault: 111km from Unknown (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-148.258,65.321,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M0.21 — 6 km WNW of Cobb, CA</n>
-      <description>Network: USGS
-Time: 2026-04-30 15:57:56 UTC
-Magnitude: 0.21  Depth: 1.5 km
-Fault: 4km from Collayami 2011 CFM (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-122.78649902344,38.835666656494,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M2.4 — SOUTHERN ITALY</n>
-      <description>Network: USGS
-Time: 2026-04-30 15:58:54 UTC
-Magnitude: 2.4  Depth: 7.9 km
-Fault: 24km from Unknown (near fault)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>15.4897,41.9472,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M1.15 — 4 km SW of Redlands, CA</n>
-      <description>Network: EMSC
-Time: 2026-04-30 16:02:39 UTC
-Magnitude: 1.15  Depth: 15.8 km
-Fault: 2km from San Jacinto (San Jacinto Valley) rev (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-117.21033333333,34.026,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M3.9 — 31 km NW of Valdez, Alaska</n>
-      <description>Network: USGS
-Time: 2026-04-30 16:03:15 UTC
-Magnitude: 3.9  Depth: 14.7 km
-Fault: 75km from East section (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-146.682,61.363,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M3.6 — MINDANAO, PHILIPPINES</n>
-      <description>Network: MULTI
-Time: 2026-04-30 16:07:05 UTC
-Magnitude: 3.6  Depth: 124.0 km
-Fault: 64km from Offshore Davao Gulf (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>126.44,6.02,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M1.56 — 19 km SW of Alamo, Nevada</n>
-      <description>Network: EMSC
-Time: 2026-04-30 16:11:02 UTC
-Magnitude: 1.56  Depth: 13.7062 km
-Fault: 28km from Sheep Basin fault (near fault)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-115.3034,37.2285,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M2.8 — NIAS REGION, INDONESIA</n>
-      <description>Network: EMSC
-Time: 2026-04-30 16:11:37 UTC
-Magnitude: 2.8  Depth: 10.0 km
-Fault: 58km from Unknown (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>96.41,1.91,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M2.5 — WEST OF GIBRALTAR</n>
-      <description>Network: USGS
-Time: 2026-04-30 16:12:19 UTC
-Magnitude: 2.5  Depth: 10.0 km
-Fault: 53km from Unknown (fault zone)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-8.5857,34.342,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M0.75 — 5 km NW of The Geysers, CA</n>
-      <description>Network: EMSC
-Time: 2026-04-30 16:13:24 UTC
-Magnitude: 0.75  Depth: 12.329999923706 km
-Fault: 7km from Collayami 2011 CFM (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-122.80416870117,38.809665679932,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
       <n>M2.2 — 5 km E of Falls City, Texas</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-04-30 16:15:08 UTC
 Magnitude: 2.2  Depth: 7.7366 km
 Fault: unavailable</description>
@@ -391,7 +184,7 @@ Fault: unavailable</description>
     </Placemark>
     <Placemark>
       <n>M2.0 — NEAR THE COAST OF WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 16:20:30 UTC
 Magnitude: 2.0  Depth: 9.4 km
 Fault: 2km from Unknown (ON FAULT)</description>
@@ -400,7 +193,7 @@ Fault: 2km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M0.95 — 12 km NNE of Mooreland, Oklahoma</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 16:23:07 UTC
 Magnitude: 0.95  Depth: 16.51 km
 Fault: 415km from Cheraw fault (inter-fault)</description>
@@ -409,7 +202,7 @@ Fault: 415km from Cheraw fault (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 16:24:47 UTC
 Magnitude: 1.6  Depth: 11.4 km
 Fault: 2km from Unknown (ON FAULT)</description>
@@ -463,7 +256,7 @@ Fault: 4km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.73 — 12 km SE of Atka, Alaska</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 16:38:12 UTC
 Magnitude: 1.73  Depth: 13.15 km
 Fault: 134km from Unknown (fault zone)</description>
@@ -472,7 +265,7 @@ Fault: 134km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — AZORES ISLANDS REGION</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 16:42:54 UTC
 Magnitude: 2.7  Depth: 5.0 km
 Fault: 1km from Unknown (ON FAULT)</description>
@@ -490,7 +283,7 @@ Fault: 3km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — SULAWESI, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 16:44:09 UTC
 Magnitude: 2.5  Depth: 8.0 km
 Fault: 70km from Unknown (fault zone)</description>
@@ -517,7 +310,7 @@ Fault: 36km from Helena Valley fault (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M4.0 — MYANMAR</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 16:53:18 UTC
 Magnitude: 4.0  Depth: 10.0 km
 Fault: 24km from Unknown (near fault)</description>
@@ -535,7 +328,7 @@ Fault: 8km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.8 — 39 km NW of Valdez, Alaska</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 17:00:45 UTC
 Magnitude: 1.8  Depth: 12.6 km
 Fault: 67km from East section (fault zone)</description>
@@ -544,7 +337,7 @@ Fault: 67km from East section (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — 7 km ESE of Pearsall, Texas</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 17:01:22 UTC
 Magnitude: 1.6  Depth: 8.8897 km
 Fault: unavailable</description>
@@ -553,7 +346,7 @@ Fault: unavailable</description>
     </Placemark>
     <Placemark>
       <n>M1.0 — 31 km NE of Crane, Texas</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 17:01:53 UTC
 Magnitude: 1.0  Depth: 9.8389 km
 Fault: 247km from West Delaware Mountains fault zone (inter-fault)</description>
@@ -562,7 +355,7 @@ Fault: 247km from West Delaware Mountains fault zone (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.82 — 40 km S of Fern Forest, Hawaii</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 17:10:50 UTC
 Magnitude: 1.82  Depth: 34.779998779297 km
 Fault: 20km from north rift zone (near fault)</description>
@@ -571,7 +364,7 @@ Fault: 20km from north rift zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — SULAWESI, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 17:10:51 UTC
 Magnitude: 2.7  Depth: 26.0 km
 Fault: 50km from Unknown (near fault)</description>
@@ -589,7 +382,7 @@ Fault: 2km from Mataikona (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.2 — RYUKYU ISLANDS, JAPAN</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 17:12:30 UTC
 Magnitude: 3.2  Depth: 10.0 km
 Fault: 45km from Ishikawa-Gushikawa (near fault)</description>
@@ -607,7 +400,7 @@ Fault: 25km from Yaquina faults (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.5 — 6 km WSW of Sutton-Alpine, Alaska</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 17:17:31 UTC
 Magnitude: 1.5  Depth: 23.2 km
 Fault: 2km from Talkeetna West section (ON FAULT)</description>
@@ -616,7 +409,7 @@ Fault: 2km from Talkeetna West section (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.5 — OFF COAST OF COSTA RICA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 17:17:39 UTC
 Magnitude: 3.5  Depth: 3.0 km
 Fault: 33km from Middle America Trench megathrust (near fault)</description>
@@ -624,17 +417,17 @@ Fault: 33km from Middle America Trench megathrust (near fault)</description>
       <Point><coordinates>-84.1448,8.8436,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M2.0 — PUERTO RICO REGION</n>
-      <description>Network: USGS
+      <n>M2.04 — 4 km SSW of Indios, Puerto Rico</n>
+      <description>Network: EMSC
 Time: 2026-04-30 17:19:57 UTC
-Magnitude: 2.0  Depth: 17.5 km
+Magnitude: 2.04  Depth: 17.46 km
 Fault: 26km from Great Southern Puerto Rico Fault (near fault)</description>
       <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-66.8323,17.954,0</coordinates></Point>
+      <Point><coordinates>-66.832333333333,17.954,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M1.4 — 19 km N of Moose Pass, Alaska</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-04-30 17:21:56 UTC
 Magnitude: 1.4  Depth: 12.6 km
 Fault: 108km from Susitna section (fault zone)</description>
@@ -652,7 +445,7 @@ Fault: 14km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.84 — 6 km SW of Volcano, Hawaii</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-04-30 17:27:53 UTC
 Magnitude: 1.84  Depth: 0.34000000357628 km
 Fault: 1km from Kilaeua's caldera (ON FAULT)</description>
@@ -661,7 +454,7 @@ Fault: 1km from Kilaeua's caldera (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — SUMBAWA REGION, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 17:27:58 UTC
 Magnitude: 2.7  Depth: 110.0 km
 Fault: 105km from Unknown (fault zone)</description>
@@ -678,7 +471,7 @@ Fault: 1km from Unknown (ON FAULT)</description>
       <Point><coordinates>-155.51116943359,19.187999725342,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M4.8 — MID-INDIAN RIDGE</n>
+      <n>M4.8 — Mid-Indian Ridge</n>
       <description>Network: EMSC
 Time: 2026-04-30 17:28:32 UTC
 Magnitude: 4.8  Depth: 10.0 km
@@ -697,7 +490,7 @@ Fault: 50km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.09 — 6 km SE of Napa, CA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-04-30 17:31:02 UTC
 Magnitude: 2.09  Depth: -0.16 km
 Fault: 5km from West Napa 2011 CFM (ON FAULT)</description>
@@ -706,7 +499,7 @@ Fault: 5km from West Napa 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.5 — 47 km SE of Denali National Park, Alaska</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 17:31:16 UTC
 Magnitude: 1.5  Depth: 5.0 km
 Fault: 7km from Tonzona-Muldrow section (ON FAULT)</description>
@@ -715,7 +508,7 @@ Fault: 7km from Tonzona-Muldrow section (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.9 — TARAPACA, CHILE</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 17:32:26 UTC
 Magnitude: 2.9  Depth: 111.1 km
 Fault: 88km from Pisagua (fault zone)</description>
@@ -724,7 +517,7 @@ Fault: 88km from Pisagua (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.3 — POLAND</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-04-30 17:32:44 UTC
 Magnitude: 2.3  Depth: 10.0 km
 Fault: 194km from Unknown (inter-fault)</description>
@@ -742,7 +535,7 @@ Fault: 46km from Brawley (Seismic Zone) alt 2 (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.11 — 8 km NE of Ventura, CA</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-04-30 17:37:28 UTC
 Magnitude: 2.11  Depth: 4.62 km
 Fault: 3km from Ventura-Pitas Point (ON FAULT)</description>
@@ -760,7 +553,7 @@ Fault: 23km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — 12 km NNE of Pāhala, Hawaii</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 17:48:45 UTC
 Magnitude: 1.4  Depth: 28.23 km
 Fault: 1km from Unknown (ON FAULT)</description>
@@ -769,7 +562,7 @@ Fault: 1km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.49 — 10 km ESE of Estacada, Oregon</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 17:52:42 UTC
 Magnitude: 1.49  Depth: -1.07 km
 Fault: 21km from Sandy River fault zone (near fault)</description>
@@ -778,7 +571,7 @@ Fault: 21km from Sandy River fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.6 — SERAM, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-04-30 17:54:59 UTC
 Magnitude: 2.6  Depth: 5.0 km
 Fault: 25km from Unknown (near fault)</description>
@@ -787,7 +580,7 @@ Fault: 25km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.27 — 7 km WNW of Cobb, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 18:00:10 UTC
 Magnitude: 1.27  Depth: 2.170000076294 km
 Fault: 4km from Collayami 2011 CFM (ON FAULT)</description>
@@ -796,7 +589,7 @@ Fault: 4km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.1 — ISLAND OF HAWAII, HAWAII</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 18:00:25 UTC
 Magnitude: 2.1  Depth: 28.2 km
 Fault: 1km from Unknown (ON FAULT)</description>
@@ -805,7 +598,7 @@ Fault: 1km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — NEW GUINEA, PAPUA NEW GUINEA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-04-30 18:07:20 UTC
 Magnitude: 2.7  Depth: 28.0 km
 Fault: 94km from Unknown (fault zone)</description>
@@ -823,7 +616,7 @@ Fault: 29km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — JAVA, INDONESIA</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-04-30 18:10:04 UTC
 Magnitude: 2.5  Depth: 15.0 km
 Fault: 27km from Unknown (near fault)</description>
@@ -850,7 +643,7 @@ Fault: 124km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.8 — NEAR EAST COAST OF HONSHU, JAPAN</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-04-30 18:15:30 UTC
 Magnitude: 3.8  Depth: 40.0 km
 Fault: 84km from Oritsume (fault zone)</description>
@@ -868,7 +661,7 @@ Fault: 32km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.8 — EASTERN TURKEY</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 18:20:24 UTC
 Magnitude: 1.8  Depth: 7.0 km
 Fault: 7km from Unknown (ON FAULT)</description>
@@ -894,8 +687,17 @@ Fault: 54km from Unknown (fault zone)</description>
       <Point><coordinates>126.75,7.16,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <n>M0.73 — 18 km WSW of Alder, Montana</n>
+      <description>Network: EMSC
+Time: 2026-04-30 18:37:20 UTC
+Magnitude: 0.73  Depth: -2.0 km
+Fault: 17km from Sweetwater fault (near fault)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-112.30633333333,45.235833333333,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <n>M3.0 — SOUTH ISLAND OF NEW ZEALAND</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 18:38:45 UTC
 Magnitude: 3.0  Depth: 28.6 km
 Fault: 21km from Te Anau (near fault)</description>
@@ -904,7 +706,7 @@ Fault: 21km from Te Anau (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.12 — 8 km N of Anza, CA</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 18:45:41 UTC
 Magnitude: 0.12  Depth: 12.8 km
 Fault: 3km from San Jacinto (Anza) rev (ON FAULT)</description>
@@ -940,7 +742,7 @@ Fault: 3km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.01 — 7 km SSW of Mojave, CA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 19:01:37 UTC
 Magnitude: 1.01  Depth: 0.87 km
 Fault: 15km from Garlock (West) (near fault)</description>
@@ -958,7 +760,7 @@ Fault: 18km from Little Lake (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.06 — 19 km NW of New Idria, CA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 19:10:07 UTC
 Magnitude: 2.06  Depth: -0.38999998569488 km
 Fault: 9km from Ortigalita (South) (ON FAULT)</description>
@@ -967,7 +769,7 @@ Fault: 9km from Ortigalita (South) (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.9 — BANGLADESH</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 19:14:31 UTC
 Magnitude: 2.9  Depth: 30.0 km
 Fault: 30km from Unknown (near fault)</description>
@@ -976,7 +778,7 @@ Fault: 30km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.9 — 236 km SE of Attu Station, Alaska</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 19:17:10 UTC
 Magnitude: 3.9  Depth: 30.0 km
 Fault: 71km from Unknown (fault zone)</description>
@@ -994,7 +796,7 @@ Fault: 216km from Unknown (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.9 — TARAPACA, CHILE</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 19:23:35 UTC
 Magnitude: 2.9  Depth: 88.0 km
 Fault: 54km from Pisagua (fault zone)</description>
@@ -1012,7 +814,7 @@ Fault: 4km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.2 — SOUTHERN ITALY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 19:30:17 UTC
 Magnitude: 2.2  Depth: 26.0 km
 Fault: 22km from Unknown (near fault)</description>
@@ -1021,7 +823,7 @@ Fault: 22km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.3 — NEAR N COAST OF PAPUA, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 19:30:33 UTC
 Magnitude: 3.3  Depth: 27.0 km
 Fault: 30km from Unknown (near fault)</description>
@@ -1030,7 +832,7 @@ Fault: 30km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — EASTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-04-30 19:31:31 UTC
 Magnitude: 1.4  Depth: 7.0 km
 Fault: 20km from Unknown (near fault)</description>
@@ -1039,7 +841,7 @@ Fault: 20km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.1 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 19:32:22 UTC
 Magnitude: 1.1  Depth: 7.0 km
 Fault: 14km from Unknown (near fault)</description>
@@ -1048,7 +850,7 @@ Fault: 14km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — 17 km SE of Skwentna, Alaska</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 19:34:25 UTC
 Magnitude: 1.4  Depth: 75.9 km
 Fault: 57km from Susitna section (fault zone)</description>
@@ -1057,7 +859,7 @@ Fault: 57km from Susitna section (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.5 — OFF COAST OF OAXACA, MEXICO</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 19:38:54 UTC
 Magnitude: 3.5  Depth: 16.1 km
 Fault: 43km from Middle America Trench megathrust (near fault)</description>
@@ -1075,7 +877,7 @@ Fault: 0km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.07 — 34 km W of Hebgen Lake Estates, Montana</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 19:38:59 UTC
 Magnitude: 1.07  Depth: 14.02 km
 Fault: 14km from Madison fault (near fault)</description>
@@ -1129,7 +931,7 @@ Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.1 — CENTRAL CALIFORNIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 19:55:30 UTC
 Magnitude: 2.1  Depth: 2.0 km
 Fault: 4km from So Sierra Nevada (ON FAULT)</description>
@@ -1147,7 +949,7 @@ Fault: 76km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.02 — 7 km SE of Bonita, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 19:59:30 UTC
 Magnitude: 1.02  Depth: 2.0 km
 Fault: 17km from Rose Canyon (near fault)</description>
@@ -1156,7 +958,7 @@ Fault: 17km from Rose Canyon (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.6 — CRETE, GREECE</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 20:00:02 UTC
 Magnitude: 2.6  Depth: 11.0 km
 Fault: 25km from Unknown (near fault)</description>
@@ -1192,7 +994,7 @@ Fault: 6km from San Gorgonio Pass (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.3 — TURKEY-SYRIA BORDER REGION</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 20:11:31 UTC
 Magnitude: 1.3  Depth: 10.0 km
 Fault: 3km from Unknown (ON FAULT)</description>
@@ -1201,7 +1003,7 @@ Fault: 3km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.5 — OFF W. COAST OF S. ISLAND, N.Z.</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 20:13:35 UTC
 Magnitude: 3.5  Depth: 12.0 km
 Fault: 14km from West Balleny (near fault)</description>
@@ -1210,7 +1012,7 @@ Fault: 14km from West Balleny (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.61 — 8 km WNW of Cobb, CA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-04-30 20:14:53 UTC
 Magnitude: 0.61  Depth: 3.1199998855591 km
 Fault: 5km from Collayami 2011 CFM (ON FAULT)</description>
@@ -1228,7 +1030,7 @@ Fault: 33km from Joes Valley fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.01 — 14 km SE of Unalaska, Alaska</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 20:15:47 UTC
 Magnitude: 0.01  Depth: 9.26 km
 Fault: 143km from Unknown (fault zone)</description>
@@ -1264,7 +1066,7 @@ Fault: 2km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.1 — 71 km ESE of Denali National Park, Alaska</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 20:24:37 UTC
 Magnitude: 2.1  Depth: 115.0 km
 Fault: 1km from Tonzona-Muldrow section (ON FAULT)</description>
@@ -1273,7 +1075,7 @@ Fault: 1km from Tonzona-Muldrow section (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.0 — 21 km N of Moose Pass, Alaska</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-04-30 20:25:02 UTC
 Magnitude: 2.0  Depth: 13.9 km
 Fault: 105km from Susitna section (fault zone)</description>
@@ -1282,7 +1084,7 @@ Fault: 105km from Susitna section (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.2 — SOUTHERN ITALY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 20:29:13 UTC
 Magnitude: 2.2  Depth: 32.5 km
 Fault: 16km from Unknown (near fault)</description>
@@ -1291,7 +1093,7 @@ Fault: 16km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.0 — 31 km SSE of Lindsay, Texas</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 20:30:44 UTC
 Magnitude: 1.0  Depth: 0.0 km
 Fault: 124km from East Baylor Mountain - Carizzo Mountain fault (fault zone)</description>
@@ -1299,17 +1101,17 @@ Fault: 124km from East Baylor Mountain - Carizzo Mountain fault (fault zone)</de
       <Point><coordinates>-103.435,31.095,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M2.5 — ISLAND OF HAWAII, HAWAII</n>
+      <n>M2.43 — 4 km SSW of Pāhala, Hawaii</n>
       <description>Network: EMSC
 Time: 2026-04-30 20:35:12 UTC
-Magnitude: 2.5  Depth: 32.0 km
+Magnitude: 2.43  Depth: 31.97 km
 Fault: 0km from Unknown (ON FAULT)</description>
       <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-155.4897,19.1608,0</coordinates></Point>
+      <Point><coordinates>-155.48966666667,19.160833333333,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M1.2 — CENTRAL TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 20:35:22 UTC
 Magnitude: 1.2  Depth: 7.1 km
 Fault: 18km from Unknown (near fault)</description>
@@ -1318,7 +1120,7 @@ Fault: 18km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — SPAIN</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 20:36:52 UTC
 Magnitude: 1.6  Depth: 4.8 km
 Fault: 81km from Unknown (fault zone)</description>
@@ -1336,7 +1138,7 @@ Fault: 38km from Chuculay 3 (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.9 — EASTERN MEDITERRANEAN SEA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 20:44:16 UTC
 Magnitude: 1.9  Depth: 28.7 km
 Fault: 10km from Unknown (ON FAULT)</description>
@@ -1372,7 +1174,7 @@ Fault: 70km from Middle America Trench megathrust (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — EASTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 20:50:43 UTC
 Magnitude: 1.4  Depth: 9.5 km
 Fault: 13km from Unknown (near fault)</description>
@@ -1381,7 +1183,7 @@ Fault: 13km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.1 — OAXACA, MEXICO</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 20:54:49 UTC
 Magnitude: 3.1  Depth: 9.5 km
 Fault: 81km from Unknown (fault zone)</description>
@@ -1398,17 +1200,8 @@ Fault: 76km from Lacamas Lake fault (fault zone)</description>
       <Point><coordinates>-122.35966666667,46.360333333333,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M1.22 — 6 km WNW of Lemon Grove, CA</n>
-      <description>Network: EMSC
-Time: 2026-04-30 21:03:58 UTC
-Magnitude: 1.22  Depth: 13.98 km
-Fault: 8km from Rose Canyon (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-117.0895,32.754666666667,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
       <n>M3.1 — FLORES REGION, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-04-30 21:07:09 UTC
 Magnitude: 3.1  Depth: 12.0 km
 Fault: 25km from Unknown (near fault)</description>
@@ -1417,7 +1210,7 @@ Fault: 25km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.0 — COLIMA, MEXICO</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 21:12:08 UTC
 Magnitude: 3.0  Depth: 24.7 km
 Fault: 85km from Middle America Trench megathrust (fault zone)</description>
@@ -1426,7 +1219,7 @@ Fault: 85km from Middle America Trench megathrust (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — 49 km W of Petrolia, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 21:14:27 UTC
 Magnitude: 2.7  Depth: 3.9500000476837 km
 Fault: 2km from Unknown (ON FAULT)</description>
@@ -1507,7 +1300,7 @@ Fault: 11km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.47 — 2 km NW of The Geysers, CA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 21:36:08 UTC
 Magnitude: 1.47  Depth: 3.0 km
 Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
@@ -1516,7 +1309,7 @@ Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — 13 km WSW of Stanton, Texas</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 21:39:53 UTC
 Magnitude: 1.6  Depth: 8.8135 km
 Fault: 273km from West Delaware Mountains fault zone (inter-fault)</description>
@@ -1525,7 +1318,7 @@ Fault: 273km from West Delaware Mountains fault zone (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.26 — 29 km SE of Virginia City, Montana</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 21:40:15 UTC
 Magnitude: 1.26  Depth: 1.49 km
 Fault: 12km from Madison fault (near fault)</description>
@@ -1534,7 +1327,7 @@ Fault: 12km from Madison fault (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.36 — 10 km E of Mission, Canada</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 21:42:25 UTC
 Magnitude: 1.36  Depth: -0.69 km
 Fault: 26km from Boulder Creek fault, Kendall scarp (near fault)</description>
@@ -1552,7 +1345,7 @@ Fault: 13km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.4 — IRAQ</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 21:45:32 UTC
 Magnitude: 2.4  Depth: 7.0 km
 Fault: 114km from Unknown (fault zone)</description>
@@ -1561,7 +1354,7 @@ Fault: 114km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.4 — SULAWESI, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 21:46:30 UTC
 Magnitude: 3.4  Depth: 6.0 km
 Fault: 42km from Unknown (near fault)</description>
@@ -1570,7 +1363,7 @@ Fault: 42km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.0 — SALTA, ARGENTINA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 21:46:34 UTC
 Magnitude: 3.0  Depth: 220.2 km
 Fault: 199km from Grupo de fallas Medeiros (inter-fault)</description>
@@ -1606,7 +1399,7 @@ Fault: 4km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.5 — MENDOZA, ARGENTINA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 21:55:23 UTC
 Magnitude: 3.5  Depth: 200.0 km
 Fault: 154km from Falla Cerro La Cal (inter-fault)</description>
@@ -1624,7 +1417,7 @@ Fault: 2km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.0 — GUERRERO, MEXICO</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 21:58:07 UTC
 Magnitude: 3.0  Depth: 22.4 km
 Fault: 70km from Unknown (fault zone)</description>
@@ -1651,7 +1444,7 @@ Fault: 38km from Lubang Fault North (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.3 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 22:08:40 UTC
 Magnitude: 2.3  Depth: 14.5 km
 Fault: 7km from Unknown (ON FAULT)</description>
@@ -1660,7 +1453,7 @@ Fault: 7km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.1 — HALMAHERA, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 22:12:02 UTC
 Magnitude: 3.1  Depth: 85.0 km
 Fault: 39km from Unknown (near fault)</description>
@@ -1695,15 +1488,6 @@ Fault: unavailable</description>
       <Point><coordinates>-99.034,28.851,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M1.1736001465721 — 3 km SSE of Mira Loma, CA</n>
-      <description>Network: EMSC
-Time: 2026-04-30 22:25:58 UTC
-Magnitude: 1.1736001465721  Depth: 16.129999160767 km
-Fault: 7km from Fontana (Seismicity) (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-117.50966644287,33.967998504639,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
       <n>M2.0 — ALBANIA</n>
       <description>Network: EMSC
 Time: 2026-04-30 22:27:13 UTC
@@ -1714,21 +1498,12 @@ Fault: 3km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M0.3 — 14 km NW of Midland, Texas</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 22:27:23 UTC
 Magnitude: 0.3  Depth: 7.7393 km
 Fault: 247km from West Delaware Mountains fault zone (inter-fault)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>-102.201,32.079,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M1.08 — 14 km WNW of La Jolla, CA</n>
-      <description>Network: USGS
-Time: 2026-04-30 22:31:36 UTC
-Magnitude: 1.08  Depth: 29.53 km
-Fault: 5km from Carlsbad (ON FAULT)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-117.40366666667,32.906166666667,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M1.06 — 2 km NW of The Geysers, CA</n>
@@ -1749,13 +1524,13 @@ Fault: unavailable</description>
       <Point><coordinates>-97.6615,34.6295,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M1.8732895851135 — 6 km NE of Fall City, Washington</n>
+      <n>M1.65 — 7 km NE of Fall City, Washington</n>
       <description>Network: EMSC
 Time: 2026-04-30 22:43:29 UTC
-Magnitude: 1.8732895851135  Depth: 14.939999580383 km
-Fault: 10km from Seattle fault zone-northern (ON FAULT)</description>
+Magnitude: 1.65  Depth: 16.14 km
+Fault: 10km from Seattle fault zone-northern (near fault)</description>
       <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-121.82133483887,47.608001708984,0</coordinates></Point>
+      <Point><coordinates>-121.81866666667,47.610166666667,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M2.7 — NORTHERN CALIFORNIA</n>
@@ -1822,7 +1597,7 @@ Fault: 3km from San Jacinto (Anza) rev (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M4.2 — COOK STRAIT, NEW ZEALAND</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 22:57:30 UTC
 Magnitude: 4.2  Depth: 137.8 km
 Fault: 39km from Manaia (near fault)</description>
@@ -1830,8 +1605,8 @@ Fault: 39km from Manaia (near fault)</description>
       <Point><coordinates>173.3258,-40.7009,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M4.8 — 85 km ESE of Kokopo, Papua New Guinea</n>
-      <description>Network: EMSC
+      <n>M4.8 — NEW IRELAND REGION, P.N.G.</n>
+      <description>Network: USGS
 Time: 2026-04-30 22:58:41 UTC
 Magnitude: 4.8  Depth: 10.0 km
 Fault: 59km from Unknown (fault zone)</description>
@@ -1849,7 +1624,7 @@ Fault: 30km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.35 — 7 km S of Unalaska, Alaska</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-04-30 23:02:40 UTC
 Magnitude: 0.35  Depth: 4.12 km
 Fault: 150km from Unknown (fault zone)</description>
@@ -1858,7 +1633,7 @@ Fault: 150km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.64 — 61 km NNE of Keeler, California</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 23:07:46 UTC
 Magnitude: 1.64  Depth: 4.4301 km
 Fault: 6km from Tin Mountain (ON FAULT)</description>
@@ -1867,7 +1642,7 @@ Fault: 6km from Tin Mountain (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.6 — SOUTHERN SUMATRA, INDONESIA</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-04-30 23:17:07 UTC
 Magnitude: 2.6  Depth: 10.0 km
 Fault: 18km from Unknown (near fault)</description>
@@ -1876,7 +1651,7 @@ Fault: 18km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.3 — CENTRAL ALASKA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-04-30 23:25:43 UTC
 Magnitude: 2.3  Depth: 129.3 km
 Fault: 9km from Tonzona-Muldrow section (ON FAULT)</description>
@@ -1894,7 +1669,7 @@ Fault: 188km from Unknown (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.07 — 5 km WSW of Cotati, CA</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-04-30 23:30:03 UTC
 Magnitude: 1.07  Depth: -0.09 km
 Fault: 12km from Rodgers Creek - Healdsburg 2011 CFM (near fault)</description>
@@ -1903,7 +1678,7 @@ Fault: 12km from Rodgers Creek - Healdsburg 2011 CFM (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — NEAR N COAST OF PAPUA, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 23:33:18 UTC
 Magnitude: 2.7  Depth: 21.0 km
 Fault: 9km from Unknown (ON FAULT)</description>
@@ -1939,7 +1714,7 @@ Fault: 11km from Coaldale fault 2 (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.32 — 16 km W of Petrolia, CA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 23:49:20 UTC
 Magnitude: 2.32  Depth: 10.420000076294 km
 Fault: 2km from Mendocino (ON FAULT)</description>
@@ -1948,7 +1723,7 @@ Fault: 2km from Mendocino (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — 4 km E of Falls City, Texas</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-04-30 23:50:32 UTC
 Magnitude: 1.4  Depth: 7.9905 km
 Fault: unavailable</description>
@@ -1957,7 +1732,7 @@ Fault: unavailable</description>
     </Placemark>
     <Placemark>
       <n>M2.3 — 69 km WNW of Karluk, Alaska</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-04-30 23:51:22 UTC
 Magnitude: 2.3  Depth: 9.4 km
 Fault: 165km from Unknown (inter-fault)</description>
@@ -1966,7 +1741,7 @@ Fault: 165km from Unknown (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.41 — 10 km SSE of Mammoth Lakes, CA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-04-30 23:56:29 UTC
 Magnitude: 1.41  Depth: 9.1800003051758 km
 Fault: 11km from Hilton Creek 2011 CFM (near fault)</description>
@@ -1975,7 +1750,7 @@ Fault: 11km from Hilton Creek 2011 CFM (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.6 — 51 km SSE of Whites City, New Mexico</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-04-30 23:57:11 UTC
 Magnitude: 2.6  Depth: 6.0999 km
 Fault: 52km from West Delaware Mountains fault zone (fault zone)</description>
@@ -1984,21 +1759,12 @@ Fault: 52km from West Delaware Mountains fault zone (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.3 — SOUTH OF SUMBAWA, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 00:00:55 UTC
 Magnitude: 3.3  Depth: 23.0 km
 Fault: 102km from Unknown (fault zone)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>118.79,-10.0,0</coordinates></Point>
-    </Placemark>
-    <Placemark>
-      <n>M1.2617799333994 — 7 km ENE of Poway, CA</n>
-      <description>Network: EMSC
-Time: 2026-05-01 00:00:58 UTC
-Magnitude: 1.2617799333994  Depth: 5.8099999427795 km
-Fault: 30km from Rose Canyon (near fault)</description>
-      <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-116.9691696167,32.985832214355,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M3.5 — PAPUA, INDONESIA</n>
@@ -2011,7 +1777,7 @@ Fault: 12km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.9 — NEAR COAST OF NICARAGUA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 00:03:10 UTC
 Magnitude: 2.9  Depth: 18.0 km
 Fault: 78km from Cosiguina Fault (fault zone)</description>
@@ -2020,7 +1786,7 @@ Fault: 78km from Cosiguina Fault (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.2 — EASTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 00:03:35 UTC
 Magnitude: 1.2  Depth: 7.0 km
 Fault: 5km from Unknown (ON FAULT)</description>
@@ -2029,7 +1795,7 @@ Fault: 5km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.0 — AZORES ISLANDS, PORTUGAL</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 00:04:40 UTC
 Magnitude: 2.0  Depth: 4.5 km
 Fault: 21km from Unknown (near fault)</description>
@@ -2038,7 +1804,7 @@ Fault: 21km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.5 — 4 km E of Falls City, Texas</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 00:09:17 UTC
 Magnitude: 1.5  Depth: 8.467 km
 Fault: unavailable</description>
@@ -2047,7 +1813,7 @@ Fault: unavailable</description>
     </Placemark>
     <Placemark>
       <n>M1.68 — 33 km SE of Mina, Nevada</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 00:11:51 UTC
 Magnitude: 1.68  Depth: 0.011 km
 Fault: 13km from Coaldale fault 1 (near fault)</description>
@@ -2056,7 +1822,7 @@ Fault: 13km from Coaldale fault 1 (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 00:13:37 UTC
 Magnitude: 1.4  Depth: 7.8 km
 Fault: 22km from Unknown (near fault)</description>
@@ -2065,7 +1831,7 @@ Fault: 22km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.5 — MINDANAO, PHILIPPINES</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 00:16:40 UTC
 Magnitude: 3.5  Depth: 4.0 km
 Fault: 22km from Offshore Davao Gulf (near fault)</description>
@@ -2074,7 +1840,7 @@ Fault: 22km from Offshore Davao Gulf (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.55 — 24 km NW of Granite Falls, Washington</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 00:17:08 UTC
 Magnitude: 0.55  Depth: 9.24 km
 Fault: 93km from Devils Mountain fault (fault zone)</description>
@@ -2083,7 +1849,7 @@ Fault: 93km from Devils Mountain fault (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.1 — NEAR THE COAST OF WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 00:20:43 UTC
 Magnitude: 2.1  Depth: 6.9 km
 Fault: 4km from Unknown (ON FAULT)</description>
@@ -2128,7 +1894,7 @@ Fault: 110km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.2 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 00:39:16 UTC
 Magnitude: 2.2  Depth: 8.9 km
 Fault: 1km from Unknown (ON FAULT)</description>
@@ -2137,7 +1903,7 @@ Fault: 1km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — 19 km NNW of Skwentna, Alaska</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 00:41:09 UTC
 Magnitude: 1.6  Depth: 84.2 km
 Fault: 23km from Unknown (near fault)</description>
@@ -2164,7 +1930,7 @@ Fault: unavailable</description>
     </Placemark>
     <Placemark>
       <n>M0.88 — 10 km ENE of Coso Junction, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 00:43:10 UTC
 Magnitude: 0.88  Depth: 2.65 km
 Fault: 8km from Airport Lake (ON FAULT)</description>
@@ -2181,7 +1947,7 @@ Fault: 20km from Coyote Spring fault (near fault)</description>
       <Point><coordinates>-115.2007,37.1828,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M5.0 — SOUTHERN MID-ATLANTIC RIDGE</n>
+      <n>M5.0 — southern Mid-Atlantic Ridge</n>
       <description>Network: EMSC
 Time: 2026-05-01 00:49:08 UTC
 Magnitude: 5.0  Depth: 10.0 km
@@ -2191,7 +1957,7 @@ Fault: 163km from Unknown (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.6 — KALIMANTAN, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 00:52:30 UTC
 Magnitude: 2.6  Depth: 30.0 km
 Fault: 116km from Unknown (fault zone)</description>
@@ -2200,7 +1966,7 @@ Fault: 116km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.1 — 31 km N of Four Mile Road, Alaska</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 00:53:02 UTC
 Magnitude: 1.1  Depth: 7.4 km
 Fault: 72km from Unknown (fault zone)</description>
@@ -2209,7 +1975,7 @@ Fault: 72km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.1 — NEAR THE COAST OF YEMEN</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 00:53:37 UTC
 Magnitude: 3.1  Depth: 11.0 km
 Fault: 13km from Unknown (near fault)</description>
@@ -2218,7 +1984,7 @@ Fault: 13km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.0 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 00:53:42 UTC
 Magnitude: 1.0  Depth: 9.6 km
 Fault: 1km from Unknown (ON FAULT)</description>
@@ -2227,7 +1993,7 @@ Fault: 1km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.1 — KALIMANTAN, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 00:54:59 UTC
 Magnitude: 3.1  Depth: 3.0 km
 Fault: 193km from Unknown (inter-fault)</description>
@@ -2244,13 +2010,13 @@ Fault: 9km from Mendocino (ON FAULT)</description>
       <Point><coordinates>-124.52233123779,40.211833953857,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M3.1 — PUERTO RICO REGION</n>
+      <n>M3.08 — 74 km N of Hatillo, Puerto Rico</n>
       <description>Network: USGS
 Time: 2026-05-01 01:02:05 UTC
-Magnitude: 3.1  Depth: 25.6 km
+Magnitude: 3.08  Depth: 25.62 km
 Fault: 3km from Unknown (ON FAULT)</description>
       <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-66.7675,19.1613,0</coordinates></Point>
+      <Point><coordinates>-66.7675,19.161333333333,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M2.4 — FRANCE</n>
@@ -2281,7 +2047,7 @@ Fault: 2km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.8 — ANTOFAGASTA, CHILE</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 01:18:11 UTC
 Magnitude: 2.8  Depth: 128.1 km
 Fault: 131km from de Atacama segmento Salar del Carmen? (fault zone)</description>
@@ -2290,7 +2056,7 @@ Fault: 131km from de Atacama segmento Salar del Carmen? (fault zone)</descriptio
     </Placemark>
     <Placemark>
       <n>M1.8 — 37 km WNW of Four Mile Road, Alaska</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 01:20:53 UTC
 Magnitude: 1.8  Depth: 13.1 km
 Fault: 63km from Unknown (fault zone)</description>
@@ -2299,7 +2065,7 @@ Fault: 63km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.29 — 7 km NW of The Geysers, CA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 01:34:54 UTC
 Magnitude: 1.29  Depth: 2.4300000667572 km
 Fault: 5km from Collayami 2011 CFM (ON FAULT)</description>
@@ -2335,7 +2101,7 @@ Fault: 7km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — TARAPACA, CHILE</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 01:42:41 UTC
 Magnitude: 2.5  Depth: 105.8 km
 Fault: 60km from Chuculay 3 (fault zone)</description>
@@ -2344,7 +2110,7 @@ Fault: 60km from Chuculay 3 (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — JAVA, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 01:43:41 UTC
 Magnitude: 2.7  Depth: 64.0 km
 Fault: 82km from Unknown (fault zone)</description>
@@ -2353,7 +2119,7 @@ Fault: 82km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — CENTRAL TURKEY</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 01:52:39 UTC
 Magnitude: 1.4  Depth: 17.1 km
 Fault: 0km from Unknown (ON FAULT)</description>
@@ -2380,7 +2146,7 @@ Fault: 6km from San Andreas (Creeping Section) 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — AZORES ISLANDS, PORTUGAL</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 02:00:08 UTC
 Magnitude: 2.7  Depth: 3.0 km
 Fault: 7km from Unknown (ON FAULT)</description>
@@ -2398,7 +2164,7 @@ Fault: 1km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.0 — 57 km S of Whites City, New Mexico</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 02:03:26 UTC
 Magnitude: 2.0  Depth: 4.8694 km
 Fault: 32km from West Delaware Mountains fault zone (near fault)</description>
@@ -2407,7 +2173,7 @@ Fault: 32km from West Delaware Mountains fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.2 — PUERTO RICO</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 02:09:24 UTC
 Magnitude: 2.2  Depth: 14.4 km
 Fault: 24km from South Lajas Fault (near fault)</description>
@@ -2416,7 +2182,7 @@ Fault: 24km from South Lajas Fault (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.59 — 25 km SSW of Mina, Nevada</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 02:11:05 UTC
 Magnitude: 1.59  Depth: 8.7849 km
 Fault: 10km from faults in Excelsior Mountains (ON FAULT)</description>
@@ -2425,7 +2191,7 @@ Fault: 10km from faults in Excelsior Mountains (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.22 — 10 km NNE of Brenas, Puerto Rico</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 02:13:24 UTC
 Magnitude: 3.22  Depth: 97.47 km
 Fault: 24km from Unknown (near fault)</description>
@@ -2452,7 +2218,7 @@ Fault: 8km from Holei Pali section (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.25 — 6 km SSW of Redlands, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 02:25:54 UTC
 Magnitude: 1.25  Depth: 15.12 km
 Fault: 1km from San Jacinto (San Jacinto Valley) rev (ON FAULT)</description>
@@ -2461,7 +2227,7 @@ Fault: 1km from San Jacinto (San Jacinto Valley) rev (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.7 — 8 km SE of Pearsall, Texas</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 02:26:04 UTC
 Magnitude: 1.7  Depth: 5.6436 km
 Fault: unavailable</description>
@@ -2470,7 +2236,7 @@ Fault: unavailable</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — EASTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 02:26:31 UTC
 Magnitude: 1.4  Depth: 7.0 km
 Fault: 26km from Unknown (near fault)</description>
@@ -2506,7 +2272,7 @@ Fault: 89km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.3 — 97 km NNW of Yakutat, Alaska</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 02:45:40 UTC
 Magnitude: 1.3  Depth: 0.8 km
 Fault: 9km from Unknown (ON FAULT)</description>
@@ -2515,7 +2281,7 @@ Fault: 9km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M0.71 — 7 km NW of The Geysers, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 02:46:49 UTC
 Magnitude: 0.71  Depth: 3.079999923706 km
 Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
@@ -2542,7 +2308,7 @@ Fault: 50km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.1 — WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 02:59:13 UTC
 Magnitude: 1.1  Depth: 7.0 km
 Fault: 4km from Unknown (ON FAULT)</description>
@@ -2551,7 +2317,7 @@ Fault: 4km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.0 — MOLUCCA SEA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 03:02:10 UTC
 Magnitude: 3.0  Depth: 8.0 km
 Fault: 21km from Unknown (near fault)</description>
@@ -2560,7 +2326,7 @@ Fault: 21km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.9 — 22 km NNW of Ninilchik, Alaska</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 03:02:27 UTC
 Magnitude: 1.9  Depth: 75.5 km
 Fault: 80km from Unknown (fault zone)</description>
@@ -2569,7 +2335,7 @@ Fault: 80km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.1 — OFFSHORE GUATEMALA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 03:04:15 UTC
 Magnitude: 3.1  Depth: 28.0 km
 Fault: 90km from Unknown (fault zone)</description>
@@ -2578,7 +2344,7 @@ Fault: 90km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.1 — 102 km NW of Yakutat, Alaska</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 03:09:22 UTC
 Magnitude: 1.1  Depth: 21.6 km
 Fault: 0km from Unknown (ON FAULT)</description>
@@ -2586,8 +2352,8 @@ Fault: 0km from Unknown (ON FAULT)</description>
       <Point><coordinates>-140.979,60.217,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M4.8 — Nicobar Islands, India region</n>
-      <description>Network: EMSC
+      <n>M4.8 — NICOBAR ISLANDS, INDIA REGION</n>
+      <description>Network: MULTI
 Time: 2026-05-01 03:12:50 UTC
 Magnitude: 4.8  Depth: 10.0 km
 Fault: 2km from Unknown (ON FAULT)</description>
@@ -2614,7 +2380,7 @@ Fault: 3km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.8 — 8 km SE of Pearsall, Texas</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 03:16:26 UTC
 Magnitude: 1.8  Depth: 7.4801 km
 Fault: unavailable</description>
@@ -2623,7 +2389,7 @@ Fault: unavailable</description>
     </Placemark>
     <Placemark>
       <n>M1.31 — 6 km SSW of Redlands, CA</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 03:17:30 UTC
 Magnitude: 1.31  Depth: 3.69 km
 Fault: 1km from San Jacinto (San Jacinto Valley) rev (ON FAULT)</description>
@@ -2632,7 +2398,7 @@ Fault: 1km from San Jacinto (San Jacinto Valley) rev (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.3 — 14 km NNW of Sand Springs, Texas</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 03:20:13 UTC
 Magnitude: 1.3  Depth: 6.4697 km
 Fault: 330km from West Delaware Mountains fault zone (inter-fault)</description>
@@ -2641,7 +2407,7 @@ Fault: 330km from West Delaware Mountains fault zone (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.7 — 3 km SE of The Geysers, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 03:20:13 UTC
 Magnitude: 0.7  Depth: 1.8600000143051 km
 Fault: 5km from Collayami 2011 CFM (ON FAULT)</description>
@@ -2650,7 +2416,7 @@ Fault: 5km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.0 — ANTOFAGASTA, CHILE</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 03:25:56 UTC
 Magnitude: 3.0  Depth: 49.8 km
 Fault: 31km from de Atacama segmento Salar del Carmen? (near fault)</description>
@@ -2659,7 +2425,7 @@ Fault: 31km from de Atacama segmento Salar del Carmen? (near fault)</description
     </Placemark>
     <Placemark>
       <n>M3.0 — DODECANESE ISLANDS, GREECE</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 03:27:59 UTC
 Magnitude: 3.0  Depth: 135.5 km
 Fault: 6km from Unknown (ON FAULT)</description>
@@ -2677,7 +2443,7 @@ Fault: 57km from Middle America Trench megathrust (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M0.76 — 9 km NW of The Geysers, CA</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 03:32:26 UTC
 Magnitude: 0.76  Depth: 1.9700000286102 km
 Fault: 8km from Maacama 2011 CFM (ON FAULT)</description>
@@ -2686,7 +2452,7 @@ Fault: 8km from Maacama 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.6 — SOUTHERN SUMATRA, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 03:34:01 UTC
 Magnitude: 3.6  Depth: 156.0 km
 Fault: 29km from Unknown (near fault)</description>
@@ -2695,7 +2461,7 @@ Fault: 29km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.87 — 9 km SSE of Mammoth Lakes, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 03:34:54 UTC
 Magnitude: 0.87  Depth: 9.1899995803833 km
 Fault: 11km from Hilton Creek 2011 CFM (near fault)</description>
@@ -2703,10 +2469,10 @@ Fault: 11km from Hilton Creek 2011 CFM (near fault)</description>
       <Point><coordinates>-118.9246673584,37.564666748047,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M4.4 — SOUTH OF FIJI ISLANDS</n>
+      <n>M4.4 — south of the Fiji Islands</n>
       <description>Network: USGS
 Time: 2026-05-01 03:36:28 UTC
-Magnitude: 4.4  Depth: 558.1 km
+Magnitude: 4.4  Depth: 558.08 km
 Fault: 293km from Unknown (inter-fault)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>-179.9758,-23.4254,0</coordinates></Point>
@@ -2721,6 +2487,15 @@ Fault: 139km from Unknown (fault zone)</description>
       <Point><coordinates>116.88,-8.93,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <n>M0.54 — 149 km W of Adak, Alaska</n>
+      <description>Network: EMSC
+Time: 2026-05-01 03:39:06 UTC
+Magnitude: 0.54  Depth: 7.19 km
+Fault: 146km from Unknown (fault zone)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-178.79716666667,51.8035,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <n>M1.5 — CENTRAL TURKEY</n>
       <description>Network: USGS
 Time: 2026-05-01 03:41:18 UTC
@@ -2731,7 +2506,7 @@ Fault: 48km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.79 — 5 km S of Savanna, Oklahoma</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 03:41:22 UTC
 Magnitude: 1.79  Depth: 6.91 km
 Fault: unavailable</description>
@@ -2749,7 +2524,7 @@ Fault: 80km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.0 — 12 km W of Stanton, Texas</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 03:48:20 UTC
 Magnitude: 1.0  Depth: 8.6182 km
 Fault: 274km from West Delaware Mountains fault zone (inter-fault)</description>
@@ -2758,7 +2533,7 @@ Fault: 274km from West Delaware Mountains fault zone (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.75 — 8 km N of Anza, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 03:49:56 UTC
 Magnitude: 0.75  Depth: 11.7 km
 Fault: 2km from San Jacinto (Anza) rev (ON FAULT)</description>
@@ -2776,7 +2551,7 @@ Fault: 3km from San Andreas (Mojave S) (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 03:52:37 UTC
 Magnitude: 1.6  Depth: 7.0 km
 Fault: 6km from Unknown (ON FAULT)</description>
@@ -2794,7 +2569,7 @@ Fault: 180km from de Atacama segmento Salar del Carmen? (inter-fault)</descripti
     </Placemark>
     <Placemark>
       <n>M0.7 — 14 km NNW of Sand Springs, Texas</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 03:57:27 UTC
 Magnitude: 0.7  Depth: 4.1748 km
 Fault: 330km from West Delaware Mountains fault zone (inter-fault)</description>
@@ -2803,7 +2578,7 @@ Fault: 330km from West Delaware Mountains fault zone (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.09 — 6 km SSW of Redlands, CA</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 04:01:09 UTC
 Magnitude: 1.09  Depth: 3.99 km
 Fault: 0km from San Jacinto (San Jacinto Valley) rev (ON FAULT)</description>
@@ -2812,7 +2587,7 @@ Fault: 0km from San Jacinto (San Jacinto Valley) rev (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.6 — KALIMANTAN, INDONESIA</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 04:03:21 UTC
 Magnitude: 2.6  Depth: 16.0 km
 Fault: 194km from Unknown (inter-fault)</description>
@@ -2821,7 +2596,7 @@ Fault: 194km from Unknown (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.7 — 58 km S of Whites City, New Mexico</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 04:05:02 UTC
 Magnitude: 1.7  Depth: 6.0999 km
 Fault: 38km from West Delaware Mountains fault zone (near fault)</description>
@@ -2830,7 +2605,7 @@ Fault: 38km from West Delaware Mountains fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.6 — TIMOR REGION, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 04:08:48 UTC
 Magnitude: 2.6  Depth: 50.0 km
 Fault: 128km from Unknown (fault zone)</description>
@@ -2838,8 +2613,17 @@ Fault: 128km from Unknown (fault zone)</description>
       <Point><coordinates>123.13,-9.91,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <n>M1.7 — 7 km ESE of Pearsall, Texas</n>
+      <description>Network: USGS
+Time: 2026-05-01 04:11:14 UTC
+Magnitude: 1.7  Depth: 6.8834 km
+Fault: unavailable</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-99.023,28.862,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <n>M1.0 — CENTRAL TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 04:16:10 UTC
 Magnitude: 1.0  Depth: 8.7 km
 Fault: 11km from Unknown (near fault)</description>
@@ -2848,7 +2632,7 @@ Fault: 11km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.82 — 18 km ESE of Silver Springs, Nevada</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 04:16:45 UTC
 Magnitude: 1.82  Depth: 4.0138 km
 Fault: 28km from Pyramid Lake fault zone (near fault)</description>
@@ -2856,8 +2640,17 @@ Fault: 28km from Pyramid Lake fault zone (near fault)</description>
       <Point><coordinates>-119.0452,39.3267,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <n>M1.9 — 38 km S of Denali National Park, Alaska</n>
+      <description>Network: EMSC
+Time: 2026-05-01 04:20:24 UTC
+Magnitude: 1.9  Depth: 7.8 km
+Fault: 4km from Unknown (ON FAULT)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-151.624,63.199,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <n>M1.8 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 04:20:47 UTC
 Magnitude: 1.8  Depth: 13.1 km
 Fault: 14km from Unknown (near fault)</description>
@@ -2866,7 +2659,7 @@ Fault: 14km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.28 — 7 km NW of The Geysers, CA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 04:21:28 UTC
 Magnitude: 0.28  Depth: 3.2200000286102 km
 Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
@@ -2875,7 +2668,7 @@ Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.7 — MYANMAR</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 04:27:38 UTC
 Magnitude: 3.7  Depth: 10.0 km
 Fault: 1km from Unknown (ON FAULT)</description>
@@ -2893,7 +2686,7 @@ Fault: 0km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.0 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 04:30:16 UTC
 Magnitude: 1.0  Depth: 7.0 km
 Fault: 16km from Unknown (near fault)</description>
@@ -2902,7 +2695,7 @@ Fault: 16km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.6 — ANTOFAGASTA, CHILE</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 04:32:12 UTC
 Magnitude: 3.6  Depth: 122.4 km
 Fault: 126km from Chuculay 3 (fault zone)</description>
@@ -2911,7 +2704,7 @@ Fault: 126km from Chuculay 3 (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.9 — DODECANESE ISLANDS, GREECE</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 04:40:22 UTC
 Magnitude: 1.9  Depth: 17.1 km
 Fault: 26km from Unknown (near fault)</description>
@@ -2920,7 +2713,7 @@ Fault: 26km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.79 — 7 km W of Thatcher, Utah</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 04:53:35 UTC
 Magnitude: 1.79  Depth: 4.92 km
 Fault: 18km from North Promontory fault (near fault)</description>
@@ -2929,7 +2722,7 @@ Fault: 18km from North Promontory fault (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.7 — ANTOFAGASTA, CHILE</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 04:55:42 UTC
 Magnitude: 3.7  Depth: 94.4 km
 Fault: 100km from Unknown (fault zone)</description>
@@ -2938,7 +2731,7 @@ Fault: 100km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — SPAIN</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 05:06:45 UTC
 Magnitude: 2.7  Depth: 0.0 km
 Fault: 3km from Unknown (ON FAULT)</description>
@@ -2947,7 +2740,7 @@ Fault: 3km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 05:09:50 UTC
 Magnitude: 1.6  Depth: 7.0 km
 Fault: 14km from Unknown (near fault)</description>
@@ -2974,7 +2767,7 @@ Fault: 179km from Unknown (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.2 — COSTA RICA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 05:17:20 UTC
 Magnitude: 3.2  Depth: 51.0 km
 Fault: 16km from Candelaria Fault (near fault)</description>
@@ -3009,17 +2802,17 @@ Fault: 88km from East section (fault zone)</description>
       <Point><coordinates>-147.572,61.03,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M3.43 — 12 km SSE of Guánica, Puerto Rico</n>
-      <description>Network: EMSC
+      <n>M3.4 — PUERTO RICO REGION</n>
+      <description>Network: USGS
 Time: 2026-05-01 05:24:00 UTC
-Magnitude: 3.43  Depth: 10.04 km
+Magnitude: 3.4  Depth: 10.0 km
 Fault: 31km from South Lajas Fault (near fault)</description>
       <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-66.876166666667,17.860166666667,0</coordinates></Point>
+      <Point><coordinates>-66.8762,17.8602,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M2.5 — SAN JUAN, ARGENTINA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 05:25:30 UTC
 Magnitude: 2.5  Depth: 10.0 km
 Fault: 2km from Falla Niquizanga (ON FAULT)</description>
@@ -3073,7 +2866,7 @@ Fault: 4km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — FLORES SEA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 05:52:48 UTC
 Magnitude: 2.5  Depth: 18.0 km
 Fault: 19km from Unknown (near fault)</description>
@@ -3127,7 +2920,7 @@ Fault: 15km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.8 — SULAWESI, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 06:18:44 UTC
 Magnitude: 2.8  Depth: 97.0 km
 Fault: 42km from Unknown (near fault)</description>
@@ -3163,7 +2956,7 @@ Fault: 18km from Middle America Trench megathrust (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — BALI SEA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 06:33:37 UTC
 Magnitude: 2.5  Depth: 25.0 km
 Fault: 34km from Unknown (near fault)</description>
@@ -3181,7 +2974,7 @@ Fault: 24km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — NICARAGUA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 06:35:18 UTC
 Magnitude: 2.5  Depth: 199.0 km
 Fault: 27km from Haciendas Fault (near fault)</description>
@@ -3226,7 +3019,7 @@ Fault: 44km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — DODECANESE ISLANDS, GREECE</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 07:01:22 UTC
 Magnitude: 2.7  Depth: 11.8 km
 Fault: 8km from Unknown (ON FAULT)</description>
@@ -3235,7 +3028,7 @@ Fault: 8km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.72 — 5 km SW of Volcano, Hawaii</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 07:05:38 UTC
 Magnitude: 1.72  Depth: -1.1000000238419 km
 Fault: 1km from Kilaeua's caldera (ON FAULT)</description>
@@ -3244,7 +3037,7 @@ Fault: 1km from Kilaeua's caldera (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.19 — 47 km SE of Mammoth, Wyoming</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 07:06:38 UTC
 Magnitude: 1.19  Depth: 5.35 km
 Fault: 12km from Eagle Bay fault (near fault)</description>
@@ -3262,7 +3055,7 @@ Fault: 1km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.3 — SERBIA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 07:07:49 UTC
 Magnitude: 2.3  Depth: 6.0 km
 Fault: 10km from Unknown (ON FAULT)</description>
@@ -3280,7 +3073,7 @@ Fault: 154km from Unknown (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — EASTERN TURKEY</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 07:10:04 UTC
 Magnitude: 1.6  Depth: 7.0 km
 Fault: 4km from Unknown (ON FAULT)</description>
@@ -3297,17 +3090,17 @@ Fault: 7km from Maacama 2011 CFM (ON FAULT)</description>
       <Point><coordinates>-122.85283660889,38.820999145508,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M3.24 — 10 km SSE of Guánica, Puerto Rico</n>
+      <n>M3.2 — PUERTO RICO REGION</n>
       <description>Network: EMSC
 Time: 2026-05-01 07:19:06 UTC
-Magnitude: 3.24  Depth: 13.99 km
+Magnitude: 3.2  Depth: 14.0 km
 Fault: 30km from South Lajas Fault (near fault)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>-66.8785,17.877,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M1.3 — 21 km SW of Manley Hot Springs, Alaska</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 07:19:25 UTC
 Magnitude: 1.3  Depth: 5.0 km
 Fault: 91km from Unknown (fault zone)</description>
@@ -3325,7 +3118,7 @@ Fault: 2km from Pu'u Mo'o section (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.4 — KEPULAUAN BARAT DAYA, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 07:20:55 UTC
 Magnitude: 3.4  Depth: 282.0 km
 Fault: 27km from Unknown (near fault)</description>
@@ -3343,7 +3136,7 @@ Fault: 330km from West Delaware Mountains fault zone (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — NEAR N COAST OF PAPUA, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 07:34:55 UTC
 Magnitude: 2.5  Depth: 14.0 km
 Fault: 7km from Unknown (ON FAULT)</description>
@@ -3352,7 +3145,7 @@ Fault: 7km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.8 — WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 07:36:51 UTC
 Magnitude: 1.8  Depth: 4.8 km
 Fault: 8km from Unknown (ON FAULT)</description>
@@ -3361,7 +3154,7 @@ Fault: 8km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.0 — DODECANESE ISLANDS, GREECE</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 07:38:28 UTC
 Magnitude: 3.0  Depth: 10.9 km
 Fault: 7km from Unknown (ON FAULT)</description>
@@ -3388,7 +3181,7 @@ Fault: unavailable</description>
     </Placemark>
     <Placemark>
       <n>M1.3 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 07:43:53 UTC
 Magnitude: 1.3  Depth: 6.9 km
 Fault: 17km from Unknown (near fault)</description>
@@ -3415,7 +3208,7 @@ Fault: 91km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.3 — SOUTH OF PANAMA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 07:54:45 UTC
 Magnitude: 3.3  Depth: 10.0 km
 Fault: 13km from Unknown (near fault)</description>
@@ -3433,7 +3226,7 @@ Fault: 20km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.2 — JAVA, INDONESIA</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 07:55:20 UTC
 Magnitude: 3.2  Depth: 103.0 km
 Fault: 140km from Unknown (fault zone)</description>
@@ -3451,7 +3244,7 @@ Fault: 79km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.6 — ANTOFAGASTA, CHILE</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 07:57:58 UTC
 Magnitude: 3.6  Depth: 98.4 km
 Fault: 115km from de Atacama segmento Salar del Carmen? (fault zone)</description>
@@ -3460,7 +3253,7 @@ Fault: 115km from de Atacama segmento Salar del Carmen? (fault zone)</descriptio
     </Placemark>
     <Placemark>
       <n>M1.9 — NEAR THE COAST OF WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 08:04:25 UTC
 Magnitude: 1.9  Depth: 12.6 km
 Fault: 5km from Unknown (ON FAULT)</description>
@@ -3469,7 +3262,7 @@ Fault: 5km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.4 — 5 km W of Houston, Alaska</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 08:10:22 UTC
 Magnitude: 2.4  Depth: 26.9 km
 Fault: 3km from Susitna section (ON FAULT)</description>
@@ -3478,7 +3271,7 @@ Fault: 3km from Susitna section (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.2 — SOUTHEASTERN ALASKA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 08:10:38 UTC
 Magnitude: 3.2  Depth: 10.0 km
 Fault: 7km from Unknown (ON FAULT)</description>
@@ -3487,7 +3280,7 @@ Fault: 7km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.7 — 11 km SE of Pearsall, Texas</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 08:11:08 UTC
 Magnitude: 1.7  Depth: 3.9996 km
 Fault: unavailable</description>
@@ -3505,7 +3298,7 @@ Fault: 64km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.1 — NORTHERN SUMATRA, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 08:27:04 UTC
 Magnitude: 3.1  Depth: 6.0 km
 Fault: 102km from Unknown (fault zone)</description>
@@ -3514,7 +3307,7 @@ Fault: 102km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.5 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 08:27:40 UTC
 Magnitude: 1.5  Depth: 7.0 km
 Fault: 1km from Unknown (ON FAULT)</description>
@@ -3523,7 +3316,7 @@ Fault: 1km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.2 — NORTHERN SUMATRA, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 08:35:46 UTC
 Magnitude: 3.2  Depth: 5.0 km
 Fault: 103km from Unknown (fault zone)</description>
@@ -3532,7 +3325,7 @@ Fault: 103km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.79 — 18 km ESE of Silver Springs, Nevada</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 08:41:29 UTC
 Magnitude: 1.79  Depth: 15.5844 km
 Fault: 28km from Pyramid Lake fault zone (near fault)</description>
@@ -3550,7 +3343,7 @@ Fault: 7km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.43 — 27 km S of Trona, CA</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 08:44:47 UTC
 Magnitude: 1.43  Depth: 9.11 km
 Fault: 1km from Garlock (Central) (ON FAULT)</description>
@@ -3559,7 +3352,7 @@ Fault: 1km from Garlock (Central) (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.84 — 17 km SE of Silver Springs, Nevada</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 08:49:56 UTC
 Magnitude: 1.84  Depth: 7.6851 km
 Fault: 28km from Wassuk Range fault zone (near fault)</description>
@@ -3577,7 +3370,7 @@ Fault: 26km from de Atacama segmento Salar del Carmen? (near fault)</description
     </Placemark>
     <Placemark>
       <n>M1.4 — WESTERN TURKEY</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 08:52:01 UTC
 Magnitude: 1.4  Depth: 7.0 km
 Fault: 3km from Unknown (ON FAULT)</description>
@@ -3594,17 +3387,17 @@ Fault: 68km from Unknown (fault zone)</description>
       <Point><coordinates>130.46,-4.87,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M2.0 — PUERTO RICO</n>
+      <n>M2.0 — 3 km SW of Indios, Puerto Rico</n>
       <description>Network: EMSC
 Time: 2026-05-01 08:55:39 UTC
-Magnitude: 2.0  Depth: 14.6 km
+Magnitude: 2.0  Depth: 14.62 km
 Fault: 26km from Great Southern Puerto Rico Fault (near fault)</description>
       <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-66.8388,17.9677,0</coordinates></Point>
+      <Point><coordinates>-66.838833333333,17.967666666667,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M1.07 — 6 km WNW of Cobb, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 08:56:49 UTC
 Magnitude: 1.07  Depth: 2.0199999809265 km
 Fault: 4km from Collayami 2011 CFM (ON FAULT)</description>
@@ -3631,7 +3424,7 @@ Fault: 28km from Pyramid Lake fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.2 — 101 km E of McCarthy, Alaska</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 09:02:38 UTC
 Magnitude: 1.2  Depth: 5.0 km
 Fault: 23km from Unknown (near fault)</description>
@@ -3649,7 +3442,7 @@ Fault: 19km from Five Fingers (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.9 — 18 km SE of Silver Springs, Nevada</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 09:06:26 UTC
 Magnitude: 1.9  Depth: 2.1047 km
 Fault: 27km from Wassuk Range fault zone (near fault)</description>
@@ -3658,7 +3451,7 @@ Fault: 27km from Wassuk Range fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 09:08:57 UTC
 Magnitude: 1.4  Depth: 6.1 km
 Fault: 2km from Unknown (ON FAULT)</description>
@@ -3676,12 +3469,21 @@ Fault: 84km from Middle America Trench megathrust (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 09:12:05 UTC
 Magnitude: 1.4  Depth: 9.6 km
 Fault: 5km from Unknown (ON FAULT)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>27.3681,38.2733,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.6 — 9 km SE of Pearsall, Texas</n>
+      <description>Network: EMSC
+Time: 2026-05-01 09:14:43 UTC
+Magnitude: 1.6  Depth: 5.8173 km
+Fault: unavailable</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-99.024,28.836,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M2.03 — 4 km SSW of Indios, Puerto Rico</n>
@@ -3712,7 +3514,7 @@ Fault: 3km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.8 — OAXACA, MEXICO</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 09:22:36 UTC
 Magnitude: 3.8  Depth: 118.8 km
 Fault: 85km from Unknown (fault zone)</description>
@@ -3721,7 +3523,7 @@ Fault: 85km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M4.9 — 14 km ESE of Ransiki, Indonesia</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 09:24:24 UTC
 Magnitude: 4.9  Depth: 10.0 km
 Fault: 13km from Unknown (near fault)</description>
@@ -3739,7 +3541,7 @@ Fault: 1km from Malibu Coast alt 1 (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M0.85 — 15 km NE of Little Lake, CA</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 09:27:42 UTC
 Magnitude: 0.85  Depth: 1.64 km
 Fault: 1km from Airport Lake (ON FAULT)</description>
@@ -3748,7 +3550,7 @@ Fault: 1km from Airport Lake (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.0 — SALTA, ARGENTINA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 09:28:36 UTC
 Magnitude: 3.0  Depth: 196.3 km
 Fault: 185km from Grupo de fallas Medeiros (inter-fault)</description>
@@ -3757,7 +3559,7 @@ Fault: 185km from Grupo de fallas Medeiros (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M4.2 — SOUTHWESTERN SIBERIA, RUSSIA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 09:30:38 UTC
 Magnitude: 4.2  Depth: 10.0 km
 Fault: 10km from Unknown (ON FAULT)</description>
@@ -3766,7 +3568,7 @@ Fault: 10km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.59 — 17 km SE of Silver Springs, Nevada</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 09:30:47 UTC
 Magnitude: 1.59  Depth: 3.8013 km
 Fault: 28km from Pyramid Lake fault zone (near fault)</description>
@@ -3775,7 +3577,7 @@ Fault: 28km from Pyramid Lake fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M4.0 — NEAR N COAST OF PAPUA, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 09:31:08 UTC
 Magnitude: 4.0  Depth: 10.0 km
 Fault: 16km from Unknown (near fault)</description>
@@ -3784,7 +3586,7 @@ Fault: 16km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.64 — 6 km SE of Loma Linda, CA</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 09:31:56 UTC
 Magnitude: 0.64  Depth: 6.64 km
 Fault: 1km from San Jacinto (San Jacinto Valley) rev (ON FAULT)</description>
@@ -3793,7 +3595,7 @@ Fault: 1km from San Jacinto (San Jacinto Valley) rev (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.5 — SOUTHERN PERU</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 09:33:34 UTC
 Magnitude: 3.5  Depth: 20.0 km
 Fault: 2km from Falla Toquepala (ON FAULT)</description>
@@ -3801,8 +3603,17 @@ Fault: 2km from Falla Toquepala (ON FAULT)</description>
       <Point><coordinates>-70.83,-17.23,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M1.3 — WESTERN TURKEY</n>
+      <n>M1.5 — 15 km W of Charlotte, Texas</n>
       <description>Network: USGS
+Time: 2026-05-01 09:35:40 UTC
+Magnitude: 1.5  Depth: 7.6987 km
+Fault: unavailable</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-98.868,28.843,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.3 — WESTERN TURKEY</n>
+      <description>Network: EMSC
 Time: 2026-05-01 09:35:42 UTC
 Magnitude: 1.3  Depth: 9.5 km
 Fault: 18km from Unknown (near fault)</description>
@@ -3811,7 +3622,7 @@ Fault: 18km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.8 — 2 km NW of Garden City, Texas</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 09:36:19 UTC
 Magnitude: 0.8  Depth: 9.3994 km
 Fault: 308km from West Delaware Mountains fault zone (inter-fault)</description>
@@ -3819,8 +3630,17 @@ Fault: 308km from West Delaware Mountains fault zone (inter-fault)</description>
       <Point><coordinates>-101.498,31.881,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M3.7 — GUERRERO, MEXICO</n>
+      <n>M0.3 — 150 km W of Adak, Alaska</n>
       <description>Network: MULTI
+Time: 2026-05-01 09:36:53 UTC
+Magnitude: 0.3  Depth: 6.37 km
+Fault: 145km from Unknown (fault zone)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-178.81983333333,51.795,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M3.7 — GUERRERO, MEXICO</n>
+      <description>Network: USGS
 Time: 2026-05-01 09:37:02 UTC
 Magnitude: 3.7  Depth: 72.7 km
 Fault: 155km from Cointzio (Sección B) (inter-fault)</description>
@@ -3829,7 +3649,7 @@ Fault: 155km from Cointzio (Sección B) (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.3 — GUERRERO, MEXICO</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 09:38:10 UTC
 Magnitude: 3.3  Depth: 13.2 km
 Fault: 59km from Unknown (fault zone)</description>
@@ -3838,7 +3658,7 @@ Fault: 59km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.7 — WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 09:40:55 UTC
 Magnitude: 1.7  Depth: 7.0 km
 Fault: 13km from Unknown (near fault)</description>
@@ -3856,7 +3676,7 @@ Fault: 8km from Maacama 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.52 — 35 km SSW of Alamo, Nevada</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 09:46:49 UTC
 Magnitude: 1.52  Depth: 15.9496 km
 Fault: 20km from Sheep Basin fault (near fault)</description>
@@ -3865,7 +3685,7 @@ Fault: 20km from Sheep Basin fault (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.85 — 23 km N of Yucca Valley, CA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 09:47:52 UTC
 Magnitude: 0.85  Depth: 10.06 km
 Fault: 0km from Kickapoo (ON FAULT)</description>
@@ -3874,7 +3694,7 @@ Fault: 0km from Kickapoo (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — OFFSHORE COQUIMBO, CHILE</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 09:48:37 UTC
 Magnitude: 2.5  Depth: 60.3 km
 Fault: 76km from Unknown (fault zone)</description>
@@ -3892,7 +3712,7 @@ Fault: 125km from SN Tunguitiro y Zipiajo (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.5 — 52 km SSE of Whites City, New Mexico</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 09:53:54 UTC
 Magnitude: 1.5  Depth: 6.3562 km
 Fault: 51km from West Delaware Mountains fault zone (fault zone)</description>
@@ -3910,7 +3730,7 @@ Fault: 143km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.58 — 18 km ESE of Silver Springs, Nevada</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 09:55:34 UTC
 Magnitude: 1.58  Depth: 7.4751 km
 Fault: 28km from Pyramid Lake fault zone (near fault)</description>
@@ -3928,7 +3748,7 @@ Fault: 4km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.2 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 09:59:13 UTC
 Magnitude: 1.2  Depth: 9.7 km
 Fault: 2km from Unknown (ON FAULT)</description>
@@ -3946,7 +3766,7 @@ Fault: 75km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.0 — KALIMANTAN, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 10:07:03 UTC
 Magnitude: 3.0  Depth: 10.0 km
 Fault: 292km from Unknown (inter-fault)</description>
@@ -3955,7 +3775,7 @@ Fault: 292km from Unknown (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.6 — OFFSHORE OAXACA, MEXICO</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 10:08:12 UTC
 Magnitude: 3.6  Depth: 16.2 km
 Fault: 58km from Middle America Trench megathrust (fault zone)</description>
@@ -3964,7 +3784,7 @@ Fault: 58km from Middle America Trench megathrust (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M4.1 — OAXACA, MEXICO</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 10:10:20 UTC
 Magnitude: 4.1  Depth: 132.2 km
 Fault: 36km from Unknown (near fault)</description>
@@ -3982,7 +3802,7 @@ Fault: 61km from West Delaware Mountains fault zone (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.6 — OAXACA, MEXICO</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 10:15:48 UTC
 Magnitude: 3.6  Depth: 10.7 km
 Fault: 109km from Tonala Fault (fault zone)</description>
@@ -3991,7 +3811,7 @@ Fault: 109km from Tonala Fault (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — 4 km SSW of Hunnewell, Kansas</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 10:21:37 UTC
 Magnitude: 1.6  Depth: 8.3 km
 Fault: unavailable</description>
@@ -4000,7 +3820,7 @@ Fault: unavailable</description>
     </Placemark>
     <Placemark>
       <n>M2.9 — OFFSHORE EL SALVADOR</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 10:24:34 UTC
 Magnitude: 2.9  Depth: 20.0 km
 Fault: 79km from Unknown (fault zone)</description>
@@ -4009,7 +3829,7 @@ Fault: 79km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.82 — 8 km NW of Laytonville, CA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 10:30:53 UTC
 Magnitude: 1.82  Depth: 0.62999999523163 km
 Fault: 2km from Maacama 2011 CFM (ON FAULT)</description>
@@ -4036,7 +3856,7 @@ Fault: 231km from Grupo de fallas Medeiros (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.3 — SAN JUAN, ARGENTINA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 10:35:22 UTC
 Magnitude: 3.3  Depth: 99.0 km
 Fault: 16km from Falla Las Tapias-Villicum (near fault)</description>
@@ -4045,7 +3865,7 @@ Fault: 16km from Falla Las Tapias-Villicum (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — BALI SEA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 10:37:58 UTC
 Magnitude: 2.7  Depth: 13.0 km
 Fault: 8km from Unknown (ON FAULT)</description>
@@ -4054,7 +3874,7 @@ Fault: 8km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.8 — ANTOFAGASTA, CHILE</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 10:39:33 UTC
 Magnitude: 2.8  Depth: 110.0 km
 Fault: 103km from de Atacama segmento Salar del Carmen? (fault zone)</description>
@@ -4063,7 +3883,7 @@ Fault: 103km from de Atacama segmento Salar del Carmen? (fault zone)</descriptio
     </Placemark>
     <Placemark>
       <n>M3.2 — ASSAM, INDIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 10:45:13 UTC
 Magnitude: 3.2  Depth: 10.0 km
 Fault: 20km from Unknown (near fault)</description>
@@ -4072,7 +3892,7 @@ Fault: 20km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.2 — WESTERN TURKEY</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 10:46:10 UTC
 Magnitude: 2.2  Depth: 7.8 km
 Fault: 0km from Unknown (ON FAULT)</description>
@@ -4099,7 +3919,7 @@ Fault: 6km from Cofradia Fault (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.2 — CELEBES SEA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 10:46:33 UTC
 Magnitude: 3.2  Depth: 24.0 km
 Fault: 20km from Unknown (near fault)</description>
@@ -4108,7 +3928,7 @@ Fault: 20km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — EASTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 10:47:18 UTC
 Magnitude: 1.6  Depth: 7.0 km
 Fault: 13km from Unknown (near fault)</description>
@@ -4117,7 +3937,7 @@ Fault: 13km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.4 — SWITZERLAND</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 10:50:55 UTC
 Magnitude: 1.4  Depth: 1.7 km
 Fault: 124km from Unknown (fault zone)</description>
@@ -4135,7 +3955,7 @@ Fault: 25km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.0 — GUERRERO, MEXICO</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 10:54:06 UTC
 Magnitude: 3.0  Depth: 17.7 km
 Fault: 54km from Unknown (fault zone)</description>
@@ -4144,7 +3964,7 @@ Fault: 54km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.9 — SULAWESI, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 10:56:29 UTC
 Magnitude: 2.9  Depth: 12.0 km
 Fault: 28km from Unknown (near fault)</description>
@@ -4162,7 +3982,7 @@ Fault: 85km from Paragonah fault (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.5 — PUEBLA, MEXICO</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 10:57:36 UTC
 Magnitude: 3.5  Depth: 54.9 km
 Fault: 175km from S.F. Tenango B (inter-fault)</description>
@@ -4189,7 +4009,7 @@ Fault: 39km from Bare Mountain fault (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.76 — 19 km SE of Silver Springs, Nevada</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 11:01:19 UTC
 Magnitude: 1.76  Depth: 1.9015 km
 Fault: 28km from Wassuk Range fault zone (near fault)</description>
@@ -4198,7 +4018,7 @@ Fault: 28km from Wassuk Range fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M3.7 — OFFSHORE CHIAPAS, MEXICO</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 11:01:55 UTC
 Magnitude: 3.7  Depth: 21.0 km
 Fault: 30km from Unknown (near fault)</description>
@@ -4207,7 +4027,7 @@ Fault: 30km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.3 — TURKEY-IRAN BORDER REGION</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 11:02:08 UTC
 Magnitude: 2.3  Depth: 7.0 km
 Fault: 5km from Unknown (ON FAULT)</description>
@@ -4216,7 +4036,7 @@ Fault: 5km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M0.44 — 10 km NW of Parkfield, CA</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 11:02:20 UTC
 Magnitude: 0.44  Depth: 8.920000076294 km
 Fault: 1km from San Andreas (Parkfield) (ON FAULT)</description>
@@ -4225,7 +4045,7 @@ Fault: 1km from San Andreas (Parkfield) (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M5.1 — South Sandwich Islands region</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 11:04:39 UTC
 Magnitude: 5.1  Depth: 10.0 km
 Fault: 81km from Unknown (fault zone)</description>
@@ -4252,7 +4072,7 @@ Fault: 2km from Johnson Valley (No) 2011 rev (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — SULAWESI, INDONESIA</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 11:17:37 UTC
 Magnitude: 2.5  Depth: 148.0 km
 Fault: 31km from Unknown (near fault)</description>
@@ -4261,7 +4081,7 @@ Fault: 31km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.3 — 57 km E of Pedro Bay, Alaska</n>
-      <description>Network: EMSC
+      <description>Network: MULTI
 Time: 2026-05-01 11:19:24 UTC
 Magnitude: 2.3  Depth: 110.6 km
 Fault: 84km from Unknown (fault zone)</description>
@@ -4279,7 +4099,7 @@ Fault: 26km from Pyramid Lake fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.6 — WESTERN TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 11:21:49 UTC
 Magnitude: 1.6  Depth: 6.9 km
 Fault: 14km from Unknown (near fault)</description>
@@ -4288,7 +4108,7 @@ Fault: 14km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.0 — CENTRAL TURKEY</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 11:24:38 UTC
 Magnitude: 2.0  Depth: 15.8 km
 Fault: 28km from Unknown (near fault)</description>
@@ -4297,7 +4117,7 @@ Fault: 28km from Unknown (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — MAKASSAR STRAIT, INDONESIA</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 11:26:18 UTC
 Magnitude: 2.5  Depth: 59.0 km
 Fault: 3km from Unknown (ON FAULT)</description>
@@ -4305,8 +4125,17 @@ Fault: 3km from Unknown (ON FAULT)</description>
       <Point><coordinates>119.25,1.08,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M1.66 — 18 km ESE of Silver Springs, Nevada</n>
+      <n>M2.6 — 107 km SSE of Sand Point, Alaska</n>
       <description>Network: EMSC
+Time: 2026-05-01 11:30:06 UTC
+Magnitude: 2.6  Depth: 20.0 km
+Fault: 73km from Unknown (fault zone)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-159.735,54.473,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.66 — 18 km ESE of Silver Springs, Nevada</n>
+      <description>Network: USGS
 Time: 2026-05-01 11:32:59 UTC
 Magnitude: 1.66  Depth: 7.8733 km
 Fault: 29km from Pyramid Lake fault zone (near fault)</description>
@@ -4315,7 +4144,7 @@ Fault: 29km from Pyramid Lake fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.1 — CENTRAL TURKEY</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 11:33:47 UTC
 Magnitude: 1.1  Depth: 7.2 km
 Fault: 1km from Unknown (ON FAULT)</description>
@@ -4342,7 +4171,7 @@ Fault: 89km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.3 — SWITZERLAND</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 11:36:52 UTC
 Magnitude: 1.3  Depth: -0.3 km
 Fault: 56km from Unknown (fault zone)</description>
@@ -4351,7 +4180,7 @@ Fault: 56km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.5 — HALMAHERA, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 11:38:07 UTC
 Magnitude: 2.5  Depth: 7.0 km
 Fault: 85km from Unknown (fault zone)</description>
@@ -4359,13 +4188,13 @@ Fault: 85km from Unknown (fault zone)</description>
       <Point><coordinates>128.57,0.62,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M2.0 — ISLAND OF HAWAII, HAWAII</n>
-      <description>Network: EMSC
+      <n>M2.03 — 18 km SSE of Pāhala, Hawaii</n>
+      <description>Network: USGS
 Time: 2026-05-01 11:41:44 UTC
-Magnitude: 2.0  Depth: 30.7 km
+Magnitude: 2.03  Depth: 30.659999847412 km
 Fault: 13km from southwest rift zone (near fault)</description>
       <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-155.3845,19.0585,0</coordinates></Point>
+      <Point><coordinates>-155.38450622559,19.058500289917,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M2.6 — MOLUCCA SEA</n>
@@ -4377,10 +4206,10 @@ Fault: 26km from Unknown (near fault)</description>
       <Point><coordinates>126.41,1.03,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M2.6 — 20 km ESE of Silver Springs, Nevada</n>
+      <n>M2.6 — NEVADA</n>
       <description>Network: EMSC
 Time: 2026-05-01 11:48:42 UTC
-Magnitude: 2.6  Depth: 10.0486 km
+Magnitude: 2.6  Depth: 10.0 km
 Fault: 29km from Pyramid Lake fault zone (near fault)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>-119.0107,39.3391,0</coordinates></Point>
@@ -4396,7 +4225,7 @@ Fault: 4km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.97 — 6 km ENE of Adjuntas, Puerto Rico</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 11:55:17 UTC
 Magnitude: 1.97  Depth: 20.51 km
 Fault: 4km from Great Southern Puerto Rico Fault (ON FAULT)</description>
@@ -4405,7 +4234,7 @@ Fault: 4km from Great Southern Puerto Rico Fault (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.41 — 4 km SSW of Anderson Springs, CA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 11:56:17 UTC
 Magnitude: 1.41  Depth: 1.8899999856949 km
 Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
@@ -4414,7 +4243,7 @@ Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.3 — SERAM, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 11:56:35 UTC
 Magnitude: 3.3  Depth: 38.0 km
 Fault: 77km from Unknown (fault zone)</description>
@@ -4423,7 +4252,7 @@ Fault: 77km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.7 — SOUTH OF JAVA, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 11:57:26 UTC
 Magnitude: 2.7  Depth: 30.0 km
 Fault: 113km from Unknown (fault zone)</description>
@@ -4432,7 +4261,7 @@ Fault: 113km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.71000004 — 5 km N of Anacortes, Washington</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 12:01:00 UTC
 Magnitude: 1.71000004  Depth: 13.609999656677 km
 Fault: 21km from Devils Mountain fault (near fault)</description>
@@ -4441,7 +4270,7 @@ Fault: 21km from Devils Mountain fault (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M0.7 — 38 km WSW of Ackerly, Texas</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 12:03:09 UTC
 Magnitude: 0.7  Depth: 6.7627 km
 Fault: 268km from West Delaware Mountains fault zone (inter-fault)</description>
@@ -4467,10 +4296,10 @@ Fault: 62km from Unknown (fault zone)</description>
       <Point><coordinates>103.69,-5.38,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M2.0 — NEVADA</n>
-      <description>Network: EMSC
+      <n>M2.03 — 18 km SE of Silver Springs, Nevada</n>
+      <description>Network: USGS
 Time: 2026-05-01 12:07:10 UTC
-Magnitude: 2.0  Depth: 11.1 km
+Magnitude: 2.03  Depth: 11.0769 km
 Fault: 28km from Pyramid Lake fault zone (near fault)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>-119.0562,39.3182,0</coordinates></Point>
@@ -4495,7 +4324,7 @@ Fault: 9km from North Panama Deformed Belt (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.4 — FLORES REGION, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 12:14:08 UTC
 Magnitude: 3.4  Depth: 148.0 km
 Fault: 94km from Unknown (fault zone)</description>
@@ -4504,7 +4333,7 @@ Fault: 94km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.9 — KEPULAUAN SANGIHE, INDONESIA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 12:17:55 UTC
 Magnitude: 2.9  Depth: 130.0 km
 Fault: 3km from Unknown (ON FAULT)</description>
@@ -4531,7 +4360,7 @@ Fault: 4km from Unknown (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.8 — JAVA, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 12:27:34 UTC
 Magnitude: 2.8  Depth: 16.0 km
 Fault: 81km from Unknown (fault zone)</description>
@@ -4549,7 +4378,7 @@ Fault: 5km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.6 — ATACAMA, CHILE</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 12:29:18 UTC
 Magnitude: 3.6  Depth: 8.1 km
 Fault: 164km from Paranal (inter-fault)</description>
@@ -4557,17 +4386,17 @@ Fault: 164km from Paranal (inter-fault)</description>
       <Point><coordinates>-69.46,-26.16,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M2.35 — 7 km S of Pāhala, Hawaii</n>
-      <description>Network: USGS
+      <n>M2.4 — ISLAND OF HAWAII, HAWAII</n>
+      <description>Network: EMSC
 Time: 2026-05-01 12:33:00 UTC
-Magnitude: 2.35  Depth: 30.309999465942 km
+Magnitude: 2.4  Depth: 30.3 km
 Fault: 2km from Unknown (ON FAULT)</description>
       <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-155.4871673584,19.133499145508,0</coordinates></Point>
+      <Point><coordinates>-155.4872,19.1335,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M2.5 — MOLUCCA SEA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 12:33:06 UTC
 Magnitude: 2.5  Depth: 3.0 km
 Fault: 17km from Unknown (near fault)</description>
@@ -4575,10 +4404,10 @@ Fault: 17km from Unknown (near fault)</description>
       <Point><coordinates>126.33,1.06,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M5.8 — 29 km ENE of Yilan, Taiwan</n>
-      <description>Network: USGS
+      <n>M5.8 — TAIWAN REGION</n>
+      <description>Network: MULTI
 Time: 2026-05-01 12:39:55 UTC
-Magnitude: 5.8  Depth: 97.333 km
+Magnitude: 5.8  Depth: 97.3 km
 Fault: 15km from Northern Ilan structure (near fault)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>122.02,24.8748,0</coordinates></Point>
@@ -4594,7 +4423,7 @@ Fault: 5km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M1.1 — 83 km NNW of Karluk, Alaska</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 12:49:57 UTC
 Magnitude: 1.1  Depth: 5.0 km
 Fault: 176km from Unknown (inter-fault)</description>
@@ -4603,7 +4432,7 @@ Fault: 176km from Unknown (inter-fault)</description>
     </Placemark>
     <Placemark>
       <n>M1.5 — 13 km WSW of Stanton, Texas</n>
-      <description>Network: MULTI
+      <description>Network: USGS
 Time: 2026-05-01 12:52:15 UTC
 Magnitude: 1.5  Depth: 8.6426 km
 Fault: 273km from West Delaware Mountains fault zone (inter-fault)</description>
@@ -4629,8 +4458,8 @@ Fault: 0km from Kilaeua's caldera (ON FAULT)</description>
       <Point><coordinates>-155.28500366211,19.399333953857,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M4.9 — NEAR EAST COAST OF HONSHU, JAPAN</n>
-      <description>Network: USGS
+      <n>M4.9 — 75 km ENE of Hasaki, Japan</n>
+      <description>Network: EMSC
 Time: 2026-05-01 13:00:41 UTC
 Magnitude: 4.9  Depth: 35.0 km
 Fault: 78km from Unknown (fault zone)</description>
@@ -4666,7 +4495,7 @@ Fault: 65km from Palo Pique Fault (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M3.1 — ANTOFAGASTA, CHILE</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 13:07:47 UTC
 Magnitude: 3.1  Depth: 89.6 km
 Fault: 78km from de Atacama segmento Salar del Carmen? (fault zone)</description>
@@ -4693,7 +4522,7 @@ Fault: 28km from Pyramid Lake fault zone (near fault)</description>
     </Placemark>
     <Placemark>
       <n>M4.1 — OFF COAST OF CHIAPAS, MEXICO</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 13:17:46 UTC
 Magnitude: 4.1  Depth: 16.1 km
 Fault: 71km from Middle America Trench megathrust (fault zone)</description>
@@ -4728,8 +4557,17 @@ Fault: 192km from Grupo de fallas Medeiros (inter-fault)</description>
       <Point><coordinates>-67.04,-23.8,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M3.2 — SAN JUAN, ARGENTINA</n>
+      <n>M1.9 — 3 km ESE of Pearsall, Texas</n>
       <description>Network: EMSC
+Time: 2026-05-01 13:30:39 UTC
+Magnitude: 1.9  Depth: 9.5308 km
+Fault: unavailable</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-99.06,28.886,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M3.2 — SAN JUAN, ARGENTINA</n>
+      <description>Network: USGS
 Time: 2026-05-01 13:32:08 UTC
 Magnitude: 3.2  Depth: 98.0 km
 Fault: 12km from Falla Niquizanga (near fault)</description>
@@ -4746,17 +4584,17 @@ Fault: 15km from Unknown (near fault)</description>
       <Point><coordinates>126.56,2.14,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M2.9 — 24 km NE of Ute Park, New Mexico</n>
+      <n>M2.9 — NEW MEXICO</n>
       <description>Network: EMSC
 Time: 2026-05-01 13:36:03 UTC
-Magnitude: 2.9  Depth: 6.447 km
+Magnitude: 2.9  Depth: 6.4 km
 Fault: 48km from Northern Sangre de Cristo fault (near fault)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>-104.9531,36.7319,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M3.5 — BABUYAN ISL REGION, PHILIPPINES</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 13:36:26 UTC
 Magnitude: 3.5  Depth: 2.0 km
 Fault: 25km from Offshore West of Calayan (near fault)</description>
@@ -4801,7 +4639,7 @@ Fault: 54km from West Delaware Mountains fault zone (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.9 — SOUTH OF TIMOR</n>
-      <description>Network: USGS
+      <description>Network: MULTI
 Time: 2026-05-01 14:02:09 UTC
 Magnitude: 2.9  Depth: 10.0 km
 Fault: 40km from West Australian Shear Zone Outer Shelf FZ Nth) (near fault)</description>
@@ -4827,17 +4665,17 @@ Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
       <Point><coordinates>-122.78150177002,38.802665710449,0</coordinates></Point>
     </Placemark>
     <Placemark>
-      <n>M1.8 — 18 km S of Westbrook, Texas</n>
+      <n>M1.8 — 19 km S of Westbrook, Texas</n>
       <description>Network: USGS
 Time: 2026-05-01 14:23:40 UTC
-Magnitude: 1.8  Depth: 0.6215 km
-Fault: 362km from West Delaware Mountains fault zone (inter-fault)</description>
+Magnitude: 1.8  Depth: 6.1279 km
+Fault: 360km from West Delaware Mountains fault zone (inter-fault)</description>
       <styleUrl>#isolated</styleUrl>
-      <Point><coordinates>-100.984,32.19,0</coordinates></Point>
+      <Point><coordinates>-100.996,32.184,0</coordinates></Point>
     </Placemark>
     <Placemark>
       <n>M0.83 — 9 km NW of The Geysers, CA</n>
-      <description>Network: MULTI
+      <description>Network: EMSC
 Time: 2026-05-01 14:26:14 UTC
 Magnitude: 0.83  Depth: 11.619999885559 km
 Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
@@ -4846,7 +4684,7 @@ Fault: 6km from Collayami 2011 CFM (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M2.6 — LA RIOJA, ARGENTINA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 14:27:43 UTC
 Magnitude: 2.6  Depth: 119.0 km
 Fault: 129km from Grupo de fallas El Duraznillo (fault zone)</description>
@@ -4855,7 +4693,7 @@ Fault: 129km from Grupo de fallas El Duraznillo (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.6 — KEP. MENTAWAI REGION, INDONESIA</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 14:28:37 UTC
 Magnitude: 2.6  Depth: 8.0 km
 Fault: 105km from Unknown (fault zone)</description>
@@ -4864,7 +4702,7 @@ Fault: 105km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M2.9 — MOLUCCA SEA</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 14:35:49 UTC
 Magnitude: 2.9  Depth: 38.0 km
 Fault: 14km from Unknown (near fault)</description>
@@ -4882,7 +4720,7 @@ Fault: 51km from Unknown (fault zone)</description>
     </Placemark>
     <Placemark>
       <n>M1.75 — 6 km SW of Volcano, Hawaii</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 14:41:19 UTC
 Magnitude: 1.75  Depth: 0.52999997138977 km
 Fault: 1km from Kilaeua's caldera (ON FAULT)</description>
@@ -4900,7 +4738,7 @@ Fault: 6km from Falla Longitudinal-Boca Chica (ON FAULT)</description>
     </Placemark>
     <Placemark>
       <n>M3.3 — CRETE, GREECE</n>
-      <description>Network: EMSC
+      <description>Network: USGS
 Time: 2026-05-01 14:41:26 UTC
 Magnitude: 3.3  Depth: 8.3 km
 Fault: 13km from Unknown (near fault)</description>
@@ -4953,13 +4791,157 @@ Fault: 17km from Unknown (near fault)</description>
       <Point><coordinates>15.65,45.55,0</coordinates></Point>
     </Placemark>
     <Placemark>
+      <n>M3.16 — 68 km N of Hatillo, Puerto Rico</n>
+      <description>Network: MULTI
+Time: 2026-05-01 14:57:01 UTC
+Magnitude: 3.16  Depth: 26.93 km
+Fault: 3km from Unknown (ON FAULT)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-66.7895,19.107,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
       <n>M3.0 — TARAPACA, CHILE</n>
-      <description>Network: USGS
+      <description>Network: EMSC
 Time: 2026-05-01 14:57:54 UTC
 Magnitude: 3.0  Depth: 100.6 km
 Fault: 75km from Pisagua (fault zone)</description>
       <styleUrl>#isolated</styleUrl>
       <Point><coordinates>-69.27,-19.59,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.7 — EASTERN TURKEY</n>
+      <description>Network: EMSC
+Time: 2026-05-01 15:03:41 UTC
+Magnitude: 1.7  Depth: 7.1 km
+Fault: 2km from Unknown (ON FAULT)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>38.3772,37.9608,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M2.1 — SICILY, ITALY</n>
+      <description>Network: MULTI
+Time: 2026-05-01 15:07:49 UTC
+Magnitude: 2.1  Depth: 37.4 km
+Fault: 51km from Unknown (fault zone)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>14.5843,37.8247,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.32 — 2 km S of Ridgemark, CA</n>
+      <description>Network: USGS
+Time: 2026-05-01 15:16:53 UTC
+Magnitude: 1.32  Depth: 3.8599998950958 km
+Fault: 0km from Calaveras (So) - Paicines extension 2011 CFM (ON FAULT)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-121.36433410644,36.798667907715,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.79 — 18 km SSE of Silver Springs, Nevada</n>
+      <description>Network: EMSC
+Time: 2026-05-01 15:18:53 UTC
+Magnitude: 1.79  Depth: 6.5781 km
+Fault: 27km from Wassuk Range fault zone (near fault)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-119.1113,39.2753,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M2.5 — MOLUCCA SEA</n>
+      <description>Network: USGS
+Time: 2026-05-01 15:20:13 UTC
+Magnitude: 2.5  Depth: 37.0 km
+Fault: 7km from Unknown (ON FAULT)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>126.02,0.73,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.77 — 10 km SSW of Brentwood, CA</n>
+      <description>Network: USGS
+Time: 2026-05-01 15:23:48 UTC
+Magnitude: 1.77  Depth: 20.340000152588 km
+Fault: 4km from Greenville (No) 2011 CFM (ON FAULT)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-121.76899719238,37.848331451416,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M3.4 — BANDA SEA</n>
+      <description>Network: EMSC
+Time: 2026-05-01 15:27:59 UTC
+Magnitude: 3.4  Depth: 203.0 km
+Fault: 34km from Unknown (near fault)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>130.89,-5.95,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M2.1 — STRAIT OF GIBRALTAR</n>
+      <description>Network: EMSC
+Time: 2026-05-01 15:35:08 UTC
+Magnitude: 2.1  Depth: 18.0 km
+Fault: 16km from Unknown (near fault)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-3.6201,35.4123,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M2.8 — PAPUA, INDONESIA</n>
+      <description>Network: USGS
+Time: 2026-05-01 15:40:44 UTC
+Magnitude: 2.8  Depth: 80.0 km
+Fault: 15km from Unknown (near fault)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>135.8,-3.75,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.2 — 12 km WSW of Stanton, Texas</n>
+      <description>Network: USGS
+Time: 2026-05-01 15:44:32 UTC
+Magnitude: 1.2  Depth: 3.6 km
+Fault: 274km from West Delaware Mountains fault zone (inter-fault)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-101.919,32.103,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.7 — 62 km S of Whites City, New Mexico</n>
+      <description>Network: USGS
+Time: 2026-05-01 15:49:59 UTC
+Magnitude: 1.7  Depth: 4.0877 km
+Fault: 35km from West Delaware Mountains fault zone (near fault)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-104.387,31.614,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M3.2 — 0 km NW of Mayagüez, Puerto Rico</n>
+      <description>Network: EMSC
+Time: 2026-05-01 15:57:56 UTC
+Magnitude: 3.2  Depth: 25.815 km
+Fault: 10km from Cerro Goden Fault (ON FAULT)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-67.1424,18.2043,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M2.0 — NEVADA</n>
+      <description>Network: MULTI
+Time: 2026-05-01 16:00:01 UTC
+Magnitude: 2.0  Depth: 10.7 km
+Fault: 29km from Pyramid Lake fault zone (near fault)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-119.0396,39.3227,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M1.1 — 13 km WSW of Stanton, Texas</n>
+      <description>Network: EMSC
+Time: 2026-05-01 16:00:12 UTC
+Magnitude: 1.1  Depth: 4.116 km
+Fault: 273km from West Delaware Mountains fault zone (inter-fault)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-101.926,32.1,0</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <n>M2.1 — SAN FRANCISCO BAY AREA, CALIF.</n>
+      <description>Network: USGS
+Time: 2026-05-01 16:10:03 UTC
+Magnitude: 2.1  Depth: 20.1 km
+Fault: 4km from Greenville (No) 2011 CFM (ON FAULT)</description>
+      <styleUrl>#isolated</styleUrl>
+      <Point><coordinates>-121.7713,37.8482,0</coordinates></Point>
     </Placemark>
   </Folder>
 </Document>
