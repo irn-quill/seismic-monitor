@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Seismic Event Data — 2026-08-25 11:40:05 UTC</title>
+  <title>Seismic Event Data — 2026-08-25 12:04:17 UTC</title>
   <meta http-equiv="refresh" content="300">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
@@ -55,8 +55,8 @@
   <h1>⚡ SEISMIC EVENT DATA</h1>
   <div class="stats">
     <span>32</span>clusters &nbsp;
-    <span>4</span>multi-network &nbsp;
-    <span>491</span>total events (24h)
+    <span>3</span>multi-network &nbsp;
+    <span>486</span>total events (24h)
   </div>
 </div>
 <div id="controls">
@@ -92,7 +92,55 @@
     <th>Flags</th>
     <th onclick="sortTable(9)">Pressure Δ</th>
   </tr></thead>
-  <tbody id="tbody"><tr class="" data-cluster="0" data-mag="0.35" data-network="EMSC">
+  <tbody id="tbody"><tr class="crow" data-cluster="1" data-mag="3.1" data-network="EMSC">
+          <td>2026-08-25 11:52:27</td>
+          <td class="mag mag3">3.1</td>
+          <td>FLORES SEA</td>
+          <td>10km<br><small>very shallow</small></td>
+          <td><span class="net netEMSC">EMSC</span></td>
+          <td>-7.860, 120.730</td>
+          <td>ON FAULT<br><small>0km — Unknown</small></td>
+          <td>37km | ?km</td>
+          <td><span class="badge cluster">CLUSTER</span></td>
+          <td>0.2 hPa</td>
+        </tr>
+<tr class="crow" data-cluster="1" data-mag="3.1" data-network="EMSC">
+          <td>2026-08-25 11:48:25</td>
+          <td class="mag mag3">3.1</td>
+          <td>FLORES REGION, INDONESIA</td>
+          <td>10km<br><small>very shallow</small></td>
+          <td><span class="net netEMSC">EMSC</span></td>
+          <td>-8.160, 120.590</td>
+          <td>near fault<br><small>36km — Unknown</small></td>
+          <td>15499km | 37km</td>
+          <td><span class="badge cluster">CLUSTER</span><span class="badge shallow">⚠️ SHALLOWING</span></td>
+          <td>? hPa</td>
+        </tr>
+<tr class="" data-cluster="0" data-mag="2.6" data-network="USGS">
+          <td>2026-08-25 11:38:06</td>
+          <td class="mag mag2">2.6</td>
+          <td>SAN JUAN, ARGENTINA</td>
+          <td>80km<br><small>intermediate</small></td>
+          <td><span class="net netUSGS">USGS</span></td>
+          <td>-31.240, -69.700</td>
+          <td>near fault<br><small>46km — Sistema de fallas El Tigre</small></td>
+          <td>10241km | 15499km</td>
+          <td></td>
+          <td>? hPa</td>
+        </tr>
+<tr class="" data-cluster="0" data-mag="1.8" data-network="USGS">
+          <td>2026-08-25 11:35:29</td>
+          <td class="mag mag1">1.8</td>
+          <td>SPAIN</td>
+          <td>1km<br><small>very shallow</small></td>
+          <td><span class="net netUSGS">USGS</span></td>
+          <td>37.146, -3.639</td>
+          <td>ON FAULT<br><small>3km — Unknown</small></td>
+          <td>9544km | 10241km</td>
+          <td></td>
+          <td>? hPa</td>
+        </tr>
+<tr class="" data-cluster="0" data-mag="0.35" data-network="EMSC">
           <td>2026-08-25 11:33:27</td>
           <td class="mag mag0">0.3</td>
           <td>7 km WSW of Anza, CA</td>
@@ -100,19 +148,31 @@
           <td><span class="net netEMSC">EMSC</span></td>
           <td>33.519, -116.739</td>
           <td>near fault<br><small>10km — San Jacinto (Anza) rev</small></td>
-          <td>301km | ?km</td>
+          <td>301km | 9544km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.97" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.97" data-network="USGS">
           <td>2026-08-25 11:32:46</td>
           <td class="mag mag0">1.0</td>
           <td>10 km ENE of Coso Junction, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.068, -117.840</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
-          <td>535km | 301km</td>
+          <td>12468km | 301km</td>
+          <td></td>
+          <td>? hPa</td>
+        </tr>
+<tr class="" data-cluster="0" data-mag="4.9" data-network="EMSC">
+          <td>2026-08-25 11:29:50</td>
+          <td class="mag mag4">4.9</td>
+          <td>SERAM, INDONESIA</td>
+          <td>51km<br><small>shallow</small></td>
+          <td><span class="net netEMSC">EMSC</span></td>
+          <td>-3.757, 127.380</td>
+          <td>near fault<br><small>49km — Unknown</small></td>
+          <td>11980km | 12468km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
@@ -124,7 +184,7 @@
           <td><span class="net netEMSC">EMSC</span></td>
           <td>38.833, -122.796</td>
           <td>ON FAULT<br><small>4km — Collayami 2011 CFM</small></td>
-          <td>3491km | 535km</td>
+          <td>3491km | 11980km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
@@ -140,28 +200,28 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.8" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.8" data-network="EMSC">
           <td>2026-08-25 11:25:13</td>
           <td class="mag mag3">3.8</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-8.310, 121.520</td>
           <td>near fault<br><small>32km — Unknown</small></td>
           <td>13306km | 10745km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.71" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.71" data-network="EMSC">
           <td>2026-08-25 11:16:19</td>
           <td class="mag mag0">0.7</td>
           <td>6 km E of Palmdale, CA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>34.576, -118.033</td>
           <td>ON FAULT<br><small>6km — San Andreas (Mojave S)</small></td>
           <td>13421km | 13306km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.1" data-network="USGS">
@@ -176,24 +236,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.0" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="2.0" data-network="MULTI">
           <td>2026-08-25 11:04:47</td>
           <td class="mag mag2">2.0</td>
           <td>39 km NNW of Petersville, Alaska</td>
           <td>104km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>62.843, -150.930</td>
           <td>near fault<br><small>32km — Tonzona-Muldrow section</small></td>
           <td>8545km | 10768km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.2" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.2" data-network="USGS">
           <td>2026-08-25 10:59:10</td>
           <td class="mag mag3">3.2</td>
           <td>EASTERN TURKEY</td>
           <td>19km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>40.020, 38.728</td>
           <td>ON FAULT<br><small>2km — Unknown</small></td>
           <td>11188km | 8545km</td>
@@ -236,40 +296,40 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.05" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.05" data-network="EMSC">
           <td>2026-08-25 10:34:21</td>
           <td class="mag mag1">1.1</td>
           <td>7 km WNW of Cobb, CA</td>
           <td>1km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.837, -122.799</td>
           <td>ON FAULT<br><small>4km — Collayami 2011 CFM</small></td>
           <td>10843km | 877km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.5" data-network="EMSC">
           <td>2026-08-25 10:21:49</td>
           <td class="mag mag1">1.5</td>
           <td>WESTERN TURKEY</td>
           <td>12km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>39.224, 28.101</td>
           <td>ON FAULT<br><small>1km — Unknown</small></td>
           <td>10409km | 10843km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.1" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.1" data-network="USGS">
           <td>2026-08-25 10:08:48</td>
           <td class="mag mag3">3.1</td>
           <td>SULAWESI, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-0.730, 122.170</td>
           <td>near fault<br><small>36km — Unknown</small></td>
           <td>16157km | 10409km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.1" data-network="USGS">
@@ -284,28 +344,28 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.54" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="0.54" data-network="MULTI">
           <td>2026-08-25 10:00:22</td>
           <td class="mag mag0">0.5</td>
           <td>12 km W of Anza, CA</td>
           <td>6km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>33.571, -116.802</td>
           <td>ON FAULT<br><small>9km — San Jacinto (Anza) rev</small></td>
           <td>11625km | 3434km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="1.9" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="1.9" data-network="USGS">
           <td>2026-08-25 09:52:43</td>
           <td class="mag mag1">1.9</td>
           <td>CENTRAL TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.021, 37.568</td>
           <td>ON FAULT<br><small>0km — Unknown</small></td>
           <td>9956km | 11625km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.8" data-network="EMSC">
@@ -320,16 +380,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.2" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="2.55" data-network="MULTI">
           <td>2026-08-25 09:51:56</td>
-          <td class="mag mag2">2.2</td>
-          <td>CENTRAL CALIFORNIA</td>
+          <td class="mag mag2">2.5</td>
+          <td>13 km W of Round Valley, CA</td>
           <td>12km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
-          <td>37.413, -118.740</td>
+          <td><span class="net netMULTI">MULTI</span></td>
+          <td>37.413, -118.741</td>
           <td>ON FAULT<br><small>8km — Round Valley</small></td>
           <td>3437km | 13264km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.2" data-network="EMSC">
@@ -380,12 +440,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.0" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.0" data-network="EMSC">
           <td>2026-08-25 09:40:19</td>
           <td class="mag mag3">3.0</td>
           <td>OFFSHORE TARAPACA, CHILE</td>
           <td>35km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-19.460, -70.220</td>
           <td>near fault<br><small>14km — Atajaña</small></td>
           <td>11962km | 12016km</td>
@@ -404,36 +464,36 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.07" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.07" data-network="USGS">
           <td>2026-08-25 09:28:11</td>
           <td class="mag mag1">1.1</td>
           <td>7 km NW of The Geysers, CA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.814, -122.815</td>
           <td>ON FAULT<br><small>7km — Collayami 2011 CFM</small></td>
           <td>12885km | 10732km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.3" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.3" data-network="USGS">
           <td>2026-08-25 09:28:06</td>
           <td class="mag mag3">3.3</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>15km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-8.350, 120.570</td>
           <td>fault zone<br><small>57km — Unknown</small></td>
           <td>9927km | 12885km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.5" data-network="EMSC">
           <td>2026-08-25 09:26:34</td>
           <td class="mag mag1">1.5</td>
           <td>EASTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.291, 38.169</td>
           <td>near fault<br><small>18km — Unknown</small></td>
           <td>11387km | 9927km</td>
@@ -452,40 +512,40 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="1.2" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="1.2" data-network="USGS">
           <td>2026-08-25 09:18:07</td>
           <td class="mag mag1">1.2</td>
           <td>13 km SW of Stanton, Texas</td>
           <td>14km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>32.046, -101.886</td>
           <td>inter-fault<br><small>275km — West Delaware Mountains fault zone</small></td>
           <td>10657km | 1533km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
           <td>2026-08-25 09:17:12</td>
           <td class="mag mag1">1.6</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>40.262, 31.547</td>
           <td>near fault<br><small>23km — Unknown</small></td>
           <td>10815km | 10657km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.6" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="2.6" data-network="MULTI">
           <td>2026-08-25 09:17:06</td>
           <td class="mag mag2">2.6</td>
           <td>54 km S of Whites City, New Mexico</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>31.690, -104.308</td>
           <td>near fault<br><small>46km — West Delaware Mountains fault zone</small></td>
           <td>11316km | 10815km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
@@ -512,40 +572,40 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="1.0" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="1.0" data-network="USGS">
           <td>2026-08-25 09:09:48</td>
           <td class="mag mag1">1.0</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>40.988, 30.281</td>
           <td>near fault<br><small>29km — Unknown</small></td>
           <td>8650km | 10850km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="5.0" data-network="EMSC">
+<tr class="crow" data-cluster="1" data-mag="5.0" data-network="USGS">
           <td>2026-08-25 09:07:20</td>
           <td class="mag mag5">5.0</td>
           <td>31 km S of Nemuro, Japan</td>
           <td>97km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>43.045, 145.634</td>
           <td>fault zone<br><small>87km — Kaiyo</small></td>
           <td>13km | 8650km</td>
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>-0.5 hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="5.3" data-network="EMSC">
+<tr class="crow mrow" data-cluster="1" data-mag="5.3" data-network="MULTI">
           <td>2026-08-25 09:07:20</td>
           <td class="mag mag5">5.3</td>
           <td>HOKKAIDO, JAPAN REGION</td>
           <td>90km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>43.159, 145.643</td>
           <td>fault zone<br><small>78km — Kaiyo</small></td>
           <td>8390km | 13km</td>
-          <td><span class="badge cluster">CLUSTER</span></td>
+          <td><span class="badge cluster">CLUSTER</span><span class="badge multi">MULTI</span></td>
           <td>0.3 hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.4" data-network="EMSC">
@@ -560,12 +620,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.63" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.63" data-network="EMSC">
           <td>2026-08-25 09:04:58</td>
           <td class="mag mag0">0.6</td>
           <td>14 km NNW of Borrego Springs, CA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.382, -116.405</td>
           <td>ON FAULT<br><small>1km — San Jacinto (Coyote Creek)</small></td>
           <td>11394km | 11620km</td>
@@ -596,16 +656,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="2.1" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="2.1" data-network="EMSC">
           <td>2026-08-25 08:43:35</td>
           <td class="mag mag2">2.1</td>
           <td>EASTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.589, 39.557</td>
           <td>ON FAULT<br><small>5km — Unknown</small></td>
           <td>13053km | 988km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.1" data-network="EMSC">
@@ -620,16 +680,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.0" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="1.0" data-network="MULTI">
           <td>2026-08-25 08:38:57</td>
           <td class="mag mag1">1.0</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>39.271, 28.057</td>
           <td>ON FAULT<br><small>2km — Unknown</small></td>
           <td>10719km | 12095km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.7" data-network="EMSC">
@@ -668,12 +728,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.39" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.39" data-network="EMSC">
           <td>2026-08-25 08:19:46</td>
           <td class="mag mag0">0.4</td>
           <td>10 km E of Coso Junction, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>36.061, -117.844</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>536km | 9640km</td>
@@ -704,24 +764,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.1" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.1" data-network="EMSC">
           <td>2026-08-25 08:12:14</td>
           <td class="mag mag3">3.1</td>
           <td>NORTHERN SUMATRA, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>1.692, 102.773</td>
           <td>inter-fault<br><small>321km — Unknown</small></td>
           <td>16322km | 8126km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.5" data-network="USGS">
           <td>2026-08-25 08:08:59</td>
           <td class="mag mag2">2.5</td>
           <td>LIBERTADOR O'HIGGINS, CHILE</td>
           <td>96km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-34.330, -70.660</td>
           <td>fault zone<br><small>80km — San Ramon 01a</small></td>
           <td>10544km | 16322km</td>
@@ -740,24 +800,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.4" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.4" data-network="EMSC">
           <td>2026-08-25 08:07:29</td>
           <td class="mag mag3">3.4</td>
           <td>FLORES SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-7.590, 120.440</td>
           <td>ON FAULT<br><small>6km — Unknown</small></td>
           <td>9703km | 13507km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.71" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.71" data-network="USGS">
           <td>2026-08-25 08:06:06</td>
           <td class="mag mag1">1.7</td>
           <td>13 km SSE of Volcano, Hawaii</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>19.331, -155.174</td>
           <td>ON FAULT<br><small>2km — Poliokeawe Pali section</small></td>
           <td>13179km | 9703km</td>
@@ -788,12 +848,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.3" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.3" data-network="USGS">
           <td>2026-08-25 07:51:33</td>
           <td class="mag mag3">3.3</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-8.260, 120.610</td>
           <td>near fault<br><small>46km — Unknown</small></td>
           <td>16238km | 13518km</td>
@@ -824,48 +884,48 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.01" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.01" data-network="EMSC">
           <td>2026-08-25 07:47:23</td>
           <td class="mag mag1">1.0</td>
           <td>9 km WNW of The Geysers, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.823, -122.845</td>
           <td>ON FAULT<br><small>8km — Maacama 2011 CFM</small></td>
           <td>856km | 537km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.71" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.71" data-network="EMSC">
           <td>2026-08-25 07:38:10</td>
           <td class="mag mag0">0.7</td>
           <td>17 km ENE of Borrego Springs, CA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.300, -116.202</td>
           <td>ON FAULT<br><small>1km — San Jacinto (Clark) rev</small></td>
           <td>3126km | 856km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.1" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="4.1" data-network="USGS">
           <td>2026-08-25 07:37:40</td>
           <td class="mag mag4">4.1</td>
           <td>OFF COAST OF CHIAPAS, MEXICO</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>14.195, -93.472</td>
           <td>near fault<br><small>27km — Middle America Trench megathrust</small></td>
           <td>16170km | 3126km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.1" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.1" data-network="USGS">
           <td>2026-08-25 07:35:00</td>
           <td class="mag mag3">3.1</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-8.340, 121.320</td>
           <td>near fault<br><small>38km — Unknown</small></td>
           <td>15827km | 16170km</td>
@@ -884,72 +944,72 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.8" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.8" data-network="EMSC">
           <td>2026-08-25 07:31:18</td>
           <td class="mag mag3">3.8</td>
           <td>ICELAND REGION</td>
           <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>63.654, -23.384</td>
           <td>ON FAULT<br><small>3km — Unknown</small></td>
           <td>10218km | 10944km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.8" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.8" data-network="USGS">
           <td>2026-08-25 07:26:39</td>
           <td class="mag mag2">2.8</td>
           <td>TARAPACA, CHILE</td>
           <td>100km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-21.120, -68.930</td>
           <td>fault zone<br><small>77km — Chuculay 3</small></td>
           <td>11700km | 10218km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.6" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="2.6" data-network="MULTI">
           <td>2026-08-25 07:22:36</td>
           <td class="mag mag2">2.6</td>
           <td>NORTHERN ALASKA</td>
           <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>65.607, -149.130</td>
           <td>fault zone<br><small>71km — Unknown</small></td>
           <td>240km | 11700km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.8" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.8" data-network="EMSC">
           <td>2026-08-25 07:20:03</td>
           <td class="mag mag1">1.8</td>
           <td>49 km E of Denali National Park, Alaska</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>63.556, -150.724</td>
           <td>near fault<br><small>28km — Unknown</small></td>
           <td>11723km | 240km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.6" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.6" data-network="USGS">
           <td>2026-08-25 07:19:46</td>
           <td class="mag mag2">2.6</td>
           <td>TARAPACA, CHILE</td>
           <td>111km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-21.280, -68.880</td>
           <td>fault zone<br><small>84km — Chuculay 3</small></td>
           <td>16633km | 11723km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.4" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.4" data-network="USGS">
           <td>2026-08-25 07:17:15</td>
           <td class="mag mag3">3.4</td>
           <td>FLORES SEA</td>
           <td>17km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-7.720, 120.470</td>
           <td>near fault<br><small>13km — Unknown</small></td>
           <td>13167km | 16633km</td>
@@ -980,16 +1040,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.9" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.9" data-network="EMSC">
           <td>2026-08-25 07:09:43</td>
           <td class="mag mag3">3.9</td>
           <td>FLORES SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-7.800, 120.510</td>
           <td>ON FAULT<br><small>4km — Unknown</small></td>
           <td>14667km | 6338km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.5" data-network="EMSC">
@@ -1004,24 +1064,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="5.5" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="5.5" data-network="MULTI">
           <td>2026-08-25 07:00:10</td>
           <td class="mag mag5">5.5</td>
           <td>TAIWAN REGION</td>
           <td>9km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>22.641, 121.660</td>
           <td>fault zone<br><small>56km — Longitudinal Valley fault</small></td>
           <td>11246km | 12236km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.3309032440997" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.3309032440997" data-network="EMSC">
           <td>2026-08-25 06:51:02</td>
           <td class="mag mag1">1.3</td>
           <td>15 km N of Warner Springs, CA</td>
           <td>15km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.417, -116.606</td>
           <td>ON FAULT<br><small>8km — San Jacinto (Coyote Creek)</small></td>
           <td>12425km | 11246km</td>
@@ -1040,12 +1100,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.2" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="4.2" data-network="USGS">
           <td>2026-08-25 06:44:34</td>
           <td class="mag mag4">4.2</td>
           <td>SOUTHWEST OF SUMATRA, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-0.070, 96.890</td>
           <td>ON FAULT<br><small>2km — Unknown</small></td>
           <td>15846km | 3087km</td>
@@ -1064,72 +1124,72 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.0" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.0" data-network="EMSC">
           <td>2026-08-25 06:41:27</td>
           <td class="mag mag1">1.0</td>
           <td>EASTERN TURKEY</td>
           <td>12km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.326, 38.724</td>
           <td>near fault<br><small>14km — Unknown</small></td>
           <td>11586km | 11354km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.61" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.61" data-network="USGS">
           <td>2026-08-25 06:37:15</td>
           <td class="mag mag0">0.6</td>
           <td>10 km NNW of Cabazon, CA</td>
           <td>18km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>33.999, -116.821</td>
           <td>ON FAULT<br><small>3km — San Andreas (San Bernardino S)</small></td>
           <td>3871km | 11586km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="2.9" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="2.9" data-network="USGS">
           <td>2026-08-25 06:33:06</td>
           <td class="mag mag2">2.9</td>
           <td>NEAR COAST OF NICARAGUA</td>
           <td>47km<br><small>shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>12.090, -87.080</td>
           <td>fault zone<br><small>63km — Marabios Fault</small></td>
           <td>4611km | 3871km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.49" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.49" data-network="EMSC">
           <td>2026-08-25 06:31:43</td>
           <td class="mag mag0">0.5</td>
           <td>11 km NW of The Geysers, CA</td>
           <td>1km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.847, -122.848</td>
           <td>ON FAULT<br><small>7km — Collayami 2011 CFM</small></td>
           <td>3189km | 4611km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.4" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="1.4" data-network="MULTI">
           <td>2026-08-25 06:27:48</td>
           <td class="mag mag1">1.4</td>
           <td>55 km S of Cantwell, Alaska</td>
           <td>5km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>62.898, -148.820</td>
           <td>fault zone<br><small>60km — West Muldrow-Alsek section</small></td>
           <td>4867km | 3189km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.78" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.78" data-network="USGS">
           <td>2026-08-25 06:27:47</td>
           <td class="mag mag0">0.8</td>
           <td>20 km NNW of Pāhala, Hawaii</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>19.375, -155.543</td>
           <td>ON FAULT<br><small>4km — Unknown</small></td>
           <td>13080km | 4867km</td>
@@ -1160,16 +1220,16 @@
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>0.4 hPa</td>
         </tr>
-<tr class="crow mrow" data-cluster="1" data-mag="4.2" data-network="MULTI">
+<tr class="crow" data-cluster="1" data-mag="4.2" data-network="USGS">
           <td>2026-08-25 06:19:52</td>
           <td class="mag mag4">4.2</td>
           <td>5 km SSE of Darreh Shahr, Iran</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>33.101, 47.398</td>
           <td>ON FAULT<br><small>9km — Unknown</small></td>
           <td>13698km | 11km</td>
-          <td><span class="badge cluster">CLUSTER</span><span class="badge multi">MULTI</span></td>
+          <td><span class="badge cluster">CLUSTER</span></td>
           <td>0.4 hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.9" data-network="EMSC">
@@ -1184,16 +1244,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="1.6" data-network="MULTI">
           <td>2026-08-25 06:10:35</td>
           <td class="mag mag1">1.6</td>
           <td>52 km WNW of Happy Valley, Alaska</td>
           <td>99km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>60.050, -152.643</td>
           <td>fault zone<br><small>67km — Unknown</small></td>
           <td>246km | 4529km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="2.2" data-network="EMSC">
@@ -1232,12 +1292,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.4" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.4" data-network="EMSC">
           <td>2026-08-25 06:03:39</td>
           <td class="mag mag3">3.4</td>
           <td>FLORES SEA</td>
           <td>17km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-7.940, 120.760</td>
           <td>ON FAULT<br><small>8km — Unknown</small></td>
           <td>17434km | 12820km</td>
@@ -1256,12 +1316,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.7" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.7" data-network="USGS">
           <td>2026-08-25 05:57:44</td>
           <td class="mag mag1">1.7</td>
           <td>GREECE</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>41.064, 25.628</td>
           <td>ON FAULT<br><small>7km — Unknown</small></td>
           <td>13292km | 10969km</td>
@@ -1280,22 +1340,22 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.9" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.9" data-network="EMSC">
           <td>2026-08-25 05:55:10</td>
           <td class="mag mag2">2.9</td>
           <td>POTOSI, BOLIVIA</td>
           <td>248km<br><small>intermediate</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-21.040, -68.200</td>
           <td>inter-fault<br><small>152km — Chuculay 3</small></td>
           <td>8095km | 10508km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.1" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.09" data-network="EMSC">
           <td>2026-08-25 05:55:05</td>
           <td class="mag mag2">2.1</td>
-          <td>UTAH</td>
+          <td>16 km NE of Milford, Utah</td>
           <td>1km<br><small>very shallow</small></td>
           <td><span class="net netEMSC">EMSC</span></td>
           <td>38.512, -112.886</td>
@@ -1388,40 +1448,40 @@
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="-0.11" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="-0.11" data-network="EMSC">
           <td>2026-08-25 05:45:40</td>
           <td class="mag mag0">-0.1</td>
           <td>15 km N of Warner Springs, CA</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.416, -116.640</td>
           <td>near fault<br><small>11km — San Jacinto (Coyote Creek)</small></td>
           <td>4148km | 6871km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.8" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.8" data-network="EMSC">
           <td>2026-08-25 05:44:51</td>
           <td class="mag mag0">0.8</td>
           <td>18 km NNW of Pāhala, Hawaii</td>
           <td>-1km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>19.360, -155.541</td>
           <td>ON FAULT<br><small>3km — Unknown</small></td>
           <td>13488km | 4148km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="1.5" data-network="MULTI">
           <td>2026-08-25 05:44:01</td>
           <td class="mag mag1">1.5</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>39.240, 28.064</td>
           <td>ON FAULT<br><small>1km — Unknown</small></td>
           <td>10540km | 13488km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="0.2" data-network="USGS">
@@ -1448,12 +1508,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.3" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.3" data-network="USGS">
           <td>2026-08-25 05:38:10</td>
           <td class="mag mag3">3.3</td>
           <td>ICELAND REGION</td>
           <td>1km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>63.390, -24.313</td>
           <td>near fault<br><small>16km — Unknown</small></td>
           <td>9714km | 4944km</td>
@@ -1484,24 +1544,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.93" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.93" data-network="USGS">
           <td>2026-08-25 05:27:49</td>
           <td class="mag mag0">0.9</td>
           <td>10 km ENE of Coso Junction, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.070, -117.846</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>4114km | 11057km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.92" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.92" data-network="EMSC">
           <td>2026-08-25 05:23:59</td>
           <td class="mag mag0">0.9</td>
           <td>20 km NNW of Pāhala, Hawaii</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>19.376, -155.543</td>
           <td>ON FAULT<br><small>4km — Unknown</small></td>
           <td>13640km | 4114km</td>
@@ -1520,23 +1580,23 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.9" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.9" data-network="USGS">
           <td>2026-08-25 05:19:16</td>
           <td class="mag mag2">2.9</td>
           <td>SAN JUAN, ARGENTINA</td>
           <td>92km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-31.540, -68.990</td>
           <td>near fault<br><small>18km — Falla Maradona-Acequion</small></td>
           <td>9079km | 12616km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.05" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.0" data-network="EMSC">
           <td>2026-08-25 05:17:46</td>
           <td class="mag mag2">2.0</td>
-          <td>10 km ENE of Coso Junction, CA</td>
-          <td>3km<br><small>very shallow</small></td>
+          <td>CENTRAL CALIFORNIA</td>
+          <td>2km<br><small>very shallow</small></td>
           <td><span class="net netEMSC">EMSC</span></td>
           <td>36.070, -117.845</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
@@ -1556,16 +1616,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.7" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.7" data-network="EMSC">
           <td>2026-08-25 05:16:11</td>
           <td class="mag mag0">0.7</td>
           <td>20 km NNW of Pāhala, Hawaii</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>19.377, -155.541</td>
           <td>ON FAULT<br><small>4km — Unknown</small></td>
           <td>4167km | 10789km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="0.64" data-network="EMSC">
@@ -1580,16 +1640,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.2" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="2.2" data-network="MULTI">
           <td>2026-08-25 05:11:42</td>
           <td class="mag mag2">2.2</td>
           <td>SOUTHERN ITALY</td>
           <td>9km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>41.580, 13.796</td>
           <td>near fault<br><small>20km — Unknown</small></td>
           <td>10357km | 10260km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="4.0" data-network="EMSC">
@@ -1628,48 +1688,48 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.0" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.0" data-network="USGS">
           <td>2026-08-25 05:00:45</td>
           <td class="mag mag2">2.0</td>
           <td>AEGEAN SEA</td>
           <td>12km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>39.426, 25.675</td>
           <td>near fault<br><small>10km — Unknown</small></td>
           <td>10743km | 8989km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.7" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.7" data-network="EMSC">
           <td>2026-08-25 04:58:59</td>
           <td class="mag mag0">0.7</td>
           <td>9 km WNW of The Geysers, CA</td>
           <td>1km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.818, -122.842</td>
           <td>ON FAULT<br><small>8km — Maacama 2011 CFM</small></td>
           <td>806km | 10743km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.53" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.53" data-network="EMSC">
           <td>2026-08-25 04:57:52</td>
           <td class="mag mag0">0.5</td>
           <td>6 km ENE of Anza, CA</td>
           <td>13km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.585, -116.615</td>
           <td>ON FAULT<br><small>3km — San Jacinto (Anza) rev</small></td>
           <td>9305km | 806km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.8" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.8" data-network="USGS">
           <td>2026-08-25 04:55:52</td>
           <td class="mag mag1">1.8</td>
           <td>STRAIT OF GIBRALTAR</td>
           <td>6km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.778, -7.262</td>
           <td>fault zone<br><small>51km — Unknown</small></td>
           <td>9348km | 9305km</td>
@@ -1688,16 +1748,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="1.8" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="1.8" data-network="EMSC">
           <td>2026-08-25 04:52:43</td>
           <td class="mag mag1">1.8</td>
           <td>18 km NW of Central, Alaska</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>65.665, -145.133</td>
           <td>ON FAULT<br><small>2km — Unknown</small></td>
           <td>4662km | 4021km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="2.4" data-network="USGS">
@@ -1712,16 +1772,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="1.6" data-network="MULTI">
           <td>2026-08-25 04:48:06</td>
           <td class="mag mag1">1.6</td>
           <td>WESTERN TURKEY</td>
           <td>9km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>40.798, 31.411</td>
           <td>ON FAULT<br><small>5km — Unknown</small></td>
           <td>10783km | 10760km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.07" data-network="USGS">
@@ -1748,12 +1808,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.5" data-network="USGS">
           <td>2026-08-25 04:43:41</td>
           <td class="mag mag2">2.5</td>
           <td>COQUIMBO, CHILE</td>
           <td>56km<br><small>shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-31.030, -71.310</td>
           <td>fault zone<br><small>111km — Unknown</small></td>
           <td>1014km | 10580km</td>
@@ -1772,40 +1832,40 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="2.5" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="2.5" data-network="EMSC">
           <td>2026-08-25 04:36:58</td>
           <td class="mag mag2">2.5</td>
           <td>CYPRUS REGION</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>35.770, 31.358</td>
           <td>fault zone<br><small>69km — Unknown</small></td>
           <td>3371km | 12292km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.4" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.4" data-network="EMSC">
           <td>2026-08-25 04:35:19</td>
           <td class="mag mag2">2.4</td>
           <td>MOROCCO</td>
           <td>15km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>34.348, -5.858</td>
           <td>near fault<br><small>13km — ?</small></td>
           <td>2831km | 3371km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.6" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="2.6" data-network="MULTI">
           <td>2026-08-25 04:34:39</td>
           <td class="mag mag2">2.6</td>
           <td>AEGEAN SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>39.310, 25.510</td>
           <td>ON FAULT<br><small>6km — Unknown</small></td>
           <td>11023km | 2831km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="0.74" data-network="USGS">
@@ -1832,12 +1892,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.8" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.8" data-network="USGS">
           <td>2026-08-25 04:24:50</td>
           <td class="mag mag2">2.8</td>
           <td>OFFSHORE ATACAMA, CHILE</td>
           <td>52km<br><small>shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-28.360, -71.210</td>
           <td>fault zone<br><small>90km — Unknown</small></td>
           <td>8776km | 13048km</td>
@@ -1856,12 +1916,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.54" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.54" data-network="EMSC">
           <td>2026-08-25 04:23:25</td>
           <td class="mag mag0">0.5</td>
           <td>9 km W of Anza, CA</td>
           <td>15km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.569, -116.772</td>
           <td>ON FAULT<br><small>7km — San Jacinto (Anza) rev</small></td>
           <td>9547km | 7984km</td>
@@ -1904,12 +1964,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.5" data-network="USGS">
           <td>2026-08-25 04:18:52</td>
           <td class="mag mag0">0.5</td>
           <td>8 km NW of The Geysers, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.832, -122.814</td>
           <td>ON FAULT<br><small>6km — Collayami 2011 CFM</small></td>
           <td>6636km | 10846km</td>
@@ -1928,12 +1988,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.76" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.76" data-network="EMSC">
           <td>2026-08-25 04:11:15</td>
           <td class="mag mag0">0.8</td>
           <td>4 km WNW of The Geysers, CA</td>
           <td>4km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.795, -122.800</td>
           <td>ON FAULT<br><small>7km — Collayami 2011 CFM</small></td>
           <td>12836km | 6639km</td>
@@ -1952,12 +2012,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.3" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.26" data-network="USGS">
           <td>2026-08-25 04:01:14</td>
           <td class="mag mag2">2.3</td>
-          <td>PUERTO RICO</td>
+          <td>5 km NNW of Coco, Puerto Rico</td>
           <td>14km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>18.046, -66.284</td>
           <td>near fault<br><small>24km — Cerrillos Fault</small></td>
           <td>4099km | 18670km</td>
@@ -1988,76 +2048,76 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.95" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.95" data-network="EMSC">
           <td>2026-08-25 03:47:29</td>
           <td class="mag mag0">0.9</td>
           <td>3 km SW of Anderson Springs, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.758, -122.713</td>
           <td>ON FAULT<br><small>5km — Collayami 2011 CFM</small></td>
           <td>158km | 533km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.27" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.27" data-network="EMSC">
           <td>2026-08-25 03:43:03</td>
           <td class="mag mag1">1.3</td>
           <td>13 km SSE of Livermore, CA</td>
           <td>5km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>37.576, -121.704</td>
           <td>ON FAULT<br><small>9km — Las Positas</small></td>
           <td>10926km | 158km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.7" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="3.7" data-network="MULTI">
           <td>2026-08-25 03:42:30</td>
           <td class="mag mag3">3.7</td>
           <td>NEAR N COAST OF PAPUA, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>-1.560, 139.070</td>
           <td>near fault<br><small>12km — Unknown</small></td>
           <td>9384km | 10926km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.9" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.9" data-network="USGS">
           <td>2026-08-25 03:41:15</td>
           <td class="mag mag0">0.9</td>
           <td>4 km NNW of Farmers Loop, Alaska</td>
           <td>5km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>64.944, -147.735</td>
           <td>fault zone<br><small>82km — Unknown</small></td>
           <td>6988km | 9384km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.2" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.2" data-network="EMSC">
           <td>2026-08-25 03:40:22</td>
           <td class="mag mag2">2.2</td>
           <td>POLAND</td>
           <td>1km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>51.551, 16.167</td>
           <td>inter-fault<br><small>297km — Unknown</small></td>
           <td>2650km | 6988km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="4.4" data-network="EMSC">
+<tr class="crow mrow" data-cluster="1" data-mag="4.4" data-network="MULTI">
           <td>2026-08-25 03:38:11</td>
           <td class="mag mag4">4.4</td>
           <td>ICELAND REGION</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>63.837, -23.244</td>
           <td>near fault<br><small>20km — Unknown</small></td>
           <td>13km | 2650km</td>
-          <td><span class="badge cluster">CLUSTER</span></td>
+          <td><span class="badge cluster">CLUSTER</span><span class="badge multi">MULTI</span></td>
           <td>2.1 hPa</td>
         </tr>
 <tr class="crow" data-cluster="1" data-mag="4.4" data-network="USGS">
@@ -2072,12 +2132,12 @@
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.1" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.1" data-network="EMSC">
           <td>2026-08-25 03:36:45</td>
           <td class="mag mag3">3.1</td>
           <td>SIBUYAN SEA, PHILIPPINES</td>
           <td>8km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>12.840, 122.840</td>
           <td>ON FAULT<br><small>2km — Sibuyan Sea Fault</small></td>
           <td>5164km | 11027km</td>
@@ -2108,48 +2168,48 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.13" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="4.13" data-network="USGS">
           <td>2026-08-25 03:25:52</td>
           <td class="mag mag4">4.1</td>
           <td>36 km NE of Punta Cana, Dominican Republic</td>
           <td>90km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>18.839, -68.184</td>
           <td>near fault<br><small>27km — Septentrional Fault</small></td>
           <td>4668km | 6008km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.7" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.7" data-network="USGS">
           <td>2026-08-25 03:24:53</td>
           <td class="mag mag3">3.7</td>
           <td>ANTOFAGASTA, CHILE</td>
           <td>136km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-23.140, -68.050</td>
           <td>inter-fault<br><small>193km — de Atacama segmento Salar del Carmen?</small></td>
           <td>11867km | 4668km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.0" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.0" data-network="EMSC">
           <td>2026-08-25 03:23:38</td>
           <td class="mag mag2">2.0</td>
           <td>14 km ENE of Ninilchik, Alaska</td>
           <td>53km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>60.093, -151.416</td>
           <td>fault zone<br><small>108km — Unknown</small></td>
           <td>9132km | 11867km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.2" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.2" data-network="EMSC">
           <td>2026-08-25 03:15:53</td>
           <td class="mag mag1">1.2</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>37.737, 31.984</td>
           <td>ON FAULT<br><small>7km — Unknown</small></td>
           <td>11120km | 9132km</td>
@@ -2168,16 +2228,16 @@
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow mrow" data-cluster="1" data-mag="4.4" data-network="MULTI">
+<tr class="crow" data-cluster="1" data-mag="4.4" data-network="USGS">
           <td>2026-08-25 03:13:26</td>
           <td class="mag mag4">4.4</td>
           <td>NORTH OF HONDURAS</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>16.890, -85.566</td>
           <td>ON FAULT<br><small>5km — Unknown</small></td>
           <td>8184km | 10km</td>
-          <td><span class="badge cluster">CLUSTER</span><span class="badge multi">MULTI</span></td>
+          <td><span class="badge cluster">CLUSTER</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
@@ -2216,16 +2276,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.7" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="4.7" data-network="MULTI">
           <td>2026-08-25 03:06:19</td>
           <td class="mag mag4">4.7</td>
           <td>BANDA SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>-6.615, 127.559</td>
           <td>near fault<br><small>34km — Unknown</small></td>
           <td>787km | 6075km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="2.9" data-network="USGS">
@@ -2240,28 +2300,28 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
           <td>2026-08-25 02:58:57</td>
           <td class="mag mag1">1.5</td>
           <td>53 km S of Whites City, New Mexico</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>31.693, -104.303</td>
           <td>near fault<br><small>46km — West Delaware Mountains fault zone</small></td>
           <td>13368km | 14700km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.0" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.0" data-network="USGS">
           <td>2026-08-25 02:58:50</td>
           <td class="mag mag3">3.0</td>
           <td>MINDANAO, PHILIPPINES</td>
           <td>21km<br><small>shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>5.060, 125.270</td>
           <td>near fault<br><small>42km — Unknown</small></td>
           <td>9413km | 13368km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.1" data-network="EMSC">
@@ -2276,36 +2336,36 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.14" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="3.14" data-network="MULTI">
           <td>2026-08-25 02:56:45</td>
           <td class="mag mag3">3.1</td>
           <td>29 km NE of Cruz Bay, U.S. Virgin Islands</td>
           <td>14km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>18.549, -64.641</td>
           <td>near fault<br><small>44km — Sombrero Fault</small></td>
           <td>5431km | 9799km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.85" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.85" data-network="EMSC">
           <td>2026-08-25 02:55:25</td>
           <td class="mag mag0">0.8</td>
           <td>7 km E of Calimesa, CA</td>
           <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.998, -116.979</td>
           <td>ON FAULT<br><small>2km — San Gorgonio Pass</small></td>
           <td>11284km | 5431km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
           <td>2026-08-25 02:55:05</td>
           <td class="mag mag1">1.6</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.975, 31.712</td>
           <td>near fault<br><small>20km — Unknown</small></td>
           <td>8867km | 11284km</td>
@@ -2324,12 +2384,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.1" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.1" data-network="USGS">
           <td>2026-08-25 02:52:38</td>
           <td class="mag mag3">3.1</td>
           <td>NEAR THE COAST OF WESTERN TURKEY</td>
           <td>18km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.867, 26.645</td>
           <td>ON FAULT<br><small>2km — Unknown</small></td>
           <td>319km | 8882km</td>
@@ -2360,12 +2420,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.24" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.24" data-network="USGS">
           <td>2026-08-25 02:37:07</td>
           <td class="mag mag1">1.2</td>
           <td>26 km NNE of Montecito, CA</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>34.662, -119.545</td>
           <td>ON FAULT<br><small>1km — Big Pine (West)</small></td>
           <td>11899km | 10820km</td>
@@ -2444,52 +2504,52 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.5" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.5" data-network="EMSC">
           <td>2026-08-25 02:04:11</td>
           <td class="mag mag3">3.5</td>
           <td>OFF E. COAST OF N. ISLAND, N.Z.</td>
           <td>32km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-38.407, 178.176</td>
           <td>near fault<br><small>15km — Pakarae</small></td>
           <td>18240km | 10485km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="1.8" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="1.8" data-network="EMSC">
           <td>2026-08-25 02:03:49</td>
           <td class="mag mag1">1.8</td>
           <td>CANARY ISLANDS, SPAIN REGION</td>
           <td>20km<br><small>shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>27.965, -16.312</td>
           <td>unknown<br><small>? — nan</small></td>
           <td>14970km | 18240km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.3" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.3" data-network="USGS">
           <td>2026-08-25 02:02:07</td>
           <td class="mag mag3">3.3</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>103km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-8.290, 120.270</td>
           <td>fault zone<br><small>61km — Unknown</small></td>
           <td>2060km | 14970km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.7" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="4.7" data-network="MULTI">
           <td>2026-08-25 01:59:04</td>
           <td class="mag mag4">4.7</td>
           <td>61 km ENE of Aras-asan, Philippines</td>
           <td>13km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>9.033, 126.855</td>
           <td>near fault<br><small>11km — Unknown</small></td>
           <td>8862km | 2060km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="0.9" data-network="EMSC">
@@ -2504,12 +2564,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.4" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="4.4" data-network="USGS">
           <td>2026-08-25 01:56:38</td>
           <td class="mag mag4">4.4</td>
           <td>13 km SSE of Comandău, Romania</td>
           <td>144km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>45.655, 26.335</td>
           <td>inter-fault<br><small>150km — Unknown</small></td>
           <td>10091km | 8142km</td>
@@ -2528,12 +2588,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.7" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.7" data-network="EMSC">
           <td>2026-08-25 01:54:51</td>
           <td class="mag mag1">1.7</td>
           <td>WESTERN TURKEY</td>
           <td>6km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>39.487, 29.776</td>
           <td>ON FAULT<br><small>1km — Unknown</small></td>
           <td>11183km | 10832km</td>
@@ -2588,12 +2648,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.4" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.4" data-network="EMSC">
           <td>2026-08-25 01:37:00</td>
           <td class="mag mag2">2.4</td>
           <td>MOZAMBIQUE</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-21.060, 33.609</td>
           <td>fault zone<br><small>75km — Unknown</small></td>
           <td>15624km | 6730km</td>
@@ -2624,60 +2684,60 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="4.5" data-network="USGS">
           <td>2026-08-25 01:22:24</td>
           <td class="mag mag4">4.5</td>
           <td>SOLOMON ISLANDS</td>
           <td>100km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-7.028, 155.712</td>
           <td>fault zone<br><small>59km — Unknown</small></td>
           <td>10008km | 9738km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.9" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="4.9" data-network="USGS">
           <td>2026-08-25 01:18:45</td>
           <td class="mag mag4">4.9</td>
           <td>HINDU KUSH REGION, AFGHANISTAN</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>34.486, 70.563</td>
           <td>ON FAULT<br><small>9km — Unknown</small></td>
           <td>8560km | 10008km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.8" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.8" data-network="EMSC">
           <td>2026-08-25 01:16:44</td>
           <td class="mag mag1">1.8</td>
           <td>58 km NNW of Petersville, Alaska</td>
           <td>133km<br><small>intermediate</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>62.944, -151.354</td>
           <td>near fault<br><small>10km — Tonzona-Muldrow section</small></td>
           <td>3289km | 8560km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.21" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.21" data-network="EMSC">
           <td>2026-08-25 01:12:10</td>
           <td class="mag mag0">0.2</td>
           <td>6 km WNW of Cobb, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.833, -122.794</td>
           <td>ON FAULT<br><small>4km — Collayami 2011 CFM</small></td>
           <td>726km | 3289km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.17" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.17" data-network="USGS">
           <td>2026-08-25 01:07:44</td>
           <td class="mag mag1">1.2</td>
           <td>1 km SW of Loma Linda, CA</td>
           <td>13km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>34.039, -117.272</td>
           <td>ON FAULT<br><small>1km — San Jacinto (San Bernardino)</small></td>
           <td>324km | 726km</td>
@@ -2696,40 +2756,40 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="1.3" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="1.3" data-network="EMSC">
           <td>2026-08-25 01:02:42</td>
           <td class="mag mag1">1.3</td>
           <td>WESTERN TURKEY</td>
           <td>13km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.919, 27.069</td>
           <td>ON FAULT<br><small>2km — Unknown</small></td>
           <td>8360km | 11088km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.8" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.8" data-network="USGS">
           <td>2026-08-25 01:02:27</td>
           <td class="mag mag2">2.8</td>
           <td>NORTHERN SUMATRA, INDONESIA</td>
           <td>80km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>1.220, 98.920</td>
           <td>fault zone<br><small>53km — Unknown</small></td>
           <td>13852km | 8360km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="1.32" data-network="EMSC">
+<tr class="crow mrow" data-cluster="1" data-mag="1.32" data-network="MULTI">
           <td>2026-08-25 00:58:59</td>
           <td class="mag mag1">1.3</td>
           <td>10 km SE of Cloverdale, CA</td>
           <td>5km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>38.746, -122.937</td>
           <td>ON FAULT<br><small>3km — Rodgers Creek - Healdsburg 2011 CFM</small></td>
           <td>19km | 13852km</td>
-          <td><span class="badge cluster">CLUSTER</span></td>
+          <td><span class="badge cluster">CLUSTER</span><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="crow" data-cluster="1" data-mag="1.41" data-network="EMSC">
@@ -2744,24 +2804,24 @@
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.96" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.96" data-network="EMSC">
           <td>2026-08-25 00:57:41</td>
           <td class="mag mag0">1.0</td>
           <td>9 km ENE of Coso Junction, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>36.063, -117.846</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>8176km | 525km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.8" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.8" data-network="EMSC">
           <td>2026-08-25 00:57:40</td>
           <td class="mag mag3">3.8</td>
           <td>ANTOFAGASTA, CHILE</td>
           <td>48km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-22.050, -70.180</td>
           <td>near fault<br><small>33km — de Atacama segmento Salar del Carmen?</small></td>
           <td>8176km | 8176km</td>
@@ -2780,12 +2840,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
           <td>2026-08-25 00:41:44</td>
           <td class="mag mag1">1.5</td>
           <td>CANARY ISLANDS, SPAIN REGION</td>
           <td>9km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>28.104, -16.168</td>
           <td>unknown<br><small>? — nan</small></td>
           <td>2940km | 9158km</td>
@@ -2816,12 +2876,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.8" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.8" data-network="USGS">
           <td>2026-08-25 00:30:46</td>
           <td class="mag mag2">2.8</td>
           <td>EASTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.189, 38.046</td>
           <td>near fault<br><small>14km — Unknown</small></td>
           <td>3506km | 9928km</td>
@@ -2840,16 +2900,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.8" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.8" data-network="EMSC">
           <td>2026-08-25 00:27:20</td>
           <td class="mag mag3">3.8</td>
           <td>NORTHERN SUMATRA, INDONESIA</td>
           <td>135km<br><small>intermediate</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>3.050, 98.470</td>
           <td>near fault<br><small>28km — Unknown</small></td>
           <td>1853km | 10747km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.3" data-network="EMSC">
@@ -2864,16 +2924,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.9" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="2.9" data-network="MULTI">
           <td>2026-08-25 00:22:48</td>
           <td class="mag mag2">2.9</td>
           <td>LOS LAGOS, CHILE</td>
           <td>117km<br><small>intermediate</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>-40.420, -72.260</td>
           <td>ON FAULT<br><small>2km — Falla Pullehue-Cordon Caulle 023a</small></td>
           <td>10198km | 14553km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="2.4" data-network="EMSC">
@@ -2888,28 +2948,28 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.7" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.7" data-network="USGS">
           <td>2026-08-25 00:21:58</td>
           <td class="mag mag3">3.7</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-8.210, 120.590</td>
           <td>near fault<br><small>42km — Unknown</small></td>
           <td>13539km | 12871km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.32" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.32" data-network="EMSC">
           <td>2026-08-25 00:21:17</td>
           <td class="mag mag0">0.3</td>
           <td>12 km SE of Anza, CA</td>
           <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.472, -116.583</td>
           <td>ON FAULT<br><small>4km — San Jacinto (Coyote Creek)</small></td>
           <td>12798km | 13539km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.4" data-network="EMSC">
@@ -2924,16 +2984,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.5" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="3.5" data-network="MULTI">
           <td>2026-08-25 00:15:52</td>
           <td class="mag mag3">3.5</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>-8.370, 120.530</td>
           <td>fault zone<br><small>60km — Unknown</small></td>
           <td>16526km | 939km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="2.7" data-network="EMSC">
@@ -2948,36 +3008,36 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="4.9" data-network="USGS">
+<tr class="crow" data-cluster="1" data-mag="4.9" data-network="EMSC">
           <td>2026-08-25 00:05:24</td>
           <td class="mag mag4">4.9</td>
           <td>34 km NW of Ruteng, Indonesia</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-8.424, 120.217</td>
           <td>fault zone<br><small>77km — Unknown</small></td>
           <td>49km | 16530km</td>
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="4.9" data-network="USGS">
+<tr class="crow" data-cluster="1" data-mag="4.9" data-network="EMSC">
           <td>2026-08-25 00:05:24</td>
           <td class="mag mag4">4.9</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-8.231, 120.613</td>
           <td>near fault<br><small>43km — Unknown</small></td>
           <td>13364km | 49km</td>
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.9" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.9" data-network="USGS">
           <td>2026-08-25 00:02:45</td>
           <td class="mag mag1">1.9</td>
           <td>9 km ENE of Coso Junction, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.068, -117.848</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>13331km | 13364km</td>
@@ -3008,52 +3068,52 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.66" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.66" data-network="USGS">
           <td>2026-08-24 23:57:12</td>
           <td class="mag mag0">0.7</td>
           <td>47 km NE of Ugashik, Alaska</td>
           <td>19km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>57.838, -156.871</td>
           <td>inter-fault<br><small>229km — Unknown</small></td>
           <td>3235km | 3808km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="1.26" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="1.26" data-network="EMSC">
           <td>2026-08-24 23:54:46</td>
           <td class="mag mag1">1.3</td>
           <td>2 km N of The Geysers, CA</td>
           <td>-0km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.795, -122.753</td>
           <td>ON FAULT<br><small>4km — Collayami 2011 CFM</small></td>
           <td>814km | 3235km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.54" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.54" data-network="EMSC">
           <td>2026-08-24 23:51:10</td>
           <td class="mag mag0">0.5</td>
           <td>18 km ESE of Anza, CA</td>
           <td>14km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.483, -116.501</td>
           <td>ON FAULT<br><small>0km — San Jacinto (Clark) rev</small></td>
           <td>9533km | 814km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.7" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="1.7" data-network="MULTI">
           <td>2026-08-24 23:47:33</td>
           <td class="mag mag1">1.7</td>
           <td>SPAIN</td>
           <td>6km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>37.129, -3.620</td>
           <td>ON FAULT<br><small>3km — Unknown</small></td>
           <td>6681km | 9533km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.0" data-network="USGS">
@@ -3092,24 +3152,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.1" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.1" data-network="USGS">
           <td>2026-08-24 23:31:10</td>
           <td class="mag mag2">2.1</td>
           <td>CENTRAL CALIFORNIA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.064, -117.845</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>11307km | 8127km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.0" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.0" data-network="USGS">
           <td>2026-08-24 23:30:19</td>
           <td class="mag mag1">1.0</td>
           <td>CENTRAL TURKEY</td>
           <td>6km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.841, 37.404</td>
           <td>fault zone<br><small>68km — Unknown</small></td>
           <td>8164km | 11307km</td>
@@ -3200,12 +3260,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.0" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.0" data-network="EMSC">
           <td>2026-08-24 23:15:02</td>
           <td class="mag mag2">2.0</td>
           <td>SICILY, ITALY</td>
           <td>155km<br><small>intermediate</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.673, 15.625</td>
           <td>near fault<br><small>31km — Unknown</small></td>
           <td>1498km | 10516km</td>
@@ -3224,12 +3284,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.2" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.2" data-network="USGS">
           <td>2026-08-24 23:13:58</td>
           <td class="mag mag3">3.2</td>
           <td>46 km SSE of Denali National Park, Alaska</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>63.140, -151.442</td>
           <td>ON FAULT<br><small>7km — Unknown</small></td>
           <td>8635km | 7908km</td>
@@ -3248,48 +3308,48 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
           <td>2026-08-24 23:10:20</td>
           <td class="mag mag1">1.6</td>
           <td>17 km SSE of Ackerly, Texas</td>
           <td>4km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>32.393, -101.620</td>
           <td>inter-fault<br><small>310km — West Delaware Mountains fault zone</small></td>
           <td>8704km | 11112km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.2" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.2" data-network="EMSC">
           <td>2026-08-24 22:59:39</td>
           <td class="mag mag1">1.2</td>
           <td>SWITZERLAND</td>
           <td>5km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>46.735, 7.230</td>
           <td>fault zone<br><small>54km — Unknown</small></td>
           <td>8464km | 8704km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.0" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.0" data-network="USGS">
           <td>2026-08-24 22:52:46</td>
           <td class="mag mag3">3.0</td>
           <td>27 km ENE of Chignik, Alaska</td>
           <td>87km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>56.404, -158.000</td>
           <td>inter-fault<br><small>239km — Unknown</small></td>
           <td>9225km | 8464km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.3" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.3" data-network="USGS">
           <td>2026-08-24 22:52:04</td>
           <td class="mag mag1">1.3</td>
           <td>EASTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>39.210, 41.550</td>
           <td>ON FAULT<br><small>3km — Unknown</small></td>
           <td>9610km | 9225km</td>
@@ -3344,24 +3404,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.7" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.7" data-network="EMSC">
           <td>2026-08-24 22:28:39</td>
           <td class="mag mag2">2.7</td>
           <td>TARAPACA, CHILE</td>
           <td>79km<br><small>intermediate</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-21.140, -69.360</td>
           <td>near fault<br><small>32km — Chuculay 3</small></td>
           <td>11688km | 8006km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
           <td>2026-08-24 22:27:43</td>
           <td class="mag mag1">1.6</td>
           <td>37 km WSW of Akhiok, Alaska</td>
           <td>9km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>56.812, -154.745</td>
           <td>fault zone<br><small>66km — Unknown</small></td>
           <td>9092km | 11688km</td>
@@ -3380,24 +3440,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.35" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.35" data-network="USGS">
           <td>2026-08-24 22:23:27</td>
           <td class="mag mag2">2.4</td>
           <td>3 km ENE of Medford, Oklahoma</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.822, -97.696</td>
           <td>unknown<br><small>? — nan</small></td>
           <td>1801km | 10551km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="1.78" data-network="EMSC">
+<tr class="crow" data-cluster="1" data-mag="1.78" data-network="USGS">
           <td>2026-08-24 22:22:55</td>
           <td class="mag mag1">1.8</td>
           <td>9 km ENE of Coso Junction, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.068, -117.847</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>40km | 1801km</td>
@@ -3416,12 +3476,12 @@
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="1.08" data-network="USGS">
+<tr class="crow" data-cluster="1" data-mag="1.08" data-network="EMSC">
           <td>2026-08-24 22:16:38</td>
           <td class="mag mag1">1.1</td>
           <td>9 km E of Coso Junction, CA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>36.060, -117.845</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>22km | 39km</td>
@@ -3440,24 +3500,24 @@
           <td><span class="badge cluster">CLUSTER</span><span class="badge shallow">⚠️ SHALLOWING</span></td>
           <td>1.4 hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.8" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.8" data-network="USGS">
           <td>2026-08-24 22:10:51</td>
           <td class="mag mag3">3.8</td>
           <td>OFFSHORE CHIAPAS, MEXICO</td>
           <td>106km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>13.994, -92.564</td>
           <td>near fault<br><small>49km — Unknown</small></td>
           <td>11505km | 3495km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.5" data-network="EMSC">
           <td>2026-08-24 22:07:00</td>
           <td class="mag mag1">1.5</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>39.129, 28.238</td>
           <td>ON FAULT<br><small>5km — Unknown</small></td>
           <td>3043km | 11505km</td>
@@ -3500,52 +3560,52 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.9" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.9" data-network="USGS">
           <td>2026-08-24 21:59:04</td>
           <td class="mag mag3">3.9</td>
           <td>OFFSHORE CHIAPAS, MEXICO</td>
           <td>133km<br><small>intermediate</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>14.408, -92.349</td>
           <td>fault zone<br><small>99km — El Triunfo Fault</small></td>
           <td>4032km | 9917km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.4" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="4.4" data-network="USGS">
           <td>2026-08-24 21:55:06</td>
           <td class="mag mag4">4.4</td>
           <td>SOUTHERN PERU</td>
           <td>106km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-15.656, -71.837</td>
           <td>ON FAULT<br><small>8km — Falla Trigal</small></td>
           <td>7016km | 4032km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.0" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="3.0" data-network="MULTI">
           <td>2026-08-24 21:52:40</td>
           <td class="mag mag3">3.0</td>
           <td>BAJA CALIFORNIA, MEXICO</td>
           <td>20km<br><small>shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>31.432, -115.610</td>
           <td>near fault<br><small>15km — San Pedro Martir</small></td>
           <td>2386km | 7016km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.2" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.2" data-network="EMSC">
           <td>2026-08-24 21:50:23</td>
           <td class="mag mag3">3.2</td>
           <td>OFFSHORE GUERRERO, MEXICO</td>
           <td>43km<br><small>shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>16.438, -98.734</td>
           <td>fault zone<br><small>64km — Middle America Trench megathrust</small></td>
           <td>3048km | 2386km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.9" data-network="EMSC">
@@ -3560,60 +3620,60 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="1.6" data-network="MULTI">
           <td>2026-08-24 21:47:10</td>
           <td class="mag mag1">1.6</td>
           <td>WESTERN TURKEY</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>39.269, 28.101</td>
           <td>ON FAULT<br><small>4km — Unknown</small></td>
           <td>11253km | 10649km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.8" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.8" data-network="EMSC">
           <td>2026-08-24 21:47:00</td>
           <td class="mag mag2">2.8</td>
           <td>NEAR COAST OF NICARAGUA</td>
           <td>23km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>11.870, -87.250</td>
           <td>fault zone<br><small>82km — Middle America Trench megathrust</small></td>
           <td>16946km | 11253km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.6" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.6" data-network="EMSC">
           <td>2026-08-24 21:45:14</td>
           <td class="mag mag3">3.6</td>
           <td>FLORES SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-7.720, 120.460</td>
           <td>near fault<br><small>14km — Unknown</small></td>
           <td>10406km | 16946km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.2" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.2" data-network="USGS">
           <td>2026-08-24 21:44:54</td>
           <td class="mag mag2">2.2</td>
           <td>43 km SW of Karluk, Alaska</td>
           <td>50km<br><small>shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>57.290, -154.960</td>
           <td>fault zone<br><small>100km — Unknown</small></td>
           <td>3097km | 10406km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.04" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.04" data-network="USGS">
           <td>2026-08-24 21:44:19</td>
           <td class="mag mag1">1.0</td>
           <td>10 km WNW of The Geysers, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.826, -122.856</td>
           <td>ON FAULT<br><small>8km — Maacama 2011 CFM</small></td>
           <td>4490km | 3097km</td>
@@ -3632,24 +3692,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="3.1" data-network="USGS">
+<tr class="crow" data-cluster="1" data-mag="3.1" data-network="EMSC">
           <td>2026-08-24 21:39:04</td>
           <td class="mag mag3">3.1</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-8.360, 120.590</td>
           <td>fault zone<br><small>58km — Unknown</small></td>
           <td>54km | 16842km</td>
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>0.5 hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="3.3" data-network="USGS">
+<tr class="crow" data-cluster="1" data-mag="3.3" data-network="EMSC">
           <td>2026-08-24 21:29:06</td>
           <td class="mag mag3">3.3</td>
           <td>FLORES SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-7.890, 120.480</td>
           <td>near fault<br><small>11km — Unknown</small></td>
           <td>16395km | 54km</td>
@@ -3668,40 +3728,40 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.6" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.6" data-network="USGS">
           <td>2026-08-24 21:27:09</td>
           <td class="mag mag3">3.6</td>
           <td>SOUTHWEST OF SUMATRA, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-6.380, 103.750</td>
           <td>fault zone<br><small>117km — Unknown</small></td>
           <td>10335km | 18010km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.1" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.1" data-network="USGS">
           <td>2026-08-24 21:27:07</td>
           <td class="mag mag2">2.1</td>
           <td>SICILY, ITALY</td>
           <td>142km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.442, 15.058</td>
           <td>ON FAULT<br><small>5km — Unknown</small></td>
           <td>10419km | 10335km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.94" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.94" data-network="EMSC">
           <td>2026-08-24 21:27:04</td>
           <td class="mag mag0">0.9</td>
           <td>8 km ESE of Cloverdale, CA</td>
           <td>4km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.768, -122.943</td>
           <td>ON FAULT<br><small>3km — Maacama 2011 CFM</small></td>
           <td>873km | 10419km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="0.98" data-network="EMSC">
@@ -3716,16 +3776,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.2" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="1.2" data-network="MULTI">
           <td>2026-08-24 21:26:48</td>
           <td class="mag mag1">1.2</td>
           <td>101 km S of McCarthy, Alaska</td>
           <td>24km<br><small>shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>60.528, -142.648</td>
           <td>ON FAULT<br><small>5km — Unknown</small></td>
           <td>9129km | 3202km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.7" data-network="EMSC">
@@ -3752,12 +3812,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.7" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.7" data-network="EMSC">
           <td>2026-08-24 21:21:29</td>
           <td class="mag mag2">2.7</td>
           <td>ANTOFAGASTA, CHILE</td>
           <td>37km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-22.350, -69.160</td>
           <td>fault zone<br><small>71km — de Atacama segmento Salar del Carmen?</small></td>
           <td>8238km | 6052km</td>
@@ -3776,12 +3836,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.6" data-network="USGS">
           <td>2026-08-24 21:18:10</td>
           <td class="mag mag1">1.6</td>
           <td>CENTRAL TURKEY</td>
           <td>9km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>37.555, 35.546</td>
           <td>near fault<br><small>18km — Unknown</small></td>
           <td>681km | 11401km</td>
@@ -3836,24 +3896,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.6" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="4.6" data-network="EMSC">
           <td>2026-08-24 21:02:14</td>
           <td class="mag mag4">4.6</td>
-          <td>236 km ESE of Kimbe, Papua New Guinea</td>
+          <td>NEW BRITAIN REGION, P.N.G.</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-6.495, 152.053</td>
           <td>fault zone<br><small>62km — Unknown</small></td>
           <td>11982km | 10441km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.3" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.3" data-network="EMSC">
           <td>2026-08-24 20:52:00</td>
           <td class="mag mag3">3.3</td>
           <td>OFFSHORE GUERRERO, MEXICO</td>
           <td>4km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>17.327, -101.323</td>
           <td>near fault<br><small>48km — Unknown</small></td>
           <td>1584km | 11982km</td>
@@ -3884,36 +3944,36 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.5" data-network="USGS">
           <td>2026-08-24 20:43:50</td>
           <td class="mag mag2">2.5</td>
           <td>SAN JUAN, ARGENTINA</td>
           <td>98km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-31.330, -68.850</td>
           <td>near fault<br><small>23km — Falla Las Tapias-Villicum</small></td>
           <td>12732km | 1189km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.6" data-network="USGS">
           <td>2026-08-24 20:39:29</td>
           <td class="mag mag1">1.6</td>
           <td>54 km WNW of Skwentna, Alaska</td>
           <td>1km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>62.238, -152.302</td>
           <td>near fault<br><small>33km — Unknown</small></td>
           <td>4791km | 12732km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.47" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.47" data-network="EMSC">
           <td>2026-08-24 20:32:17</td>
           <td class="mag mag1">1.5</td>
           <td>7 km S of Owasso, Oklahoma</td>
           <td>0km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>36.199, -95.856</td>
           <td>unknown<br><small>? — nan</small></td>
           <td>2073km | 4791km</td>
@@ -3932,12 +3992,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.0" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.0" data-network="USGS">
           <td>2026-08-24 20:21:06</td>
           <td class="mag mag3">3.0</td>
           <td>OAXACA, MEXICO</td>
           <td>58km<br><small>shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>16.054, -96.124</td>
           <td>fault zone<br><small>78km — Unknown</small></td>
           <td>14757km | 220km</td>
@@ -3980,52 +4040,52 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.1" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.1" data-network="EMSC">
           <td>2026-08-24 20:14:59</td>
           <td class="mag mag1">1.1</td>
           <td>24 km SW of Ackerly, Texas</td>
           <td>4km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>32.363, -101.897</td>
           <td>inter-fault<br><small>284km — West Delaware Mountains fault zone</small></td>
           <td>12853km | 1521km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.6" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.6" data-network="EMSC">
           <td>2026-08-24 20:14:29</td>
           <td class="mag mag3">3.6</td>
           <td>LUZON, PHILIPPINES</td>
           <td>6km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>17.670, 120.490</td>
           <td>ON FAULT<br><small>0km — West Ilocos Fault System W</small></td>
           <td>8058km | 12853km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.9" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.9" data-network="USGS">
           <td>2026-08-24 20:13:35</td>
           <td class="mag mag3">3.9</td>
           <td>58 km SSE of Kokhanok, Alaska</td>
           <td>126km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>58.966, -154.314</td>
           <td>fault zone<br><small>117km — Unknown</small></td>
           <td>8909km | 8058km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="1.4" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="1.4" data-network="USGS">
           <td>2026-08-24 20:07:26</td>
           <td class="mag mag1">1.4</td>
           <td>WESTERN TURKEY</td>
           <td>13km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>40.806, 31.317</td>
           <td>ON FAULT<br><small>4km — Unknown</small></td>
           <td>321km | 8909km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.2" data-network="EMSC">
@@ -4040,36 +4100,36 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.0" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="3.0" data-network="MULTI">
           <td>2026-08-24 20:02:44</td>
           <td class="mag mag3">3.0</td>
           <td>OAXACA, MEXICO</td>
           <td>16km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>16.077, -97.104</td>
           <td>fault zone<br><small>80km — Unknown</small></td>
           <td>17409km | 11648km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.0" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.0" data-network="EMSC">
           <td>2026-08-24 20:00:24</td>
           <td class="mag mag3">3.0</td>
           <td>NORTHERN SUMATRA, INDONESIA</td>
           <td>20km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>2.100, 97.870</td>
           <td>fault zone<br><small>92km — Unknown</small></td>
           <td>15588km | 17409km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.7" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.7" data-network="USGS">
           <td>2026-08-24 19:57:10</td>
           <td class="mag mag1">1.7</td>
           <td>60 km S of Whites City, New Mexico</td>
           <td>4km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>31.633, -104.406</td>
           <td>near fault<br><small>34km — West Delaware Mountains fault zone</small></td>
           <td>11410km | 15588km</td>
@@ -4088,64 +4148,64 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.7" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.7" data-network="EMSC">
           <td>2026-08-24 19:53:48</td>
           <td class="mag mag3">3.7</td>
           <td>CAUCASUS REGION, RUSSIA</td>
           <td>100km<br><small>intermediate</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>43.290, 45.750</td>
           <td>fault zone<br><small>86km — Unknown</small></td>
           <td>1399km | 605km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.2" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.2" data-network="USGS">
           <td>2026-08-24 19:49:51</td>
           <td class="mag mag1">1.2</td>
           <td>WESTERN TURKEY</td>
           <td>15km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>40.794, 29.118</td>
           <td>ON FAULT<br><small>3km — Unknown</small></td>
           <td>10683km | 1399km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.9" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.9" data-network="USGS">
           <td>2026-08-24 19:47:29</td>
           <td class="mag mag3">3.9</td>
           <td>FLORES SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-7.830, 120.400</td>
           <td>near fault<br><small>16km — Unknown</small></td>
           <td>10747km | 10683km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.2" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.2" data-network="USGS">
           <td>2026-08-24 19:44:44</td>
           <td class="mag mag1">1.2</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>39.199, 28.183</td>
           <td>ON FAULT<br><small>0km — Unknown</small></td>
           <td>6345km | 10747km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.1" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="3.1" data-network="MULTI">
           <td>2026-08-24 19:41:30</td>
           <td class="mag mag3">3.1</td>
           <td>MYANMAR</td>
           <td>100km<br><small>intermediate</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>23.790, 94.153</td>
           <td>ON FAULT<br><small>6km — Unknown</small></td>
           <td>12795km | 6345km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="0.87" data-network="EMSC">
@@ -4160,12 +4220,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.65" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.65" data-network="USGS">
           <td>2026-08-24 19:40:58</td>
           <td class="mag mag0">0.7</td>
           <td>10 km E of Coso Junction, CA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.062, -117.843</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>526km | 242km</td>
@@ -4208,12 +4268,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.9" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.9" data-network="EMSC">
           <td>2026-08-24 19:27:33</td>
           <td class="mag mag3">3.9</td>
           <td>FLORES SEA</td>
           <td>22km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-7.890, 120.460</td>
           <td>near fault<br><small>13km — Unknown</small></td>
           <td>10479km | 15306km</td>
@@ -4232,48 +4292,48 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="1.4" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="1.4" data-network="USGS">
           <td>2026-08-24 19:24:07</td>
           <td class="mag mag1">1.4</td>
           <td>CENTRAL TURKEY</td>
           <td>9km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>40.551, 34.508</td>
           <td>near fault<br><small>43km — Unknown</small></td>
           <td>624km | 8968km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.9" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.9" data-network="USGS">
           <td>2026-08-24 19:23:21</td>
           <td class="mag mag1">1.9</td>
           <td>WESTERN TURKEY</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.873, 29.078</td>
           <td>near fault<br><small>14km — Unknown</small></td>
           <td>9329km | 624km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.8" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="2.8" data-network="MULTI">
           <td>2026-08-24 19:19:11</td>
           <td class="mag mag2">2.8</td>
           <td>JAVA, INDONESIA</td>
           <td>35km<br><small>shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>-7.040, 105.980</td>
           <td>fault zone<br><small>55km — Unknown</small></td>
           <td>17157km | 9329km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.1" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.1" data-network="EMSC">
           <td>2026-08-24 19:17:42</td>
           <td class="mag mag3">3.1</td>
           <td>GUERRERO, MEXICO</td>
           <td>8km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>16.542, -98.454</td>
           <td>fault zone<br><small>84km — Middle America Trench megathrust</small></td>
           <td>16545km | 17157km</td>
@@ -4292,12 +4352,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.67" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.67" data-network="USGS">
           <td>2026-08-24 19:08:14</td>
           <td class="mag mag0">0.7</td>
           <td>10 km ENE of Coso Junction, CA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.064, -117.839</td>
           <td>ON FAULT<br><small>6km — Airport Lake</small></td>
           <td>1447km | 14104km</td>
@@ -4316,72 +4376,72 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="5.0" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="5.0" data-network="EMSC">
           <td>2026-08-24 19:00:03</td>
           <td class="mag mag5">5.0</td>
           <td>209 km NNE of Lospalos, Timor Leste</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-6.691, 127.502</td>
           <td>near fault<br><small>26km — Unknown</small></td>
           <td>17346km | 14081km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.5" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="4.5" data-network="EMSC">
           <td>2026-08-24 18:55:21</td>
           <td class="mag mag4">4.5</td>
           <td>COLOMBIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>4.521, -76.525</td>
           <td>near fault<br><small>12km — GARRAPATAS_FAULT</small></td>
           <td>6017km | 17346km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.83" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.83" data-network="USGS">
           <td>2026-08-24 18:54:34</td>
           <td class="mag mag0">0.8</td>
           <td>6 km WNW of Cobb, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.836, -122.790</td>
           <td>ON FAULT<br><small>4km — Collayami 2011 CFM</small></td>
           <td>3159km | 6017km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.1" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.1" data-network="USGS">
           <td>2026-08-24 18:52:17</td>
           <td class="mag mag2">2.1</td>
           <td>83 km ESE of Ugashik, Alaska</td>
           <td>76km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>57.215, -156.124</td>
           <td>inter-fault<br><small>159km — Unknown</small></td>
           <td>10340km | 3159km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.8" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.8" data-network="EMSC">
           <td>2026-08-24 18:50:45</td>
           <td class="mag mag3">3.8</td>
           <td>FLORES SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-7.800, 120.500</td>
           <td>ON FAULT<br><small>5km — Unknown</small></td>
           <td>9612km | 10340km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.82" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.82" data-network="EMSC">
           <td>2026-08-24 18:50:07</td>
           <td class="mag mag1">1.8</td>
           <td>15 km WNW of Kailua-Kona, Hawaii</td>
           <td>9km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>19.707, -156.133</td>
           <td>near fault<br><small>31km — Unknown</small></td>
           <td>4538km | 9612km</td>
@@ -4400,64 +4460,64 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.03" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.0" data-network="USGS">
           <td>2026-08-24 18:47:57</td>
           <td class="mag mag2">2.0</td>
-          <td>9 km E of Coso Junction, CA</td>
+          <td>CENTRAL CALIFORNIA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.061, -117.846</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>11382km | 3631km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.4" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.4" data-network="USGS">
           <td>2026-08-24 18:47:52</td>
           <td class="mag mag1">1.4</td>
           <td>CENTRAL TURKEY</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.235, 37.763</td>
           <td>near fault<br><small>10km — Unknown</small></td>
           <td>11617km | 11382km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.7" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.7" data-network="EMSC">
           <td>2026-08-24 18:47:24</td>
           <td class="mag mag0">0.7</td>
           <td>10 km SW of Anza, CA</td>
           <td>14km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.480, -116.739</td>
           <td>near fault<br><small>14km — San Jacinto (Anza) rev</small></td>
           <td>11216km | 11617km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.0" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.0" data-network="EMSC">
           <td>2026-08-24 18:47:21</td>
           <td class="mag mag2">2.0</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>39.181, 29.420</td>
           <td>near fault<br><small>12km — Unknown</small></td>
           <td>756km | 11216km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.6" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="2.6" data-network="MULTI">
           <td>2026-08-24 18:45:26</td>
           <td class="mag mag2">2.6</td>
           <td>ALBANIA</td>
           <td>15km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>40.828, 20.800</td>
           <td>ON FAULT<br><small>0km — Unknown</small></td>
           <td>11852km | 756km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.7" data-network="USGS">
@@ -4508,10 +4568,10 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.34" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.3" data-network="USGS">
           <td>2026-08-24 18:13:18</td>
           <td class="mag mag2">2.3</td>
-          <td>18 km SW of Toms Place, CA</td>
+          <td>CENTRAL CALIFORNIA</td>
           <td>2km<br><small>very shallow</small></td>
           <td><span class="net netUSGS">USGS</span></td>
           <td>37.458, -118.835</td>
@@ -4532,36 +4592,36 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.2" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.2" data-network="USGS">
           <td>2026-08-24 18:10:46</td>
           <td class="mag mag1">1.2</td>
           <td>WESTERN TURKEY</td>
           <td>16km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>39.171, 28.154</td>
           <td>ON FAULT<br><small>4km — Unknown</small></td>
           <td>9175km | 5970km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="-0.07" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="-0.07" data-network="EMSC">
           <td>2026-08-24 18:07:53</td>
           <td class="mag mag0">-0.1</td>
           <td>81 km NNW of Karluk, Alaska</td>
           <td>5km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>58.283, -154.780</td>
           <td>inter-fault<br><small>168km — Unknown</small></td>
           <td>4726km | 9175km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.7" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="4.7" data-network="EMSC">
           <td>2026-08-24 18:07:02</td>
           <td class="mag mag4">4.7</td>
           <td>NEAR EAST COAST OF HONSHU, JAPAN</td>
           <td>32km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>40.585, 142.630</td>
           <td>fault zone<br><small>110km — Oritsume</small></td>
           <td>8287km | 4726km</td>
@@ -4580,72 +4640,72 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="2.9" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="2.9" data-network="USGS">
           <td>2026-08-24 17:58:42</td>
           <td class="mag mag2">2.9</td>
           <td>OFFSHORE EL SALVADOR</td>
           <td>40km<br><small>shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>13.010, -89.510</td>
           <td>fault zone<br><small>79km — Unknown</small></td>
           <td>3522km | 11917km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.54" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.54" data-network="USGS">
           <td>2026-08-24 17:57:25</td>
           <td class="mag mag0">0.5</td>
           <td>18 km E of Julian, CA</td>
           <td>5km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>33.063, -116.408</td>
           <td>ON FAULT<br><small>1km — Earthquake Valley (So Extension)</small></td>
           <td>4021km | 3522km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="-0.41" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="-0.41" data-network="MULTI">
           <td>2026-08-24 17:54:16</td>
           <td class="mag mag0">-0.4</td>
           <td>76 km NW of Ninilchik, Alaska</td>
           <td>6km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>60.509, -152.703</td>
           <td>near fault<br><small>27km — Unknown</small></td>
           <td>10623km | 4021km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.7" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.7" data-network="EMSC">
           <td>2026-08-24 17:40:24</td>
           <td class="mag mag3">3.7</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-8.230, 120.610</td>
           <td>near fault<br><small>43km — Unknown</small></td>
           <td>9991km | 10623km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.5" data-network="EMSC">
           <td>2026-08-24 17:39:52</td>
           <td class="mag mag1">1.5</td>
           <td>CENTRAL TURKEY</td>
           <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>37.442, 37.164</td>
           <td>ON FAULT<br><small>8km — Unknown</small></td>
           <td>11289km | 9991km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.69" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.69" data-network="USGS">
           <td>2026-08-24 17:29:22</td>
           <td class="mag mag0">0.7</td>
           <td>8 km WNW of Cobb, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.838, -122.808</td>
           <td>ON FAULT<br><small>5km — Collayami 2011 CFM</small></td>
           <td>875km | 11289km</td>
@@ -4664,52 +4724,52 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.9" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.9" data-network="EMSC">
           <td>2026-08-24 17:23:05</td>
           <td class="mag mag0">0.9</td>
           <td>5 km SW of Inyokern, CA</td>
           <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>35.615, -117.849</td>
           <td>ON FAULT<br><small>5km — So Sierra Nevada</small></td>
           <td>10816km | 318km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.5" data-network="USGS">
           <td>2026-08-24 17:16:59</td>
           <td class="mag mag2">2.5</td>
           <td>IONIAN SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>37.225, 19.862</td>
           <td>ON FAULT<br><small>8km — Unknown</small></td>
           <td>8534km | 10816km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.92" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="2.92" data-network="MULTI">
           <td>2026-08-24 17:16:39</td>
           <td class="mag mag2">2.9</td>
           <td>56 km NW of San Antonio, Puerto Rico</td>
           <td>9km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>18.790, -67.529</td>
           <td>ON FAULT<br><small>5km — West Mona Rift Fault</small></td>
           <td>5727km | 8534km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.71" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.71" data-network="EMSC">
           <td>2026-08-24 17:09:05</td>
           <td class="mag mag0">0.7</td>
           <td>4 km W of Cobb, CA</td>
           <td>1km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.827, -122.764</td>
           <td>ON FAULT<br><small>2km — Collayami 2011 CFM</small></td>
           <td>11235km | 5727km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.6" data-network="USGS">
@@ -4724,16 +4784,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.34" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="0.34" data-network="MULTI">
           <td>2026-08-24 16:52:51</td>
           <td class="mag mag0">0.3</td>
           <td>147 km W of Adak, Alaska</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>51.831, -178.772</td>
           <td>fault zone<br><small>149km — Unknown</small></td>
           <td>10023km | 9499km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="2.6" data-network="USGS">
@@ -4760,48 +4820,48 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.5" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.5" data-network="USGS">
           <td>2026-08-24 16:47:16</td>
           <td class="mag mag3">3.5</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-8.200, 120.600</td>
           <td>near fault<br><small>40km — Unknown</small></td>
           <td>13715km | 13244km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.28" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.28" data-network="USGS">
           <td>2026-08-24 16:37:07</td>
           <td class="mag mag0">0.3</td>
           <td>16 km NE of Milford, Utah</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.507, -112.889</td>
           <td>fault zone<br><small>61km — Paragonah fault</small></td>
           <td>13718km | 13715km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.5" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="3.5" data-network="MULTI">
           <td>2026-08-24 16:36:14</td>
           <td class="mag mag3">3.5</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>-8.200, 120.560</td>
           <td>near fault<br><small>41km — Unknown</small></td>
           <td>10904km | 13718km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.2" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.2" data-network="EMSC">
           <td>2026-08-24 16:34:11</td>
           <td class="mag mag2">2.2</td>
           <td>NEAR THE COAST OF WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>39.190, 26.814</td>
           <td>near fault<br><small>24km — Unknown</small></td>
           <td>8924km | 10904km</td>
@@ -4844,28 +4904,28 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.4" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.4" data-network="USGS">
           <td>2026-08-24 16:20:27</td>
           <td class="mag mag3">3.4</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-8.220, 120.600</td>
           <td>near fault<br><small>42km — Unknown</small></td>
           <td>18007km | 4059km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="2.8" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="2.8" data-network="USGS">
           <td>2026-08-24 16:20:11</td>
           <td class="mag mag2">2.8</td>
           <td>HAITI REGION</td>
           <td>12km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>19.980, -73.560</td>
           <td>ON FAULT<br><small>6km — Oriente Fault</small></td>
           <td>4634km | 18007km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.08" data-network="EMSC">
@@ -4880,16 +4940,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.0" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="1.0" data-network="MULTI">
           <td>2026-08-24 16:14:08</td>
           <td class="mag mag1">1.0</td>
           <td>16 km NE of Milford, Utah</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>38.517, -112.893</td>
           <td>fault zone<br><small>62km — Paragonah fault</small></td>
           <td>9023km | 563km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.1" data-network="EMSC">
@@ -4952,60 +5012,60 @@
           <td><span class="badge cluster">CLUSTER</span><span class="badge shallow">⚠️ SHALLOWING</span></td>
           <td>1.7 hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.1" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.1" data-network="EMSC">
           <td>2026-08-24 16:02:13</td>
           <td class="mag mag3">3.1</td>
           <td>MINDANAO, PHILIPPINES</td>
           <td>15km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>9.660, 126.070</td>
           <td>fault zone<br><small>67km — Surigao Fault</small></td>
           <td>11628km | 11658km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.28" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.28" data-network="EMSC">
           <td>2026-08-24 15:58:49</td>
           <td class="mag mag1">1.3</td>
           <td>10 km ENE of Coso Junction, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>36.069, -117.845</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>2298km | 11628km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.6" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="2.6" data-network="MULTI">
           <td>2026-08-24 15:58:24</td>
           <td class="mag mag2">2.6</td>
-          <td>11 km ENE of Pleasant Hill, Louisiana</td>
+          <td>LOUISIANA-TEXAS BORDER REGION</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>31.842, -93.390</td>
           <td>unknown<br><small>? — nan</small></td>
           <td>15624km | 2298km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.4" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.4" data-network="USGS">
           <td>2026-08-24 15:56:22</td>
           <td class="mag mag3">3.4</td>
           <td>FLORES SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-7.790, 120.310</td>
           <td>near fault<br><small>26km — Unknown</small></td>
           <td>13532km | 15624km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.69" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.69" data-network="EMSC">
           <td>2026-08-24 15:51:37</td>
           <td class="mag mag0">0.7</td>
           <td>5 km E of Lake Henshaw, CA</td>
           <td>15km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>33.235, -116.710</td>
           <td>ON FAULT<br><small>3km — Earthquake Valley (No  Extension)</small></td>
           <td>829km | 13532km</td>
@@ -5036,12 +5096,12 @@
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>1.2 hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="0.83" data-network="USGS">
+<tr class="crow" data-cluster="1" data-mag="0.83" data-network="EMSC">
           <td>2026-08-24 15:45:05</td>
           <td class="mag mag0">0.8</td>
           <td>10 km ENE of Coso Junction, CA</td>
           <td>4km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>36.063, -117.838</td>
           <td>ON FAULT<br><small>6km — Airport Lake</small></td>
           <td>3699km | 60km</td>
@@ -5060,12 +5120,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.5" data-network="USGS">
           <td>2026-08-24 15:39:53</td>
           <td class="mag mag2">2.5</td>
           <td>CORDOBA, ARGENTINA</td>
           <td>108km<br><small>intermediate</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-31.150, -65.346</td>
           <td>fault zone<br><small>75km — Grupo de fallas Sierra de San Marcos</small></td>
           <td>18339km | 12834km</td>
@@ -5084,40 +5144,40 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="2.4" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="2.4" data-network="EMSC">
           <td>2026-08-24 15:34:25</td>
           <td class="mag mag2">2.4</td>
           <td>CRETE, GREECE</td>
           <td>58km<br><small>shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>35.700, 25.880</td>
           <td>ON FAULT<br><small>1km — Unknown</small></td>
           <td>13661km | 9423km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.3" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.3" data-network="USGS">
           <td>2026-08-24 15:33:58</td>
           <td class="mag mag3">3.3</td>
           <td>OFF COAST OF AISEN, CHILE</td>
           <td>20km<br><small>shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-46.320, -76.530</td>
           <td>near fault<br><small>44km — Unknown</small></td>
           <td>13772km | 13661km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.1" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="3.1" data-network="MULTI">
           <td>2026-08-24 15:30:05</td>
           <td class="mag mag3">3.1</td>
           <td>FLORES SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>-7.750, 120.420</td>
           <td>near fault<br><small>15km — Unknown</small></td>
           <td>13815km | 13772km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.5" data-network="EMSC">
@@ -5132,12 +5192,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="4.9" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="4.9" data-network="EMSC">
           <td>2026-08-24 15:27:32</td>
           <td class="mag mag4">4.9</td>
           <td>76 km SE of Taira, Japan</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>26.111, 128.651</td>
           <td>near fault<br><small>43km — Unknown</small></td>
           <td>1872km | 16909km</td>
@@ -5156,12 +5216,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.7" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.7" data-network="USGS">
           <td>2026-08-24 15:22:52</td>
           <td class="mag mag2">2.7</td>
           <td>NEAR COAST OF AISEN, CHILE</td>
           <td>17km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-44.360, -73.360</td>
           <td>fault zone<br><small>62km — Falla Puerto Cisnes 006oo</small></td>
           <td>11466km | 15687km</td>
@@ -5216,12 +5276,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="3.5" data-network="USGS">
+<tr class="crow" data-cluster="1" data-mag="3.5" data-network="EMSC">
           <td>2026-08-24 15:11:08</td>
           <td class="mag mag3">3.5</td>
           <td>FLORES SEA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-7.790, 120.480</td>
           <td>ON FAULT<br><small>7km — Unknown</small></td>
           <td>44km | 13522km</td>
@@ -5252,48 +5312,48 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.78" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.78" data-network="EMSC">
           <td>2026-08-24 15:04:31</td>
           <td class="mag mag1">1.8</td>
           <td>16 km NE of Milford, Utah</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.516, -112.891</td>
           <td>fault zone<br><small>62km — Paragonah fault</small></td>
           <td>8987km | 10551km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.3" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.3" data-network="USGS">
           <td>2026-08-24 15:04:23</td>
           <td class="mag mag2">2.3</td>
           <td>STRAIT OF GIBRALTAR</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.794, -2.974</td>
           <td>near fault<br><small>20km — Unknown</small></td>
           <td>13535km | 8987km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.3" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.3" data-network="USGS">
           <td>2026-08-24 14:59:22</td>
           <td class="mag mag3">3.3</td>
           <td>FLORES REGION, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>-8.020, 120.930</td>
           <td>near fault<br><small>12km — Unknown</small></td>
           <td>1449km | 13535km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.6" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="3.6" data-network="EMSC">
           <td>2026-08-24 14:49:27</td>
           <td class="mag mag3">3.6</td>
           <td>NEAR S COAST OF PAPUA, INDONESIA</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-4.340, 133.510</td>
           <td>near fault<br><small>36km — Unknown</small></td>
           <td>5021km | 1449km</td>
@@ -5324,16 +5384,16 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.8" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="1.8" data-network="MULTI">
           <td>2026-08-24 14:32:27</td>
           <td class="mag mag1">1.8</td>
           <td>SPAIN</td>
           <td>5km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>37.122, -3.605</td>
           <td>ON FAULT<br><small>2km — Unknown</small></td>
           <td>9508km | 10833km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.43" data-network="USGS">
@@ -5360,60 +5420,60 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.6" data-network="USGS">
           <td>2026-08-24 14:31:12</td>
           <td class="mag mag1">1.6</td>
           <td>59 km SW of Cantwell, Alaska</td>
           <td>0km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>62.964, -149.669</td>
           <td>near fault<br><small>43km — West Muldrow-Alsek section</small></td>
           <td>3596km | 13041km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.83" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="0.83" data-network="EMSC">
           <td>2026-08-24 14:27:38</td>
           <td class="mag mag0">0.8</td>
           <td>17 km NW of Parkfield, CA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>36.005, -120.565</td>
           <td>ON FAULT<br><small>0km — San Andreas (Creeping Section) 2011 CFM</small></td>
           <td>12412km | 3596km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="6.0" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="6.0" data-network="EMSC">
           <td>2026-08-24 14:10:17</td>
           <td class="mag mag6">6.0</td>
           <td>215 km NNE of Lospalos, Timor Leste</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-6.626, 127.460</td>
           <td>near fault<br><small>34km — Unknown</small></td>
           <td>12541km | 12412km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.1" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="2.1" data-network="USGS">
           <td>2026-08-24 14:09:10</td>
           <td class="mag mag2">2.1</td>
           <td>CENTRAL CALIFORNIA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>37.448, -118.833</td>
           <td>ON FAULT<br><small>9km — Hilton Creek 2011 CFM</small></td>
           <td>177km | 12541km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.7" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.7" data-network="USGS">
           <td>2026-08-24 14:07:57</td>
           <td class="mag mag0">0.7</td>
           <td>10 km ENE of Coso Junction, CA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.068, -117.838</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>11038km | 177km</td>
@@ -5432,12 +5492,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.2" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.2" data-network="EMSC">
           <td>2026-08-24 14:05:39</td>
           <td class="mag mag2">2.2</td>
           <td>50 km NW of Rampart, Alaska</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>65.850, -150.865</td>
           <td>fault zone<br><small>72km — Unknown</small></td>
           <td>15631km | 8483km</td>
@@ -5468,28 +5528,28 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.87" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.87" data-network="EMSC">
           <td>2026-08-24 13:48:19</td>
           <td class="mag mag1">1.9</td>
           <td>17 km SW of Toms Place, CA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>37.461, -118.824</td>
           <td>ON FAULT<br><small>7km — Hilton Creek 2011 CFM</small></td>
           <td>378km | 11077km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="0.68" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="0.68" data-network="USGS">
           <td>2026-08-24 13:39:13</td>
           <td class="mag mag0">0.7</td>
           <td>5 km NW of The Geysers, CA</td>
           <td>13km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.811, -122.796</td>
           <td>ON FAULT<br><small>6km — Collayami 2011 CFM</small></td>
           <td>12812km | 378km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="3.7" data-network="EMSC">
@@ -5504,24 +5564,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="1.6" data-network="MULTI">
           <td>2026-08-24 13:38:28</td>
           <td class="mag mag1">1.6</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>37.159, 29.474</td>
           <td>ON FAULT<br><small>4km — Unknown</small></td>
           <td>3172km | 10742km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.6" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.6" data-network="EMSC">
           <td>2026-08-24 13:37:22</td>
           <td class="mag mag1">1.6</td>
           <td>SPAIN</td>
           <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>37.871, -6.708</td>
           <td>fault zone<br><small>69km — Unknown</small></td>
           <td>9129km | 3172km</td>
@@ -5540,24 +5600,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.5" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.5" data-network="USGS">
           <td>2026-08-24 13:29:47</td>
           <td class="mag mag1">1.5</td>
           <td>EASTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.249, 38.475</td>
           <td>near fault<br><small>18km — Unknown</small></td>
           <td>11283km | 11281km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="2.5" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="2.85" data-network="EMSC">
           <td>2026-08-24 13:23:10</td>
-          <td class="mag mag2">2.5</td>
-          <td>CENTRAL CALIFORNIA</td>
+          <td class="mag mag2">2.9</td>
+          <td>19 km SW of Toms Place, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>37.446, -118.833</td>
           <td>ON FAULT<br><small>9km — Hilton Creek 2011 CFM</small></td>
           <td>8712km | 11283km</td>
@@ -5588,12 +5648,12 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.31" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.31" data-network="EMSC">
           <td>2026-08-24 13:14:29</td>
           <td class="mag mag1">1.3</td>
           <td>6 km NW of The Geysers, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.810, -122.809</td>
           <td>ON FAULT<br><small>7km — Collayami 2011 CFM</small></td>
           <td>12838km | 9359km</td>
@@ -5612,24 +5672,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.2" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="3.2" data-network="USGS">
           <td>2026-08-24 13:06:37</td>
           <td class="mag mag3">3.2</td>
           <td>WESTERN TURKEY</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>39.622, 27.894</td>
           <td>ON FAULT<br><small>2km — Unknown</small></td>
           <td>10898km | 10853km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.79" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.79" data-network="USGS">
           <td>2026-08-24 13:06:32</td>
           <td class="mag mag0">0.8</td>
           <td>10 km E of Coso Junction, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.059, -117.839</td>
           <td>ON FAULT<br><small>6km — Airport Lake</small></td>
           <td>7995km | 10898km</td>
@@ -5648,48 +5708,48 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow mrow" data-cluster="1" data-mag="0.68" data-network="MULTI">
+<tr class="crow" data-cluster="1" data-mag="0.68" data-network="EMSC">
           <td>2026-08-24 12:57:53</td>
           <td class="mag mag0">0.7</td>
           <td>10 km ENE of Coso Junction, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>36.070, -117.841</td>
           <td>ON FAULT<br><small>7km — Airport Lake</small></td>
           <td>31km | 7996km</td>
-          <td><span class="badge cluster">CLUSTER</span><span class="badge multi">MULTI</span><span class="badge shallow">⚠️ SHALLOWING</span></td>
+          <td><span class="badge cluster">CLUSTER</span><span class="badge shallow">⚠️ SHALLOWING</span></td>
           <td>-0.8 hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="1.04" data-network="USGS">
+<tr class="crow" data-cluster="1" data-mag="1.04" data-network="EMSC">
           <td>2026-08-24 12:47:19</td>
           <td class="mag mag1">1.0</td>
           <td>16 km SW of Little Lake, CA</td>
           <td>27km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>35.831, -118.022</td>
           <td>ON FAULT<br><small>7km — Scodie Lineament</small></td>
           <td>543km | 31km</td>
           <td><span class="badge cluster">CLUSTER</span></td>
           <td>-0.6 hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.46" data-network="USGS">
+<tr class=" mrow" data-cluster="0" data-mag="1.46" data-network="MULTI">
           <td>2026-08-24 12:44:59</td>
           <td class="mag mag1">1.5</td>
           <td>16 km NE of Milford, Utah</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>38.510, -112.894</td>
           <td>fault zone<br><small>61km — Paragonah fault</small></td>
           <td>10657km | 543km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.2" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.2" data-network="USGS">
           <td>2026-08-24 12:42:12</td>
           <td class="mag mag1">1.2</td>
           <td>WESTERN TURKEY</td>
           <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.328, 29.745</td>
           <td>ON FAULT<br><small>1km — Unknown</small></td>
           <td>171km | 10657km</td>
@@ -5708,24 +5768,24 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="5.0" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="5.0" data-network="EMSC">
           <td>2026-08-24 12:29:31</td>
           <td class="mag mag5">5.0</td>
           <td>southern Mid-Atlantic Ridge</td>
           <td>10km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>-17.704, -13.837</td>
           <td>near fault<br><small>27km — Unknown</small></td>
           <td>11994km | 7688km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.16" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="1.16" data-network="USGS">
           <td>2026-08-24 12:25:46</td>
           <td class="mag mag1">1.2</td>
           <td>17 km NE of Milford, Utah</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.527, -112.894</td>
           <td>fault zone<br><small>63km — Paragonah fault</small></td>
           <td>1199km | 11994km</td>
@@ -5768,28 +5828,28 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.58" data-network="USGS">
+<tr class="" data-cluster="0" data-mag="1.58" data-network="EMSC">
           <td>2026-08-24 12:20:38</td>
           <td class="mag mag1">1.6</td>
           <td>16 km NE of Milford, Utah</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>38.517, -112.892</td>
           <td>fault zone<br><small>62km — Paragonah fault</small></td>
           <td>8847km | 1094km</td>
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.2" data-network="MULTI">
+<tr class="" data-cluster="0" data-mag="3.2" data-network="USGS">
           <td>2026-08-24 12:15:46</td>
           <td class="mag mag3">3.2</td>
           <td>POLAND</td>
           <td>1km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>51.523, 16.115</td>
           <td>inter-fault<br><small>294km — Unknown</small></td>
           <td>8848km | 8847km</td>
-          <td><span class="badge multi">MULTI</span></td>
+          <td></td>
           <td>? hPa</td>
         </tr>
 <tr class="" data-cluster="0" data-mag="1.27" data-network="USGS">
@@ -5804,188 +5864,68 @@
           <td></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="1.68" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="1.68" data-network="MULTI">
           <td>2026-08-24 12:09:41</td>
           <td class="mag mag1">1.7</td>
           <td>5 km NNW of The Geysers, CA</td>
           <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>38.819, -122.788</td>
           <td>ON FAULT<br><small>5km — Collayami 2011 CFM</small></td>
           <td>533km | 860km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="crow mrow" data-cluster="1" data-mag="0.58" data-network="MULTI">
+<tr class="crow" data-cluster="1" data-mag="0.58" data-network="USGS">
           <td>2026-08-24 12:09:39</td>
           <td class="mag mag0">0.6</td>
           <td>11 km ENE of Coso Junction, CA</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>36.072, -117.835</td>
           <td>ON FAULT<br><small>6km — Airport Lake</small></td>
           <td>27km | 533km</td>
-          <td><span class="badge cluster">CLUSTER</span><span class="badge multi">MULTI</span></td>
+          <td><span class="badge cluster">CLUSTER</span></td>
           <td>-0.8 hPa</td>
         </tr>
-<tr class="crow" data-cluster="1" data-mag="0.64" data-network="USGS">
+<tr class="crow" data-cluster="1" data-mag="0.64" data-network="EMSC">
           <td>2026-08-24 12:08:37</td>
           <td class="mag mag0">0.6</td>
           <td>28 km NNW of Searles Valley, CA</td>
           <td>5km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
+          <td><span class="net netEMSC">EMSC</span></td>
           <td>35.982, -117.561</td>
           <td>near fault<br><small>18km — Airport Lake</small></td>
           <td>5378km | 27km</td>
           <td><span class="badge cluster">CLUSTER</span><span class="badge shallow">⚠️ SHALLOWING</span></td>
           <td>-0.6 hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="3.6" data-network="EMSC">
+<tr class=" mrow" data-cluster="0" data-mag="3.6" data-network="MULTI">
           <td>2026-08-24 12:04:21</td>
           <td class="mag mag3">3.6</td>
           <td>233 km ESE of Attu Station, Alaska</td>
           <td>18km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netMULTI">MULTI</span></td>
           <td>51.953, 176.292</td>
           <td>fault zone<br><small>106km — Unknown</small></td>
           <td>5509km | 5378km</td>
-          <td></td>
+          <td><span class="badge multi">MULTI</span></td>
           <td>? hPa</td>
         </tr>
-<tr class="" data-cluster="0" data-mag="0.03" data-network="EMSC">
+<tr class="" data-cluster="0" data-mag="0.03" data-network="USGS">
           <td>2026-08-24 12:02:55</td>
           <td class="mag mag0">0.0</td>
           <td>17 km NE of Milford, Utah</td>
           <td>3km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
+          <td><span class="net netUSGS">USGS</span></td>
           <td>38.515, -112.887</td>
           <td>fault zone<br><small>62km — Paragonah fault</small></td>
-          <td>13696km | 5509km</td>
-          <td></td>
-          <td>? hPa</td>
-        </tr>
-<tr class=" mrow" data-cluster="0" data-mag="3.6" data-network="MULTI">
-          <td>2026-08-24 12:01:12</td>
-          <td class="mag mag3">3.6</td>
-          <td>FLORES SEA</td>
-          <td>18km<br><small>very shallow</small></td>
-          <td><span class="net netMULTI">MULTI</span></td>
-          <td>-7.780, 120.460</td>
-          <td>ON FAULT<br><small>10km — Unknown</small></td>
-          <td>18532km | 13696km</td>
-          <td><span class="badge multi">MULTI</span></td>
-          <td>? hPa</td>
-        </tr>
-<tr class="" data-cluster="0" data-mag="2.98" data-network="EMSC">
-          <td>2026-08-24 12:00:33</td>
-          <td class="mag mag2">3.0</td>
-          <td>38 km NW of San Antonio, Puerto Rico</td>
-          <td>11km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
-          <td>18.756, -67.342</td>
-          <td>ON FAULT<br><small>2km — East Mona Rift Fault</small></td>
-          <td>2812km | 18532km</td>
-          <td></td>
-          <td>? hPa</td>
-        </tr>
-<tr class="" data-cluster="0" data-mag="4.1" data-network="EMSC">
-          <td>2026-08-24 12:00:00</td>
-          <td class="mag mag4">4.1</td>
-          <td>OFF COAST OF CHIAPAS, MEXICO</td>
-          <td>8km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
-          <td>14.168, -93.300</td>
-          <td>near fault<br><small>32km — Middle America Trench megathrust</small></td>
-          <td>11410km | 2812km</td>
-          <td></td>
-          <td>? hPa</td>
-        </tr>
-<tr class="" data-cluster="0" data-mag="3.0" data-network="USGS">
-          <td>2026-08-24 11:59:53</td>
-          <td class="mag mag3">3.0</td>
-          <td>CRETE, GREECE</td>
-          <td>41km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
-          <td>34.792, 23.425</td>
-          <td>near fault<br><small>15km — Unknown</small></td>
-          <td>11364km | 11410km</td>
-          <td></td>
-          <td>? hPa</td>
-        </tr>
-<tr class="" data-cluster="0" data-mag="0.1" data-network="EMSC">
-          <td>2026-08-24 11:55:29</td>
-          <td class="mag mag0">0.1</td>
-          <td>15 km N of Warner Springs, CA</td>
-          <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netEMSC">EMSC</span></td>
-          <td>33.419, -116.640</td>
-          <td>near fault<br><small>11km — San Jacinto (Coyote Creek)</small></td>
-          <td>11311km | 11364km</td>
-          <td></td>
-          <td>? hPa</td>
-        </tr>
-<tr class="" data-cluster="0" data-mag="1.4" data-network="USGS">
-          <td>2026-08-24 11:54:08</td>
-          <td class="mag mag1">1.4</td>
-          <td>CENTRAL TURKEY</td>
-          <td>7km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
-          <td>39.819, 33.486</td>
-          <td>ON FAULT<br><small>3km — Unknown</small></td>
-          <td>13374km | 11311km</td>
-          <td></td>
-          <td>? hPa</td>
-        </tr>
-<tr class="" data-cluster="0" data-mag="1.86" data-network="USGS">
-          <td>2026-08-24 11:52:34</td>
-          <td class="mag mag1">1.9</td>
-          <td>14 km SW of Volcano, Hawaii</td>
-          <td>29km<br><small>shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
-          <td>19.338, -155.319</td>
-          <td>ON FAULT<br><small>0km — Unknown</small></td>
-          <td>4593km | 13374km</td>
-          <td></td>
-          <td>? hPa</td>
-        </tr>
-<tr class="crow" data-cluster="1" data-mag="1.44" data-network="USGS">
-          <td>2026-08-24 11:46:10</td>
-          <td class="mag mag1">1.4</td>
-          <td>16 km NE of Milford, Utah</td>
-          <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
-          <td>38.516, -112.893</td>
-          <td>fault zone<br><small>62km — Paragonah fault</small></td>
-          <td>0km | 4593km</td>
-          <td><span class="badge cluster">CLUSTER</span></td>
-          <td>-0.3 hPa</td>
-        </tr>
-<tr class="crow" data-cluster="1" data-mag="1.19" data-network="USGS">
-          <td>2026-08-24 11:39:16</td>
-          <td class="mag mag1">1.2</td>
-          <td>17 km NE of Milford, Utah</td>
-          <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
-          <td>38.520, -112.894</td>
-          <td>fault zone<br><small>62km — Paragonah fault</small></td>
-          <td>865km | 0km</td>
-          <td><span class="badge cluster">CLUSTER</span></td>
-          <td>-0.3 hPa</td>
-        </tr>
-<tr class="" data-cluster="0" data-mag="0.72" data-network="USGS">
-          <td>2026-08-24 11:38:55</td>
-          <td class="mag mag0">0.7</td>
-          <td>11 km WNW of Cobb, CA</td>
-          <td>2km<br><small>very shallow</small></td>
-          <td><span class="net netUSGS">USGS</span></td>
-          <td>38.850, -122.850</td>
-          <td>ON FAULT<br><small>7km — Collayami 2011 CFM</small></td>
-          <td>?km | 865km</td>
+          <td>?km | 5509km</td>
           <td></td>
           <td>? hPa</td>
         </tr></tbody>
 </table>
-<div id="footer">Updated: 2026-08-25 11:40:05 UTC &nbsp;|&nbsp; Auto-refreshes every 5 minutes</div>
+<div id="footer">Updated: 2026-08-25 12:04:17 UTC &nbsp;|&nbsp; Auto-refreshes every 5 minutes</div>
 <script>
 function filterTable(){
   var s=document.getElementById('search').value.toLowerCase();
